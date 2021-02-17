@@ -1,0 +1,57 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bbbblue</item>
+        <item name="colorPrimaryDark">@color/bbbblue</item>
+        <item name="colorAccent">@color/bbbblue</item>
+    </style>
+    <style name="first_aid" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bbbblue</item>
+        <item name="colorPrimaryDark">@color/bbbblue</item>
+        <item name="colorAccent">@color/bbbblue</item>
+    </style>
+    <style name="sign_in" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bbbblue</item>
+        <item name="colorPrimaryDark">@color/bbbblue</item>
+        <item name="colorAccent">@color/bbbblue</item>
+    </style>
+    <style name="signup_theme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bbbblue</item>
+        <item name="colorPrimaryDark">@color/bbbblue</item>
+        <item name="colorAccent">@color/bbbblue</item>
+    </style>
+    <style name="SecondTextStyle">
+        <!-- Customize your Second Text Style here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="EditText">
+        <!-- Customize your Edit Text style. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="ButtonStyle">
+        <!-- Customize your Button style. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_corners</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+</resources>

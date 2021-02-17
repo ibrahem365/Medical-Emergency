@@ -1,0 +1,12 @@
+<vector android:height="100dp" android:viewportHeight="512"
+    android:viewportWidth="512" android:width="100dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#d80027" android:pathData="M48,160L464,160A32,32 0,0 1,496 192L496,448A32,32 0,0 1,464 480L48,480A32,32 0,0 1,16 448L16,192A32,32 0,0 1,48 160z"/>
+    <path android:fillColor="#e0e0e2" android:pathData="m352,288v64h-64v64h-64v-64h-64v-64h64v-64h64v64z"/>
+    <path android:fillColor="#e0e0e2" android:pathData="m80,136h96v24h-96z"/>
+    <path android:fillColor="#e0e0e2" android:pathData="m336,136h96v24h-96z"/>
+    <path android:fillColor="#ffeb99" android:pathData="m400,136h-32v-32a48.054,48.054 0,0 0,-48 -48h-128a48.054,48.054 0,0 0,-48 48v32h-32v-32a80.091,80.091 0,0 1,80 -80h128a80.091,80.091 0,0 1,80 80z"/>
+    <path android:fillColor="#FF000000" android:pathData="m464,152h-24v-16a8,8 0,0 0,-8 -8h-24v-24a88.1,88.1 0,0 0,-88 -88h-128a88.1,88.1 0,0 0,-88 88v24h-24a8,8 0,0 0,-8 8v16h-24a40.045,40.045 0,0 0,-40 40v256a40.045,40.045 0,0 0,40 40h416a40.045,40.045 0,0 0,40 -40v-256a40.045,40.045 0,0 0,-40 -40zM424,152h-80v-8h80zM184,152v-16a8,8 0,0 0,-8 -8h-24v-24a40.045,40.045 0,0 1,40 -40h128a40.045,40.045 0,0 1,40 40v24h-24a8,8 0,0 0,-8 8v16zM120,104a72.081,72.081 0,0 1,72 -72h128a72.081,72.081 0,0 1,72 72v24h-16v-24a56.063,56.063 0,0 0,-56 -56h-128a56.063,56.063 0,0 0,-56 56v24h-16zM88,144h80v8h-80zM488,448a24.027,24.027 0,0 1,-24 24h-416a24.027,24.027 0,0 1,-24 -24v-256a24.027,24.027 0,0 1,24 -24h416a24.027,24.027 0,0 1,24 24z"/>
+    <path android:fillColor="#FF000000" android:pathData="m352,280h-56v-56a8,8 0,0 0,-8 -8h-64a8,8 0,0 0,-8 8v56h-56a8,8 0,0 0,-8 8v64a8,8 0,0 0,8 8h56v56a8,8 0,0 0,8 8h64a8,8 0,0 0,8 -8v-56h56a8,8 0,0 0,8 -8v-64a8,8 0,0 0,-8 -8zM344,344h-56a8,8 0,0 0,-8 8v56h-48v-56a8,8 0,0 0,-8 -8h-56v-48h56a8,8 0,0 0,8 -8v-56h48v56a8,8 0,0 0,8 8h56z"/>
+    <path android:fillColor="#FF000000" android:pathData="m112,184h-64a8,8 0,0 0,0 16h64a8,8 0,0 0,0 -16z"/>
+    <path android:fillColor="#FF000000" android:pathData="m144,184h-8a8,8 0,0 0,0 16h8a8,8 0,0 0,0 -16z"/>
+</vector>

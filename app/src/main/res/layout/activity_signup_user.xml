@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".signup_user" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RL_name"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name_icon"
+                    app:srcCompat="@drawable/ic_add_person"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/name_icon"
+                    android:layout_toRightOf="@+id/name_icon"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/bbbblue"
+                    android:text="@string/full_name" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/first_name"
+                    android:layout_toEndOf="@+id/name_icon"
+                    android:layout_below="@id/full_name"
+                    android:hint="@string/first_name"
+                    android:layout_toRightOf="@+id/name_icon" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/last_name"
+                    android:layout_toEndOf="@+id/name_icon"
+                    android:layout_below="@id/first_name"
+                    android:hint="@string/last_name"
+                    android:layout_toRightOf="@+id/name_icon" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RL_birthday"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/birthday_icon"
+                    android:src="@drawable/ic_calender" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_Birthday"
+                    android:textStyle="bold"
+                    android:text="@string/birthday"
+                    android:textColor="@color/bbbblue"
+                    android:layout_toEndOf="@+id/birthday_icon"
+                    android:layout_toRightOf="@+id/birthday_icon" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="datetime"
+                    android:id="@+id/et_birthday"
+                    android:layout_toEndOf="@+id/birthday_icon"
+                    android:layout_below="@id/tv_Birthday"
+                    android:hint="@string/birthday"
+                    android:layout_toRightOf="@+id/birthday_icon" />
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RL_sex"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sex_icon"
+                    android:src="@drawable/ic_sex"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_sex"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:text="@string/sex"
+                    android:textColor="@color/bbbblue"
+                    android:layout_toEndOf="@+id/sex_icon"
+                    android:layout_toRightOf="@+id/sex_icon" />
+
+                <Spinner
+                    android:id="@+id/sp_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_sex"
+                    android:layout_toEndOf="@+id/sex_icon"
+                    android:entries="@array/Sp_sex"
+                    android:layout_toRightOf="@+id/sex_icon" />
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RL_number"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone_icon"
+                    android:src="@drawable/ic_phone" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_phone"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:text="@string/phone"
+                    android:textColor="@color/bbbblue"
+                    android:layout_toEndOf="@+id/phone_icon"
+                    android:layout_toRightOf="@+id/phone_icon" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_phone"
+                    android:layout_toEndOf="@+id/phone_icon"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:layout_toRightOf="@+id/phone_icon" />
+
+
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:id="@+id/rl_length">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/length_icon"
+                        android:src="@drawable/ic_length" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_length"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:text="@string/length"
+                        android:textColor="@color/bbbblue"
+                        android:layout_toEndOf="@+id/length_icon"
+                        android:layout_toRightOf="@+id/length_icon" />
+
+                    <EditText
+                        android:id="@+id/et_length"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_length"
+                        android:layout_toEndOf="@+id/length_icon"
+                        android:hint="@string/length"
+                        android:inputType="phone"
+                        android:layout_toRightOf="@+id/length_icon" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:id="@+id/rl_weight">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/weight_icon"
+                        android:src="@drawable/ic_weight" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_weight"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/weight"
+                        android:textColor="@color/bbbblue"
+                        android:layout_toEndOf="@+id/weight_icon"
+                        android:layout_toRightOf="@+id/weight_icon" />
+
+                    <EditText
+                        android:id="@+id/et_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_weight"
+                        android:layout_toEndOf="@+id/weight_icon"
+                        android:hint="@string/weight"
+                        android:inputType="number"
+                        android:layout_toRightOf="@+id/weight_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RL_address"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address_icon"
+                    android:src="@drawable/ic_address" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_address"
+                    android:textColor="@color/bbbblue"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:text="@string/address"
+                    android:layout_toEndOf="@+id/address_icon"
+                    android:layout_toRightOf="@+id/address_icon" />
+
+                <EditText
+                    android:id="@+id/et_Governorate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_address"
+                    android:layout_toEndOf="@+id/address_icon"
+                    android:hint="@string/governorate"
+                    android:layout_toRightOf="@+id/address_icon" />
+
+                <EditText
+                    android:id="@+id/et_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_Governorate"
+                    android:layout_toEndOf="@+id/address_icon"
+                    android:hint="@string/city"
+                    android:layout_toRightOf="@+id/address_icon" />
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RL_blood_types"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/blood_icon"
+                    android:src="@drawable/ic_blood" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_blood"
+                    android:textColor="@color/bbbblue"
+                    android:text="@string/blood_type"
+                    android:layout_toEndOf="@+id/blood_icon"
+                    android:layout_toRightOf="@+id/blood_icon" />
+
+                <Spinner
+                    android:id="@+id/sp_blood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_blood"
+                    android:layout_toEndOf="@+id/blood_icon"
+                    android:entries="@array/Sp_blood_types"
+                    android:layout_toRightOf="@+id/blood_icon" />
+
+
+
+
+            </RelativeLayout>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb_deaf_dumb"
+                android:padding="10dp"
+                android:text="@string/are_you_from_the_deaf_and_dumb_category"/>
+            <Switch
+                android:layout_width="match_parent"
+                android:id="@+id/sw_diabetic"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/are_you_diabetic"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+            <Switch
+                android:layout_width="match_parent"
+                android:id="@+id/sw_blood_pressure"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_blood_pressure_gauge"
+                android:text="@string/are_you_sick_with_blood_pressure"
+                tools:ignore="UseSwitchCompatOrMaterialXml"
+                android:drawableLeft="@drawable/ic_blood_pressure_gauge" />
+            <Switch
+                android:layout_width="match_parent"
+                android:id="@+id/sw_heart"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_heart"
+                android:text="@string/are_you_a_heart_patient"
+                tools:ignore="UseSwitchCompatOrMaterialXml"
+                android:drawableLeft="@drawable/ic_heart" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RL_diseases"
+                android:padding="20dp">
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cb_diseases"
+                    android:text="@string/do_you_suffer_from_other_chronic_diseases"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_the_diseases"
+                    android:layout_below="@+id/cb_diseases"/>
+
+
+
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:bottomRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

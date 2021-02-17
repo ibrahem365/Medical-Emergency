@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق طبي</string>
+    <string-array name="Sp_sex">
+        <item>ذكر</item>
+        <item>أنثي</item>
+    </string-array>
+    <string-array name="Sp_blood_types">
+        <item>A+</item>
+        <item>O+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>A-</item>
+        <item>O-</item>
+        <item>B-</item>
+        <item>AB-</item>
+        <item>Other</item>
+    </string-array>
+<!--    ebrahim-->
+    <string name="app_name2">Sign Up</string>
+    <string name="name">الاسم:</string>
+    <string name="hint1">الاسم بالكامل</string>
+    <string name="address2">العنوان:</string>
+    <string name="hint2">العنوان</string>
+    <string name="phone2">رقم الهاتف:</string>
+    <string name="hint3">رقم الهاتف</string>
+    <string name="info">معلومات خاصة بالجهة:</string>
+    <string name="hint4">عدد سيارات الاسعاف</string>
+    <string name="hint5">عدد السراير</string>
+    <string name="hint6">عدد غرف العناية</string>
+    <string name="bttn0">انشاء حساب</string>
+<!--    medic-->
+    <string name="amp_1">الإسعاف</string>
+    <string name="amp_num">123</string>
+    <string name="fire_2">المطافي</string>
+    <string name="fire_num">180</string>
+    <string name="pol_3">النجدة</string>
+    <string name="pol_num">122</string>
+    <string name="acc_4">حوادث الطرق السریعة</string>
+    <string name="acc_num">012111000</string>
+    <string name="add_5">مكافحة الإدمان</string>
+    <string name="add_num">16023</string>
+    <string name="hea_6">طوارئ الصحة</string>
+    <string name="hea_num">137</string>
+    <string name="med_7">الطب الوقائي</string>
+    <string name="med_num">105</string>
+<!--    bloodbank-->
+    <string name="app_name3">بنك الدم</string>
+    <string name="text_1">انقر للبحث</string>
+    <string name="text_2">البحث عن طریق :</string>
+    <string name="text_4">أبلغ المستخدم</string>
+    <string-array name="spinner">
+        <item>- إختر -</item>
+        <item>الإسم</item>
+        <item>فصیلة الدم</item>
+        <item>العنوان</item>
+    </string-array>
+
+<!--    fa_aid_screen-->
+    <string name="fa_name">الاسعافات الاولية</string>
+    <string name="item_title_takef">التثقيف والتوعية الاسعافية </string>
+    <string name="item_title_ksoor">الكسور والرضوخ والخلع</string>
+    <string name="item_title_ekhtnak">انسداد مجرى الهواء (الغصة او الاختناق)</string>
+    <string name="item_title_darbetshams">ضربة الشمس</string>
+    <string name="item_title_ghark">الغرق</string>
+    <string name="item_title_enashkalby">الانعاش القلبي الرئوي</string>
+    <string name="item_title_momdadalaelard">الفحص السريع</string>
+    <string name="item_title_rabw">الربو الشعبي و ازمات الربو الحادة</string>
+    <string name="item_title_reaf">ماذا افعل اذا وجدت شخص لديه رعاف؟</string>
+    <string name="item_title_saktademaghia">السكتة الدماغية</string>
+    <string name="item_title_saraa">الصرع</string>
+    <string name="item_title_tasmom">التسمم</string>
+    <string name="item_title_yanzefbaghzara">كيف اسعف شخصا لديه جرح مفتوح كبير ينزف بغزار؟</string>
+    <string name="item_title_azmakalbia">الأزمات القلبية</string>
+    <string name="item_title_hrook">الحروق</string>
+    <string name="item_title_sokary">مرض السكر وغيبوبة السكر</string>
+<!--    login_screen-->
+
+    <string name="signin">تسجيل الدخول</string>
+    <string name="phn">رقم الهاتف</string>
+    <string name="phnet">رقم الهاتف</string>
+    <string name="passtv">كلمة السر</string>
+    <string name="passet">الرمز السري</string>
+    <string name="newacc">أو انشاء حساب جديد</string>
+    <string name="paramedic_btn">مسعف</string>
+    <string name="user_btn">مستخدم</string>
+    <string name="todo">TODO</string>
+    <string name="textview">TextView</string>
+    <string name="sign_as">التسجيل ك:</string>
+    <string name="or">او</string>
+    <string name="faid">الاسعافات الاولية</string>
+    <string name="emg_num">ارقام الطوارئ</string>
+<!--    الانعاش القلبي الرئوي-->
+   <string name="defenash">هو اجرءات ميكانيكية جسدية يطبقها المسعف الاولي ع شخص توقف عنده القلب والتنفس عن العمل محاولا تقليد وظيفة القلب والرئتين بهدف ايصال الدم والأوكسجين الي الدماغ وهذه الاجراءات هي:</string>
+    <string name="egra1">•	الضغطات الصدرية بواسطة اليدين </string>
+    <string name="egra2">•	فتح مجري الهواء</string>
+    <string name="egra3">•	اعطاء نفسين فم لفم  </string>
+<string name="lemanygry">لمن يجري الانعاش القلبي الرئوي :</string>
+    <string name="shakhs">لشخص غير واع ولا يتنفس او يتنفس تنفسا نزعيا(لهاث) بغض النظر عن عمره بالغا او طفلا رضيعا </string>
+    <string name="khtwat">خطوات التعامل مع فقدان الوعي مترافق بتوقف القلب والتنفس:</string>
+    <string name="khtwats1">1-تقييم الوعي ومراقبة التنفس</string>
+    <string name="khatwats2">2- اتصل بالرقم (123)</string>
+   <string name="khtawts3">3- البدء بخطوات الانعاش القل</string>
+
+    <string name="sefat"> صفات الضغطات الصدرية :</string>
+<string name="sefat1">1- عميقة وقوية  ويكون العمق بمعدل مناسب لعمر الضحية :</string>
+    <string name="sefta1a">•	عند البالغين :2 بوصة وتعال 5 سم علي الاقل</string>>
+    <string name="sefta1aa">•	عند الأطفال: بمقدار ثلث المسافة بين بين الجدار الامامي والخلفي للصدر بمقدار 2 بوصة وتعادل 5سم </string>
+    <string name="sefta1aaa">•	عند الرضع : بمقدار ثلث المسافة بين الجدار الأمامي والخلفي للصدر بمقدار 1.5 بوصة وتعادل 4 سم</string>
+    <string name="sefat2">2-  سريعة بمعدل الضغطات الصدرية في الدقيقة الواحدة من 100-120 ضغطة.</string>
+    <string name="sefat3">3- السماح للارتداد الكامل للصدر عقب كل ضغطة </string>
+    <string name="sefat4">4- الحد من مرات التوقف أثناء عملية الضغط علي الصدر</string>
+    <string name="sefat5">5-  تقليل زمن التوقف قدر الامكان أثناء اجراء الضغطات الصدرية  (أقل من 10 ثواني )</string>
+    <string name="sefat6">6- التبديل مع المسعف  الاخر بحال وجوده كل خمس دورات كاملة من الانعاش القلبي الرئوي او كل دقيقتين او عن الانهاك</string>
+    <string name="fateh">
+فتح مجري الهواء :
+</string>
+    <string name="fateh1">
+        حالة المرض:
+    </string>
+    <string name="fateh11">امالة الراس ورفع الذقن وتتم بامالة الرأس للخلف بوضع راحة يد المسعف علي جبهة الضحية وامالة كاملة للرأس برفق للخلف بينما يتم رفع ذقن الضحية باصابع او بابهام اليد الاخري للمسعف مع الانتباه لاجراء امالة خفيفة للرأس عند الرضع.</string>
+<string name="fateh2">حالة الاصابة :</string>
+    <string name="ftah21">تثبيت الراس ودفع الفك للاعلي يقوم بها المسعف الصحي والمسعف الاولي الذي تلقي تدريبا علي ذلك بان يثبت الرأس مع رقبة الضحية بباطن الكفين ويدفع زاوية الفك السفلي من الجانبين باتجاه الاعلي ويكون المسعف جانبا خلف المصاب .</string>
+<string name="tanfosse">التنفس الصناعي فم لفم :</string>
+    <string name="tanfoss1">وهي خطوة غير الزامية  للمسعف الاولي في حالة عدم تلقيه تدريبا علي ذلك او كان اجراءوها يهدر الوقت او لعدم توافر الحاجز الواقي بين فم الضحية وفم المسعف .</string>
+    <string name="mataya">متي يتوقف عن اجراء الانعاش القلبي الرئوي:</string>
+    <string name="mataya1">1- عند عوة الوعي أو التنفس أو النبض.</string>
+    <string name="mataya2">2- عند وصول فرقة اسعافية او مسعفين او متخصصين.</string>
+    <string name="mataya3">3- عند الانهاك الشديد للمسعف الاولي .</string>
+    <string name="mataya4">4-عند الوصول للمستشفي وتقديم الحالة للفريق الطبي بقسم الطوارئ.</string>
+    <string name="mataya5">5-عندا يكون المكان غير امن للمسعف الاولي.</string>
+<!--    التثقيف والتوعية الاسعافية-->
+    <string name="hal">هل افحص المصاب واقدم العناية الاسعافية الطارئة له في موقعه؟ ام اقوم بتحريكه بعيدا عن موقع الحاددث؟</string>
+    <string name="aleg">عالج المصاب في موقعه ولا تحاول تحريحه الا في الحالات التالية :</string>
+    <string name="ela1">1- وجود المصاب علي قارعة طريق سريع حتي لا يتعرض للدهس من السيارات المسرعة.</string>
+    <string name="ela2">2- وجود المصاب داخل السيارة ويحتمل اشتعال النيران فيها او انفجارها او سقوطها من مكان مرتفع.</string>
+    <string name="ela3">3- وجود تسريب للمواد البترولية من السيارات المتصادمة.</string>
+    <string name="ela4">4- صعوبة تقديم الخدمة الطبية الطارئة له وهو في موقعه الحالي مثل السيطرة علي النزيف الشديد او اجراء الانعاش القلبي الرئوي له.</string>
+<!--مرض السكر-->
+    <string name="what_is_dia">ما هو مرض السكر؟</string>
+    <string name="diadef">هو ارتفاع في نسبة السكر بالدم وهي حالة مزمنة تنتج عن نقص جزئي او كلي في هرمون الانسولين والذي تفرزه غدة البنكرياس ليقوم بمساعدة السكر الموجود في الدم للدخول الي خلايا الجسم حيث يتحول الي طاقة تساعد الجسم علي اداء وظائفه الحيوية.</string>
+    <string name="diatypes">ما انواع مرض السكري ؟</string>
+    <string name="type1">1- النوع الاول: مرض السكري الذي يعتمد في علاجه علي الانسولين </string>
+    <string name="type2">2- النوع الثاني: مرض السكري الذي يعتمد في علاجه علي الانسولين</string>
+    <string name="Symptoms_of_diabetes">ما هي اعراض السكري؟</string>
+
+    <string name="sympotms1">1- كثرة التبول والاستقياظ المتكرر من النوم بقصد التبول.</string>
+    <string name="sympotms2"> 2- العطش الشديد وكثرة شرب الماء.</string>
+    <string name="sympotms3">3- نقص في الوزن.</string>
+    <string name="sympotms4">4- تشوش النظر وضعف القدرة البصرية.</string>
+    <string name="sympotms5">ا5- الشعور بتنميل او وخز في اصابع القدمين او اليدين.</string>
+    <string name="sympotms6">6- بطء التئام الجروح.</string>
+    <string name="sympotms7">7- تقلصات في العضلات.</string>
+    <string name="sympotms8">8- نقص وتخلف النمو عند الاطفال.</string>
+    <string name="sympotms9">9- زيادة قابلية الاصابة بالتهابات الميكروبية.</string>
+    <string name="sympotms10">10- الشعور بالتعب والارهاق والدوخة.</string>
+    <string name="low_sugar">ما اعراض وعلامات هبوط (نسبة السكر في الدم)؟</string>
+    <string name="low_sugar_signs1">1- رجف شديد في الجسم والاطراف.</string>
+    <string name="low_sugar_signs2">2- تصبب العرق من الجسم</string>
+    <string name="low_sugar_signs3">3- قلة التركيز وعدم القدرة علي الاستيعاب.</string>
+    <string name="low_sugar_signs4">4- الجوع الشديد.</string>
+    <string name="low_sugar_signs5">5- دوخة ودوار.</string>
+    <string name="low_sugar_signs6">6- انخفاض حاد في نسبة السكر في الدم باستخدام الجهاز.</string>
+   <string name="low_sugar_signs_7">7- عدم وضوح الرؤية.</string>
+    <string name="اhowtoactinlowsugar">كيف يمكن التصرف في حال حصول هبوط في مستوي السكر؟</string>
+    <string name="Conscious_patient">اذا كان المريض واعيا:</string>
+    <string name="Conscious_patient1">•	اعطه قطعتين او معلقتين كبيرتين من السكر مذابتين في الماء.</string>
+    <string name="Conscious_patient2">•	او اعطه كوب من عصير الفواكه او من اي عصير محلي.</string>
+    <string name="Conscious_patient3">•	اذا لم تزل هذه الاعراض خلال 10-15 دقيقة فعلي المريض اعادة شرب الكمية نفسها لحين انتهاء الاعراض.</string>
+    <string name="Patient_is_unconscious">اذا كان المريض غير واع:</string>
+    <string name="Patient_is_unconscious1">•	يجب عدم اعطائه اي مشروب عن طريق الفم وذلكك تفاديا لحدوث الاختناق ثم ينتقل فورا الي المستشفي.</string>
+
+<!--كيف اسعف شخصا لديه جرح مفتوح كبير ينزف بغزار-->
+ <string name="howcanihelp1">1- الضغط المباشر علي الجرح من 3-10 دقائق حتي يتوقف النزيف.</string>
+    <string name="howcanihelp2">2- اذا تشبع الشاش بالدماء ضع فوقه شاشا اخر ولا تنزع السابق مع الاستمرار في الضغط.</string>
+    <string name="howcanihelp3">3- اذا استمر النزيف ولا يتوقف يتم عمل الاعاصبة للمصاب .</string>
+    <string name="howcanihelp4">4- اذا كان النزيف في الاطراف ولم يتوقف النزيف بعد الضغط المباشر يتم ربط العاصبة وشدة الربط تكون بمقدار توقف النزيف.</string>
+    <string name="note1">ملاحظة: لا تتاثر الانسجة لانقطاع الدم بسبب وضع العاصبة من 150-120 دقيقة.</string>
+    <string name="howcanihelp5">5- انقل المصاب الي اقرب مركز طبي </string>
+    <string name="howcanihelp6">6- اغسل يديك جيدا قبل وبعد تقديم الاسعافات الاولية.</string>
+    <string name="bleedandlying">ماذا اصنع اذا وجدت شخص ينزف وممدد علي الطريق؟</string>
+    <string name="bleedandly1">1- اهتم بسلامتك الشخصية اولا.</string>
+    <string name="bleedandly2">2- اهتم بسلامة الجمهور.</string>
+    <string name="bleedandly3">3- اجعل المكان امنا.</string>
+    <string name="bleedandly4">4- اهتم بسلامة المصاب .</string>
+    <string name="whatthen">ماذا افعل بعد ذلك ا؟</string>
+    <string name="Ifconscious">اذا كان المصاب واعي:</string>
+    <string name="Ifconscious1"> 1- اتصل بالرقم (123)</string>
+    <string name="Ifconscious2">2- طمئن المصاب وهدئ من روعه.</string>
+    <string name="Ifconscious3">3- اضغط علي مكان النزيف باستخدام ضماد شاش او قطعة قماش نظيفة او فوطة صحية او اذا تشبع الضماد بالدم ضع فوقه ضماد اخر واستمر في الضغط ثم اربطه بشاش معقم.</string>
+    <string name="Ifconscious4">4- اذا استمر النزيف ولم يتوقف يتم عمل العاصبة للمصاب</string>
+    <string name="objectembeded">ماذا افعل اذا وجدت شخصا مغروزا في جسده جسما غريبا (سكينا او ألة حادة)؟</string>
+    <string name="objectembeded1">•	اتبع الخطوات الاسبقة نفسها للسيطرة علي النزيف.</string>
+    <string name="objectembeded2">•	ممنوع ازالة الجسم الغريب (سكينا او الة حادة) من جسم المصاب ,بل تثبيته في مكانه باستخدام الضماد والربط بالشاش المعقم , حيث ان المكان المناسب لازالة هذه الاجسام هي غرفة العمليات داخل المستشفي.</string>
+    <string name="objectembeded3">•	اوقف النزيف باستخدام الضغط عليه  وارفع العضو لاعلي.  </string>
+<!--bahaa task-->
+    <string name="Drowning" translatable="true">"الغرق"</string>
+    <string name="drown_first_line" translatable="true">"ماذا افعل إذا رأيت شخصاً يصارع الغرق في البحر او في حمام السباحة؟"</string>
+    <string name="drown_2_line" translatable="true">"إذا كنت لا تجيد السباحة: -"</string>
+    <string name="drown_3_line" translatable="true">•	إذا كان الشخص الذي على وشك الغرق واعياً عليك باتباع الخطوات الأتية:-</string>
+    <string name="drown_4_line" translatable="true">•	لا تجاول مطلقاٌ القفز في الماء لإنقاذ الغريق.</string>
+    <string name="drown_5_line" translatable="true">•	ساعده بمد يدك او عصا او قضيب جديد او رمي حبل اليه في الماء ثم اسحبه الي خارج الماء.</string>
+    <string name="drown_6_line" translatable="true">•	إذا كان الشخص الذي يصارع الغرق عير واع عليك باتباع الخطوات التالية:-</string>
+    <string name="drown_7_line" translatable="true">•	لا تحاول مطلقاُ القفز في الماء لإنقاذ الغريق.</string>
+    <string name="drown_8_line" translatable="true">•	اطلب المساعدة من الجمهور، فربما وجدت من يجيد السباحة فيساعد على انقاذ الغريق.</string>
+    <string name="drown_9_line" translatable="true">•	اتصل بالدفاع المدني او مسؤولي الإنقاذ على الشاطئ او في النادي.</string>
+    <string name="quick_check">الفحص السريع</string>
+    <string name="how_should_i_behave_if_i_find_an_adult_child_or_infant_lying_on_the_ground_on_the_public_road">كيف اتصرف إذا وجدت شخصاً بالغاً او طفلاً او رضيعاً ممداً على الأرض في الطريق العام؟</string>
+    <string name="take_care_of_your_safety_first">اهتم بسلامتك اولاً.</string>
+    <string name="never_approach_the_site_of_an_accident_if_it_is_not_safe">لا تقترب من موقع الحادث مطلقاً إذا كان غير امن.</string>
+    <string name="ask_the_audience_to_get_away_from_the_scene_of_the_accident">اطلب من الجمهور الابتعاد عن موقع الحادث.</string>
+    <string name="ask_the_audience_if_one_of_them_is_a_doctor_or_ambulance_technician_to_help_rescue_the_injured">اسال الجمهور إذا كان أحدهم طبيباً او فني خدمات اسعافية للمساعدة في انقاذ المصابين.</string>
+    <string name="you_can_request_assistance_from_members_of_the_public_in_following_the_emergency_instructions_that_you_specify_for_them_to_help_save_the_largest_number_of_injured">يمكن طلب المساعدة من افراد الجمهور في اتباع التعليمات الاسعافية التي تحددها لهمللمساعدة في انقاذ أكبر عدد من المصابين .</string>
+    <string name="make_the_place_safe">اجعل المكان امناً.</string>
+    <string name="take_care_of_the_safety_of_the_injured"> اهتم بسلامة المصاب.</string>
+    <string name="age_group">الفئة العمرية</string>
+    <string name="pulse_rate_per_minute">معدل النبض في الدقيقة</string>
+    <string name="accurate_respiratory_rate">معدل التنفس في الدقيقة</string>
+    <string name="adults">البالغون</string>
+    <string name="_60_100">60-100</string>
+    <string name="children">الاطفال</string>
+    <string name="infants">الرضع</string>
+    <string name="how_to_examine_the_injured_person"> كيف افحص المصاب:</string>
+    <string name="test_the_degree_of_consciousness_to_determine_if_it_is_conscious_or_unconscious">• اختبر درجة الوعي لتحديد إذا كان واعياً ام غير واعً.</string>
+    <string name="ask_the_injured_person_what_is_wrong_with_you_in_a_loud_voice_if_he_does_not_respond_to_the_verbal_stimulus_try_scratching_the_sternum_mid_breastbone_with_your_finger_several_times_while_repeating_your_question">•اسال المصاب ماذا بك بصوت مرتفع فان لم يستجيب للمنبه الكلامي. حاول حك عظمة القص (عظمة منتصف الصدر) بأصبعك مرات عدة مع تكرار سؤالك </string>
+    <string name="what_s_wrong_if_he_does_not_respond_to_the_verbal_stimulus_the_sufferer_is_unconscious_and_if_he_responds_to_the_verbal_or_painful_stimulus_the_sufferer_is_conscious">ماذا بك. فان لم يستجيب للمنبه الكلامي يكون المصاب غير واع وإذا استجاب للمنبه الكلامي او الايلامي يكون المصاب واعياً.</string>
+    <string name="rapid_examination_of_the_unconscious_patient">الفحص السريع للمصاب غير الواعي:</string>
+    <string name="what_do_i_do_if_it_is_confirmed_that_the_patient_is_not_conscious">ماذا افعل إذا تأكدت ان المصاب غير واع؟.</string>
+    <string name="follow_the_life_saving_adult_series_as_follows">اتبع سلسلة انقاذ الحياة للبالغين كالتالي:</string>
+    <string name="early_call_to_the_ambulance_number_123">•الاتصال المبكر ع رقم الاسعاف123</string>
+    <string name="a_breath_test">• فحص التنفس</string>
+    <string name="early_cpr_in_case_the_patient_is_not_breathing"> •الانعاش القلبي الرئوي المبكر في حال كان المريض لا يتنفس</string>
+    <string name="use_of_an_abdominal_defibrillation_device">•استعمال جهاز ازاله الرجفان البطني</string>
+    <string name="the_arrival_of_the_ambulance_team">•وصول الفرقة الاسعافية</string>
+    <string name="advanced_cardiac_care">•العناية القلبية المتقدمة</string>
+    <string name="breath_test">فحص التنفس:</string>
+    <string name="the_patient_s_breathing_is_checked_by_looking_at_the_patient_s_chest_to_monitor_the_rise_and_fall_of_the_chest_the_movement_of_the_chest_downward_and_rising_is_an_indication_of_the_presence_of_a_pulse_so_it_is_sufficient_to_check_breathing_without_the_need_to_check_the_pulse">يتم فحص تنفس المريض من خلال النظر الي صدر المريض لمراقبة ارتفاع وهبط الصدر. حركة الصدر بالهبوط والارتفاع دلالة على وجود النبض لذلك يكتفي بفحص التنفس دون الحاجة لفحص النبض.</string>
+    <string name="note">ملاحظة:</string>
+    <string name="the_time_period_for_the_breath_test_is_5_10_seconds">الفترة الزمنية لفحص التنفس 5_10 ثواني.</string>
+    <string name="fractures_bruises_and_dislocations">الكسور والرضوض والخلع</string>
+    <string name="how_do_i_know_that_the_leg_or_arm_bones_are_broken">كيف اعرف ان عظام الساق او الذراع مكسورة؟</string>
+    <string name="look_for_signs_of_fractures_such_as">ابحث عن علامات الكسور مثل:</string>
+    <string name="_1_deformation_of_the_limb">1.تشوه الطرف.</string>
+    <string name="_2_the_thing_that_happens_when_you_press_its_place">2.حدوث الم شديد عند العضو الذي يوجد به الكسر وتزداد جدة الألم عند الضغط على مكان الإصابة.</string>
+    <string name="_3_shortness_of_the_bones">3.حدوث قصر في العظام إذا كان الكسر متداخلاً</string>
+    <string name="_4_hear_the_crackling_sound_when_trying_to_move_the_broken_person_with_severe_pain">4.سماع صوت قرقعة عتد محاول المصاب تحريك الطرف المكسور مع الشعور بالأم شديد.</string>
+    <string name="_5_seeing_bone_protruding_from_the_open_wounds">5.رؤية العظام بارزة من الجروح المفتوحة.</string>
+    <string name="what_is_the_importance_of_splints_and_ligaments">ما أهمية الجبائر والاربطة؟</string>
+    <string name="_1_keeping_the_broken_bones_in_a_state_of_rest_thus_reducing_the_feeling_of_severe_pain">1.حفظ العظام المكسورة في حالة من الراحة وبالتالي يخف الشعور بالألم الشديد.</string>
+    <string name="_2_preventing_tissue_damage_surrounding_the_fracture_and_preventing_rupture_of_the_surrounding_blood_vessels_and_nerves">2.منع حدوث تهتك بالأنسجة المحيطة بالكسر ومنع تمزق الاوعية الدموية والاعصاب المجاورة.</string>
+    <string name="_3_avoid_turning_the_simple_fraction_into_a_double_or_compound_fracture">3.تجنب تحول الكسر البسيط الي كسر مضاعف او مركب.</string>
+    <string name="_4_preventing_the_two_ends_of_the_broken_bone_from_friction_thus_avoiding_the_occurrence_of_pain">4.منع طرفي العظم المكسور من الاحتكاك وبالتالي تجنب حدوث الألم.</string>
+    <string name="what_are_the_general_principles_of_splints">ما هي المبادئ العامة للجبائر؟</string>
+    <string name="_1_the_joint_located_before_and_after_the_skeletal_injury_is_fixed_for_the_joint_injury_the_bone_present_before_and_after_the_injured_joint_is_fixed">1.يتم تثبيت المفصل الموجود قبل وبعد الإصابة الهيكلية، لإصابة المفصل تثبت العظمة الموجودة قبل وبعد المفصل المصاب.</string>
+    <string name="_2_remove_and_cut_the_clothes_in_the_injured_area_before_casting">2.ازاله وقص الثياب الموجودة في منطقة الإصابة قبل التجبير.</string>
+    <string name="_3_cover_open_injuries_with_a_sterile_pad_before_splinting">3.تغطية الإصابات المفتوحة بواسطة الضمادة المعقمة قبل تركيب الجبيرة.</string>
+    <string name="_4_fixing_the_limb_in_the_position_in_which_it_was_found_unless_there_was_no_pulse_in_the_distal_limb_of_the_manual_traction_injury_before_the_splint_was_installed">4.تثبيت الطرف في الوضعية التي وجدته بها الا إذا كان لا يوجد نبض في الطرف البعيد لإصابة الشد اليدوي قبل تركيب الجبيرة.</string>
+    <string name="_5_not_to_return_the_bone_from_the_wound_intentionally_into_the_tissues">5.عدم ارجاع العظم الخارج من الجرح عن قصد داخل الانسجة.</string>
+    <string name="_6_putting_on_the_splint_when_you_suspect_an_injury">6.تركيب الجبيرة عند الشك بوجود إصابة.</string>
+    <string name="full_name">الاسم بالكامل</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="last_name">الاسم الاخير</string>
+    <string name="birthday">عيد الميلاد</string>
+    <string name="city">المدينة</string>
+    <string name="sex">النوع</string>
+    <string name="phone">التليفون</string>
+    <string name="phone_number">رقم التليفون</string>
+    <string name="length">الطول</string>
+    <string name="weight">العرض</string>
+    <string name="address">العنوان</string>
+    <string name="governorate">المحافظة</string>
+    <string name="blood_type">نوع فصيلة الدم</string>
+    <string name="are_you_from_the_deaf_and_dumb_category">هل انت من فئة الصم والبكم؟</string>
+    <string name="are_you_diabetic">هل أنت مصاب بالسكر؟</string>
+    <string name="are_you_sick_with_blood_pressure">هل أنت مريض بضغط الدم؟</string>
+    <string name="are_you_a_heart_patient">هل أنت مريض قلب؟</string>
+    <string name="do_you_suffer_from_other_chronic_diseases">هل تعاني من أمراض مزمنة أخرى؟</string>
+    <string name="enter_the_diseases">أدخل الأمراض</string>
+    <string name="sign_in">انشاء حساب جديد</string>
+    <string name="poisoning">التسمم</string>
+    <string name="what_is_poisoning">ما هو التسمم؟</string>
+    <string name="it_is_the_arrival_of_any_toxic_substance_into_the_human_body_that_produces_a_harmful_effect_on_the_vital_body_processes_whether_through_injection_swallowing_or_inhalation">هو وصول أي ماده سامه الي جسم الانسان ينتج منها تأثير ضار بعمليات الجسم الحيوية سواء عن طريق الحقن والبلع او الاستنشاق او ملامسة الجلد.</string>
+    <string name="what_are_the_methods_of_poisoning">ما طرق التسمم؟</string>
+    <string name="first_poisoning_by_ingestion">أولاً: التسمم بالابتلاع:</string>
+    <string name="_1_the_presence_of_burns_around_the_mouth_and_tongue">1. وجود حروق حول الفم واللسان.</string>
+    <string name="_2_convulsions">2. التشنجات.</string>
+    <string name="_3_the_occurrence_of_tver_in_the_degree_of_consciousness_of_the_patient">3. حدوث تفير في درجة وعي المريض.</string>
+    <string name="_4_the_presence_of_empty_medicine_bottles_or_bottles_or_chemical_bottles_near_the_injured_person">4. وجود قناني ادوية فارغة او زجاجات او قناني كيماوية قرب المصاب.</string>
+    <string name="how_do_i_treat_a_patient_suffering_from_swallowing_poisoning">كيف أعالج مريض يعاني من ابتلاع التسمم؟</string>
+    <string name="if_the_injured_person_is_conscious_you_must_follow_the_following">إذا كان المصاب واعياً ، يجب عليك اتباع ما يلي: -</string>
+    <string name="reassure_the_injured_person_first_then_ask_him_about_the_name_of_the_substance_that_he_swallowed_and_how_much_how_long_has_it_been_since_you_swallowed_it">• طمئن المصاب أولاً ، ثم اسأله عن اسم المادة التي ابتلعها ، وكم؟ كم مضى منذ أن ابتلعته؟</string>
+    <string name="call_123_and_tell_them_the_symptoms_and_signs_you_have_noticed_on_the_patient">• اتصل بالرقم 123 وأخبرهم بالأعراض والعلامات التي لاحظتها على المريض.</string>
+    <string name="keep_the_medicine_box_and_the_tablets_in_it_or_the_liquid_that_he_took_and_bring_it_to_the_hospital_with_the_poisoned_person">• احتفظ بعلبة الدواء والأقراص بداخلها أو السائل الذي تناوله واحضره إلى المستشفى مع الشخص المسموم.</string>
+    <string name="second_poisoning_through_the_skin">ثانياً: - تسمم عن طريق الجلد</string>
+    <string name="skin_poisoning_occurs_if_the_infected_skin_comes_into_contact_with">يحدث تسمم الجلد إذا لامس الجلد المصاب: -</string>
+    <string name="_1_loose_cleaners_such_as_clorox_or_flash">1. المنظفات السائبة مثل Clorox أو Flash.</string>
+    <string name="_2_insecticides">2. المبيدات الحشرية</string>
+    <string name="_3_paint_materials_such_as_nitrous_or_oil">3. مواد الطلاء مثل النيتروز أو الزيت.</string>
+    <string name="symptoms_and_signs">الأعراض والعلامات</string>
+    <string name="_1_severe_and_burning_pain">1. ألم شديد وحارق.</string>
+    <string name="_2_blurred_vision">2. عدم وضوح الرؤية.</string>
+    <string name="_3_a_change_in_the_degree_of_consciousness">3. تغيير في درجة الوعي.</string>
+    <string name="_4_diarrhea_and_vomiting">4. الإسهال والقيء.</string>
+    <string name="_5_sweating">5. التعرق.</string>
+    <string name="_6_convulsions_convulsions">6. التشنجات .</string>
+    <string name="third_poisoning_by_inhalation_of_gases">ثالثاً: - التسمم باستنشاق الغازات:</string>
+    <string name="what_are_the_symptoms_of_gas_inhalation_poisoning">ما هي أعراض التسمم باستنشاق الغازات؟</string>
+    <string name="_1_a_severe_cough_with_nausea_and_vomiting">1. سعال حاد مع غثيان وقيء.</string>
+    <string name="_2_pain_in_the_mouth_nose_throat_and_chest">2. ألم في الفم والأنف والحنجرة والصدر.</string>
+    <string name="_3_difficulty_breathing_with_a_feeling_of_suffocation">3. صعوبة التنفس مع الشعور بالاختناق.</string>
+    <string name="_4_a_severe_headache_that_increases_gradually">4. صداع شديد يزداد تدريجياً.</string>
+    <string name="_5_a_sense_of_extreme_weakness_with_a_desire_to_sleep_in_the_patient">5. الشعور بالضعف الشديد ، مع رغبة المريض في النوم.</string>
+    <string name="what_are_the_signs_of_gas_inhalation_poisoning">ما هي علامات التسمم باستنشاق الغازات؟</string>
+    <string name="_1_convulsions_convulsions">1. التشنجات </string>
+    <string name="_2_skin_blue_or_scarlet_red_depending_on_the_type_and_amount_of_gas_inhaled">2. الجلد: أزرق أو أحمر قرمزي (حسب نوع وكمية الغاز المستنشق).</string>
+    <string name="_3_the_pulse_is_fast_and_weak">3. النبض سريع وضعيف.</string>
+    <string name="_4_a_change_in_the_degree_of_awareness_of_the_patient">4. تغيير في درجة وعي المريض.</string>
+    <string name="how_do_i_treat_a_victim_suffering_from_gas_inhalation_poisoning">كيف أعالج ضحية تعاني من التسمم الناتج عن استنشاق الغازات؟</string>
+    <string name="_1_make_sure_the_place_is_safe_to_ensure_your_personal_safety_first">1. تأكد من أن المكان آمن لضمان سلامتك الشخصية أولاً.</string>
+    <string name="_2_try_to_turn_off_the_gas_leakage_keys_if_you_know_the_source">2. حاول إيقاف تشغيل مفاتيح تسرب الغاز إذا كنت تعرف المصدر.</string>
+    <string name="_3_open_closed_windows_to_help_ventilate_the_space">3. افتح النوافذ المغلقة للمساعدة في تهوية المكان.</string>
+    <string name="_4_call_123_for_an_ambulance">4. اتصل بالرقم 123 للحصول على سيارة إسعاف</string>
+    <string name="_5_transfer_the_victim_to_a_well_ventilated_place">5. نقل المصاب إلى مكان جيد التهوية</string>
+    <string name="fourth_bites_stings_and_bites">رابعًا: اللسعات واللدغات: -</string>
+    <string name="_1_localized_pain_cyanosis_and_swelling">1. ألم موضعي ، زرقة وتورم.</string>
+    <string name="_2_weakness_in_muscles_and_inability_to_move">2. ضعف العضلات وعدم القدرة على الحركة.</string>
+    <string name="_3_muscle_stiffness_m_cramps_occur_in_the_muscles_near_the_site_of_the_bite">3. تصلب العضلات  ، تحدث تقلصات في العضلات القريبة من مكان اللدغة.</string>
+    <string name="_4_sweating">4. التعرق.</string>
+    <string name="_5_weakness_or_lack_of_vision">5. ضعف أو ضعف الرؤية.</string>
+    <string name="_6_a_change_in_the_degree_of_consciousness">6. تغيير في درجة الوعي.</string>
+    <string name="what_do_i_do_to_help_the_injured">ماذا أفعل لمساعدة الجرحى؟</string>
+    <string name="_1_call_123">1. اتصل بالرقم 123</string>
+    <string name="_2_if_the_victim_is_conscious">2. إذا كانت الضحية واعية</string>
+    <string name="reassure_the_injured_person_and_make_him_lie_on_his_back_and_ask_him_not_to_move">• طمأن المصاب واجعله يستلقي على ظهره واطلب منه عدم الحركة.</string>
+    <string name="place_the_bite_or_sting_site_below_the_level_of_the_heart">• ضع موضع اللدغة أو اللدغة تحت مستوى القلب.</string>
+    <string name="wipe_the_site_of_the_bite_or_sting_with_alcohol_or_water_and_soap">• امسح مكان اللدغة أو اللدغة بالكحول أو الماء والصابون.</string>
+    <string name="fixation_of_the_limb_with_splints_to_prevent_movement_or_walking_as_in_the_case_of_a_fracture">• تثبيت الطرف بالجبائر لمنع الحركة أو المشي (كما في حالة الكسر).</string>
+
+<!--omartask-->
+    <string-array name="report_types" >
+        <item>اختر نوع البلاغ</item>
+        <item>حوادث مرروريه</item>
+        <item>حريق</item>
+        <item>أمراض</item>
+        <item>نساءوولاده</item>
+        <item>تسمم</item>
+        <item>متفجرات وأسلحه</item>
+        <item>اصابات</item>
+        <item>اعتداء وعنف</item>
+    </string-array>
+
+    <string name="types">انواع الحروق\n</string>
+    <string name="details1">
+        الحروق الحراريه تحدث بسبب :\n
+. النيران (اللهب) \n\n
+.انسكاب الماء المغلي او الشاي او القهوه علي الجلد \n\n
+.ملامسه جسم حار\n\n
+.اشعه الشمس الحارقه\n\n
+       </string>
+    <string name="details2">.الحروق الكميائيه.\n\n</string>
+    <string name="det3">
+   \n\nما الاسعافات الاوليه للحرق الكميائي\n\n  </string>
+
+    <string name="det4">
+التخلص من المادة الكيميائية المتسببة في الحرق.. \n\n.
+ اغسل المادة الكيميائية بالمياه الجارية الفاترة لإزالتها من على الجلد لمدة لا تقل عن 10دقائق \n\n
+اخلع الملابس أو المجوهرات الملوثة بالمادة الكيميائية.\n
+.\n\nالغسل مرة أخرى إذا لزم الأمر\n
+</string>
+    <string name="det5">الحروق الكهربائيه؟</string>
+    <string name="det6">
+.البعد عن المصدر الكهربائى الذى سبب الحرق...\n
+.تحديد عمق الحرق..\n
+.تغطية الحروق بضمادة جافة معقمة.\n
+\nلا تهدأ الحروق باستخدام الماء.
+.مراقبة ما إذا كانت توجد علامات تهدد حياة المصاب مثل: عدم انتظام ضربات القلب أو مشاكل التنفس.\n
+"</string>
+    <string name="det7">وفي ما يلي أربعة تصنيفات للحروق:\n</string>
+    <string name="det8">1- حرق من الدرجة الأولى \n\n
+         يُصيب هذا الحرق البسيط الطبقة الخارجية من الجلد (البشرة) فقط.\n\n
+          ويُسبب احمرارًا وألمًا وعادةً ما يزول باتباع إجراءات الإسعافات الأولية خلال     عدة أيام إلى أسبوع \n
+           وتعد حروق الشمس مثالاً معهودًا لذلك.\n\n</string>
+
+    <string name="det9">2- حرق من الدرجة الثانية\n\n
+تُصيب هذه الحروق كلاً من البشرة والطبقة التي تليها من الجلد (الأدمة)،\n\n وتُسبب احمرارًا وألمًا وتورُّمًا، وغالبًا ما يبدو الحرق من الدرجة الثانية مبللاً أو رطبًا. ويمكن أن تظهر بثور وقد يكون الألم شديدًا،\n\n كما أن الحروق العميقة من الدرجة الثانية قد تُسبب ندبات\n\n</string>
+
+    <string name="det10">\n 3- حرق من الدرجة الثالثة\n\n
+إن الحروق التي تصل إلى الطبقة الدهنية التي توجد تحت الأدمة تُسمّى حروقًا من الدرجة الثالثة،\n\n
+وقد يبدو الجلد بمظهر متيبِّسٍ أو شمعي أبيض أو صلب أو أسمر اللون،\n\n ويمكن أن تؤدي الحروق من الدرجة الثالثة إلى تدمير الأعصاب، مما يسبب التنميل.\n
+    </string>
+
+    <string name="det11">كيف اتصرف في حدوث حريق!!!</string>
+    <string name="det12">في حال اندلاع حريق, تصرف باعصاب هادئه, فكر بشكل متزن بحسب تقديرك للوضع.\n قبل كل شيئ يجب ابلاغ خدمات الاطفاء والانقاذ.\n
+
+حاول اطفاء النار حالا عند اكتشافها, بالوسائل المتوفره لديك (مطفئه, نربيج ماء, دلو ماء, خرقه مبلوله, او أي مسيله اخرى مناسبه).
+احذر ! لا تحرك الماء باتجاه اجهزه كهربائيه .
+ابعد عن منطقة النار المواد والأجهزه التي قد تساهم في انتشار الحريق.
+في حال انتشار الحريق وعدو مقدرتك على السيطره عليها, اخرج من مكان تواجدك, اغلق الباب خلفك واعلم الجيران بان يخلوا البنايه وان يبتعدوا عن مكان النار. من المفضل اغلاق كل الابواب في طريقك للخروج بدون اقفالها."
+</string>
+    ------------skta dmaghia-----
+    <string name="sk1">\n\n\nالسكته الدماغيه تعني حدوث تلف في الخلايا او المراكز \n
+ العصبيه في جزء من المخ  نتبجه توقف جريان الدم في شريان او اكثر ..\n
+ بسبب انسداده بجلطه وهو ما يؤدي الي توقف تدفق الاكسجين\n
+ والغذاء الي تلك الخلايا والمراكز العصبيه\n\n
+</string>
+
+    <string name="sk2">\nاعراض السكته الدماغيه</string>
+    <string name="sk3">
+1-حدوث تشنجات \n
+2-انحراف زاويه الفم في الجهه السليمه\n
+3-تسرب اللعاب او المياه من الفم\n
+4-حدوث تغير في درجه الوعي لدي المريض\n
+5-ضعف القدره علي التحرك(الشلل النصفي)\n
+</string>
+
+    <string name="sk4">\n\nماذا افعل اذا تاكدت ان المريض يعاني من سكته دماغيه</string>
+
+    <string name="sk5">1- اتصل باقرب مستتشفي\n
+2- طمئن المرسض وهدئ من روعه\n
+3- اجعل راس المريض وكتفه على جسمه\n
+4- اخلع عن المريض ملابسه الضيقه\n
+5- لا تقدم للمريض طعاما ولا شرابا عن طريق فمه\n</string>
+
+    ----------------nazif------------
+
+    <string name="nz1" translatable="false">ماذا افعل اذا وجدت لديه نذيف بالانف</string>
+    <string name="nz2">
+ \n\n .اتكئ قليلاً مع إمالة الرأس للأمام\n
+  بصق أي دم قد يتجمع في فمك وحلقك.\n.
+بلطف ، نفخ أي جلطات دموية من أنفك. \n.
+الضغط على جميع الأجزاء اللينة من الأنف معًا بين الإبهام والسبابة. \n.
+أمسك الأنف لمدة خمس دقائق على الأقل.\n.
+.\nالجلوس بهدوء ، والحفاظ على رأس أعلى من مستوى القلب</string>
+
+    -----------------saraa--------------
+
+    <string name="sr1">
+
+الصرع (Epilepsy) هو خلل في نقل الشارات الكهربائية في داخل الدماغ.\n وبالرغم من أن الاعتقاد الشائع هو إن مرض الصرع يسبب دائما نوبة من الحركة \nاللا إرادية وفقدان الوعي،\n
+ إلا إن مرض الصرع، في الحقيقة، يظهر بصور متنوعة جدا. \n
+ إن الحالات التي تظهر فيها علامات المعروفة بالنوبة الصرعيّة تكون، على الأغلب، ضمنية، تثير أحاسيس غريبة، حساسية زائدة وتصرفات شاذة. \n
+    </string>
+
+    <string name="sr2">كيف اسعف المريض الذي به صرع</string>
+    <string name="sr3">ارشادات هامه\n\n
+            1- تكون هادئا وحاول تهدئه الاخرين \n\n
+             2- ضع شيئا لين ومستوي تحت راسه \n\n
+             3- يجب ابعاد الاشياء التي قد تصطدم براسه&#160;
+              \n&#160;&#160;مثل الالات الحاده او الاواني الزجاجيه \n\n
+              4- اذا كان يلبس ربطه عنق او ملابس ضيقه حاول ان ترخيها \n\n
+               5-  امنع سقوطه المفاجئ  وصدمته بالارض وضع المريض على جنبه حتى يخرج اللعاب ولا يسبب له اي ضرر\n\n
+               6- لاتضع اي شئ في فمه\n\n
+               7- لا تحاول ان تدفع لسانه بمعلقه او اي اداه اخري \n\n
+               8- ابقي معه حتي يستعيد وعيه\n\n
+               9- وصله الي منزله\n\n
+               10- افحص التنفس واذا كان غير قادر علي التنفس قم &#160;&#160;بعمليه النعاش القلبي والرئوي\n\n
+</string>
+<!--    esraatask-->
+<!--    1-->
+    <string name="t_1">ضربة الشمس ( الصدمة الحرارية)</string>
+    <string name="t_2">يتعرض الانسان لضربات الشمس ، نتيجة التعرض الي جو حار ورطب لمدة طويلة ، مع عدم التخلص من السوائل عن طريق العرق.</string>
+    <string name="t_3">كيف اعرف ان هذا الشخص مصاب بضربة الشمس؟</string>
+    <string name="t_4">اذا كان يعاني من الاعراض والعلامات الآتيه:- </string>
+    <string name="t_5">.صداع و دوخة و اعياء </string>
+    <string name="t_6">.اختلاف في درجة الوعي </string>
+    <string name="t_7">.الجلد:جاف و حار(قد يكون رطبا في بعض الحالات)</string>
+    <string name="t_8">.النبض:سريع و ضعيف </string>
+    <string name="t_9">.تشنجات في العضلات </string>
+    <string name="t_10">.اتساع حدقة العين </string>
+    <string name="t_11">    كيف اسعف الشخص المصاب بضربة الشمس ؟</string>
+    <string name="t_12">هناك عدد من الاجراءات التي يجب اتباعها لإنقاذ المصاب بضربة الشمس وهي:  </string>
+    <string name="t_13">.انقل المصاب الي مكان بارد : اخلع عنه ملابسه الخارجيه  </string>
+    <string name="t_14">.لف المصاب بمنشف مبلل بالماء البارد كل 10 دقلئق حتي تنخفض درجة حرارته</string>
+    <string name="t_15">.ضع المصاب في تيار هوائي (مروحه او مكيف) </string>
+    <string name="t_16">.يمكن رش الجسم المصاب بالماء اذا لم يتوفر المنشف </string>
+    <string name="t_17">.اتصل علي الرقم 123 (الاسعاف) لنقل المصاب الي اقرب مستشفي</string>
+<!--    2-->
+    <string name="t_21">الأزمات القلبيه</string>
+    <string name="t_22"> الأزمات القلبيه كثيره منها الجلطة(احتشاء عضلة القلب) والتي تحدث نتيجة انسداد كلي في شريان او اكثر من الشرايين التاجيه التي تغذي عضلة القلب ب الاوكسجين والغذاء الاازم ، ومنها الذبحه الصدريه التي تحدث نتيجة الشرايين التاجيه وحدوث نقص في جريان الدم فيها ، وهو ما يسبب الآما مبرحه. </string>
+    <string name="t_23"> ما التصرف اذا وجدت شخصا يشكو من ألم شديد في الصدر ؟</string>
+    <string name="t_24">أولا :-باالنسبه الي الذبحه الصدريه</string>
+    <string name="t_25">الألم الذي تحدثه الذبحه الصدريه شديد ، وقد تمتد آثاره الي كثير من اعضاء الجسم وتكون صفات الألم كالتالي :-</string>
+    <string name="t_26">1.يحدث بعد مجهود عضلي (صعود السلالم ، ممارسة الرياضه) او مجهود نفسي (الانفعال الشديد)</string>
+    <string name="t_27">2.الم ضاغط او احساس بوجود ثقل علي وسط الصدر</string>
+    <string name="t_28">3.قد يمتد الألم الي الكتف الأيسر ، داخل الذراع الأيسر و اصابع اليد اليسري ، الرقبه ، الفك السفلي بين عضمتين اللوح بظهر المريض </string>
+    <string name="t_29">4.يستمر الألم ما بين (5-10 دقائق)</string>
+    <string name="t_210">5.يتحسن الألم بالراحه او باخذ حبوب تحت اللسان المصوفه من قبل الطبيب</string>
+    <string name="t_211">ثانيا:-الجلطة(احتشاء عضلة القلب)</string>
+    <string name="t_212">الألم المصاحب للجلطه له صفات خاصه منها:-</string>
+    <string name="t_214">.قد يحدث فجأه دون مسببات او دون جهد قبله </string>
+    <string name="t_215">.ضاغط وسط الصدر   </string>
+    <string name="t_216">.شديد الحده   </string>
+    <string name="t_217">كيف أسعف المريض؟  </string>
+    <string name="t_218">1.اتصل علي رقم 123(الاسعاف)   </string>
+    <string name="t_219">2.طمئن المرض وهدئ من روعه ولا تسمح له بالحركة   </string>
+    <string name="t_220">3.اخلع عن المرض ملابسه الضيقه وفك ازرار الرقبة ورباط عنقه ان وجد  </string>
+    <string name="t_221">4.ساعد المرض علي اخذ حبوب تحت اللسات الموصوفه من قبل الطبيب اذا كان ما يعانيه المريض هو علامات الذبحه الصدريه    </string>
+
+
+<!--3-->
+    <string name="t_31">  ما هو الربو ؟</string>
+    <string name="t_32">هو مرض مزمن يؤثر في الشعب والقصبات الهوائيه محدثا تضيقا بها </string>
+    <string name="t_33">ما اسباب الربو؟ </string>
+    <string name="t_34">لا توجد اسباب محدثه لهذا المرض فقد ينتقل وراثيا من العائله نفسها ، ولكن توجد مهيحات تؤدي الي حدوث ازمة الربو مث :-</string>
+    <string name="t_35">1.غبار المنزل الذي يحوي كائنات دقيقه تعرف باسم العثه المنزليه ، وتعيش في المفروشات كالسجاد والموكيت والستائر الثقيله واغطيه الفراش كاللحاف والمناشف والبطانيات </string>
+    <string name="t_36">2.تلوث الجو المحيط بالمريض بدخان السجائر وابخرة المصانع وعوادم السيارات وغيرها </string>
+    <string name="t_37">3.الغبار والعوالق الترابيه </string>
+    <string name="t_38">4.العطور</string>
+    <string name="t_39">5.المنظفات المنزليه خصوصا تلك التي لها رائحه قوية ونفاذه</string>
+    <string name="t_310">6.الحساسيه لحبيبات الطلع (حبوب اللقاح) في الأزهار والنباتات الزهريه</string>
+    <string name="t_311">7.فرو او شعر الحيوانات المنزليه</string>
+    <string name="t_312">8.التعرض للهواء البارد</string>
+    <string name="t_313">9.لسعات بعض الحشرا كالنحل</string>
+    <string name="t_314">10.التهابات المسالك التنفسيه العلويه </string>
+    <string name="t_315">ما اعراض ازمة الربو الحاده؟</string>
+    <string name="t_316">1.سعال </string>
+    <string name="t_317">2.صوت ازيز او تصفير اثناء الزفير</string>
+    <string name="t_318"> 3.صعوبه في الكلام وعدم القدره علي اكمال جمله واحده</string>
+    <string name="t_319">4.صعوبه في التنفس</string>
+    <string name="t_320">5.انقباض في الصدر </string>
+    <string name="t_321">6.زيادة افراز المخاط</string>
+    <string name="t_322">7.تعرق</string>
+    <string name="t_323">8.ارهاق</string>
+    <string name="t_324">9.قلق و توتر</string>
+    <string name="t_325">10.انخفاض مستوي الوعي </string>
+    <string name="t_326">ماذا افعل اذا تاكدت ان ما يعانيه المريض هو نوبة(ازمه) ربويه حاده؟ </string>
+    <string name="t_327">عليك باتباع الخطوات الآتيه:- </string>
+    <string name="t_328">1.طمئن المريض وهدئ من روعه </string>
+    <string name="t_329">2.ساعد المريض علي ان يجلس او يأخذ الوضعية المريحه له </string>
+    <string name="t_330">3.ساعده علي اخذ جرعه من بخاخ او بخار الذي يستعمله واذا لم يتحسن بعد 10 دقائق اتصل علي رقم 123 (الاسعاف)  </string>
+    <string name="t_331">4.في حالة تكرار النوبه أي حدوث ما يسمي (حالة الربو المتكرره) ينقل المريض الي المستشفي عالفور </string>
+<!--4-->
+    <string name="t_41">انسداد مجري الهواء (الغصه او الاختناق)</string>
+    <string name="t_42">الاختناق هو احد الحالات المهدده للحياه ، حيث يتوقف التنفس للمصاب ويحدث اعاقه لدخول وخروج الهواء الي رئتيه  </string>
+    <string name="t_43">كيف اتصرف اذا تأكدت ان هناك شخصا مصابا بانسداد مجري الهواء:</string>
+    <string name="t_44">يجب ان تحدد اولا هل الانسداد بسيط ام شديد</string>
+    <string name="t_45">اذا كان الانسداد بسيطا فان المصاب يعني:</string>
+    <string name="t_46">-سعالا مستمرا</string>
+    <string name="t_47">-حشرجه وخشونه فالصوت</string>
+    <string name="t_48">سماع صوت زفيرا او ازيزا عند دخول وخروج الهواء</string>
+    <string name="t_49">ماذا افعل لانقاذه:</string>
+    <string name="t_410">.لا تتدخل شجعة علي الاستمرار في السعال حتي يخرج الجسم الغريب من الفم </string>
+    <string name="t_411">.راقبه جيدا وكن مستعدا للتدخل في حالة فقدان الوعي</string>
+    <string name="t_412">اذا كان الانسداد شديدا فان المصاب يعاني من:</string>
+    <string name="t_413">-عدم وجود سعال او حشرجه او صوت صفير او ازيز عند دخول وخروج الهواء </string>
+    <string name="t_414">عدم القدره علي الكلام </string>
+    <string name="t_415">صعوبة شديده فالتنفس مع وجود زرقة في لون الجلد</string>
+    <string name="t_416">الميل لفقدان الوعي</string>
+    <string name="t_417">ماذا افعل كي اتاكد ان الانسداد شديدا؟</string>
+    <string name="t_418">.قم بهز المصاب من كتفيه بقوة واسأله بصوت مرتفع :هل انت مختنق؟ فاذا حرك رأسه لأعلي و للاسفل فهذا يعني انه (نعم) في طور الاختناق</string>
+    <string name="t_419">مناورة هيميلك للبالغين:</string>
+    <string name="t_420">قف خلف المختنق ولف ذراعيك حول وسطه من تحت ابطيه وثبت احدي يديك وهي مقبوضه علي بطنه فوق السره واسفل عضمة القص</string>
+    <string name="t_421">.اقبض الآخري علي اليد المضغوطه علي البطن باحكام</string>
+    <string name="t_422">قم بعمل دفعات سريعه علي بطن المختنق بكلتا يديك بحيث تكون الدفعات للأعلي والي الداخل(الخلف)</string>
+    <string name="t_423">.استمر في عمل الدفعات البطنيه حتي يخرج الجسم الغريب من فمه او يفقد المختنق وعيه</string>
+    <string name="t_424">.اثناء عمل الدفعات البطنيه ضع احدي ساقيك بين ساقي المختنق من الخلف حتي لا يسقط علي الارض عند فقدان وعيه</string>
+    <string name="t_425">ماذا افعل اذا انتهيت من عمل خمس دورات من الانعاش القلبي؟</string>
+    <string name="t_426">.بعد الانتهاء من 5 دورات (كل دوره تشمل 30 ضغطه صدريه ثم نفسين انقاذيين) لمده دقيقتين ابحث عن علامات وجود الحياه مثل التنفس او السعال </string>
+    <string name="t_427">.اذا لم توجد علامات وجود الحياه كرر الخطوات السابقه حتي خخروج الجسم الغريب من الفم لحين وصول فني اسعاف الخدمات الطبيه الطارئه</string>
+    <string name="t_428">ماذا افعل اذا اصبح الرضيع المختنق فاقد الوعي اقل من سنه؟</string>
+    <string name="t_429">1.اذا تأكدت ان الرضيع فاقد الوعي استخدم الأسلوب المتبع نفسه في انقاذ البالغ المختنق الذي فقد وعيه اثناء انقاذه مع مراعاة التالي:- </string>
+    <string name="t_430">2. ضع الرضيع علي الارض مستلقيا علي ظهره</string>
+    <string name="t_431">3. افتح الفم وانظر داخله للبحث عن وجود الجسم الغريب ، اذا رايته حاول اخراجه</string>
+    <string name="t_432"> 4.وان لم تره افتح مجري الهواء بطريقه امالة الرأس ورفع الذقن</string>
+    <string name="t_433">5.اعط الرضيع تنفسا انقاذيا لمده ثانيه مع ملاحظة ارتفاع الصدر اثناء اعطاء التنفس</string>
+    <string name="t_434">6.اذا لم يرتفع الصدر افتح فم المصاب مرة اخري وابحث عن الجسم الغريب ولا تحاول اخراجه الا عند رؤيته فقط </string>
+    <string name="t_435">7.اعد فتح مجري الهواء بطريقة امالة الرأس ورفع الذقن</string>
+    <string name="t_436">8.اعط الرضيع تنفسا انقاذيا مرة اخري لمده ثابته مع ملاحظة ارتفاع الصدر اثتاء اعطاء التنفس ، اذا لم يرتف الصدر قم بعمل انعاش للقلب الرئوي كما في الرضع اقل من سنه </string>
+    <string name="t_437">-اتصل علي رقم 123(الاسعاف) ثم استمر في عمل الخطوات السابقه حتي وصول المسعفين</string>
+    <string name="t_438">ماذا افعل اذا كان المختنق رضيعا واعيا اقل من سنه؟</string>
+    <string name="t_439">لاحظ صعوبة التنفس لدي الرضيع مع تغيير لون الجلد والشفتين الي الزرقه للتأكد من انسداد مجلري الهواء بجسم غريب ثم :</string>
+    <string name="t_440">بالنسبة الي الرضع:</string>
+    <string name="t_441">1.ثبت رأس الرضيع علي كف يدك ورأسه للأرض وصدره ممددا علي ساعدك بحيث يكون رأسه الي اسفل مستوي الجذع حيث ان الجاذبيه الأرضيه تساعد علي جذب الجسم الغريب الي الاسفل </string>
+    <string name="t_442">2.ارح ساعدك الذي يحمل الرضيع علب فخذيك</string>
+    <string name="t_443">3.باستخدام كف الاخري اضرب الرضيع خمس ضربات متتاليه بين لوحي كتفيه</string>
+    <string name="t_444">4.اقلب الرضيع المختنق بحيث يكون ظهره مستندا علي ساعدك الآخر مع المحافظه علي جعل الرأس في مستوي اسفل من الجذع</string>
+    <string name="t_445">5.باستخدام طرفي الاصبعين (الوسطي والسبابه)اضغط علي وسط عظم القص بين الحلمتين</string>
+    <string name="t_446">كرر الخطوات السابقه حتي خروج الجسم الغريب وبدء الرضيع في الصياح او فقد الرضيع وعيه </string>
+
+
+
+</resources>

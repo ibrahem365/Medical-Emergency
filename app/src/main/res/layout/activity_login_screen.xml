@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".login"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/bbbblue"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_wave3"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_marginTop="-125dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="30dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/tawreklogoooo" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <EditText
+                            android:id="@+id/phnet"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:autofillHints=""
+                            android:drawableEnd="@drawable/ic_phone_numbers_call"
+                            android:drawableRight="@drawable/ic_phone_numbers_call"
+                            android:drawablePadding="5dp"
+                            android:ems="15"
+                            android:gravity="start"
+                            android:hint="@string/phnet"
+
+
+                            android:inputType="phone"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:singleLine="true"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/passet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:autofillHints=""
+                        android:drawableEnd="@drawable/ic_padlock"
+                        android:drawablePadding="5dp"
+                        android:ems="15"
+                        android:gravity="start"
+                        android:hint="@string/passet"
+                        android:inputType="textPassword"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+
+                        android:textSize="20sp"
+                        android:drawableRight="@drawable/ic_padlock" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/signin_btn"
+                    style='"@style/Widget.MaterialComponents.Button.colored.TextButton.Icon"'
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/signin"
+
+
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/bbbblue" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/l2"
+                        android:layout_width="120dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="23dp"
+                        android:background="@color/bbbblue" />
+
+                    <TextView
+                        android:id="@+id/or"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="@string/or"
+                        android:textColor="@color/bbbblue"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="120dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="23dp"
+                        android:background="@color/bbbblue" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/fa_btn"
+                    style='"@style/Widget.MaterialComponents.Button.colored.TextButton.Icon"'
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableRight="@drawable/ic_medical"
+                    android:gravity="center"
+
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="@string/faid"
+                    app:backgroundTint="@color/bbbblue"
+                    app:icon="@drawable/ic_medical"
+                    app:iconSize="30dp" />
+
+                <Button
+                    android:id="@+id/emg_btn"
+                    style='"@style/Widget.MaterialComponents.Button.colored.TextButton.Icon"'
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:singleLine="false"
+                    android:text="@string/emg_num"
+                    app:icon="@drawable/ic_emergency1_call"
+                    app:iconSize="30dp" />
+
+
+                <TextView
+                    android:id="@+id/newacc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/newacc"
+                    android:textColor="@color/bbbblue" />
+
+                <TextView
+                    android:id="@+id/signas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/sign_as"
+                    android:textColor="@color/bbbblue" />
+
+                <LinearLayout
+                    android:id="@+id/newlog"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/paramedic"
+                        style='"@style/Widget.MaterialComponents.Button.colored.TextButton.Icon"'
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+
+                        android:layout_margin="10dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/paramedic_btn"
+                        app:icon="@drawable/ic_paramedic"
+                        app:iconSize="30dp" />
+
+                    <Button
+                        android:id="@+id/user"
+                        style='"@style/Widget.MaterialComponents.Button.colored.TextButton.Icon"'
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/user_btn"
+                        app:icon="@drawable/ic_user"
+                        app:iconSize="30dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </LinearLayout>
+</ScrollView>
