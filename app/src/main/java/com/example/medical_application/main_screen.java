@@ -18,10 +18,12 @@ Button emg_btn;
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
+
         blood_btn=findViewById(R.id.button_blood);
         report_btn=findViewById(R.id.button2);
         fa_btn=findViewById(R.id.button);

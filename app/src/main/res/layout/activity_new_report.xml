@@ -123,7 +123,7 @@ android:textStyle="bold"
                 >
 
                 <ImageView
-                    android:id="@+id/m"
+                    android:id="@+id/p"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
 
@@ -131,7 +131,7 @@ android:textStyle="bold"
                 <View
                     android:layout_width="3dp"
                     android:layout_height="30dp"
-                    android:background="@color/bbbblue"
+                    android:background="@color/black"
                     />
 
                 <TextView
@@ -143,10 +143,10 @@ android:textStyle="bold"
                 <View
                     android:layout_width="3dp"
                     android:layout_height="30dp"
-                    android:background="@color/bbbblue"/>
+                    android:background="@color/black"/>
 
                 <ImageView
-                    android:id="@+id/p"
+                    android:id="@+id/m"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/ic_baseline_remove_24" />
