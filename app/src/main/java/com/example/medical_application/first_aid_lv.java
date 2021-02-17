@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class first_aid_lv extends AppCompatActivity {
     private first_aidAdapter adapter;
-    ImageButton iv;
+
     ListView lv;
     SearchView sv;
 
@@ -28,14 +28,7 @@ public class first_aid_lv extends AppCompatActivity {
 
         lv=findViewById(R.id.fa_lv);
         sv=findViewById(R.id.fa_sv);
-        iv=findViewById(R.id.arrow_img);
-       iv.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               Intent b=new Intent(first_aid_lv.this ,login_screen.class);
-               startActivity(b);
-           }
-       });
+
 
         final ArrayList<fa_info> fa_infos = new ArrayList<>();
          fa_infos.add(new fa_info(R.drawable.azma10,R.string.item_title_azmakalbia));
@@ -84,10 +77,7 @@ public class first_aid_lv extends AppCompatActivity {
                     Intent i=new Intent(first_aid_lv.this,fractures.class);
                     startActivity(i);
                 }
-                if(position==6){
-                    Intent i=new Intent(first_aid_lv.this,drowning.class);
-                    startActivity(i);
-                }
+
                 if(position==7){
                     Intent i=new Intent(first_aid_lv.this,poisoning2.class);
                     startActivity(i);

@@ -25,13 +25,13 @@ public class bloodbank_recycle extends AppCompatActivity {
         ArrayList<Item> items = new ArrayList<>();
         items.add(new Item(R.drawable.ic_man,"ابراهيم","A+","منياالفمح"));
         items.add(new Item(R.drawable.ic_man,"محمد","bb","زفازيف"));
-        items.add(new Item(R.drawable.ic_man,"محمد","b+","mini elqamh"));
+        items.add(new Item(R.drawable.ic_man,"محمد","b+","منيا القمح"));
         items.add(new Item(R.drawable.ic_man,"ابراهيم","A+","منياالفمح"));
         items.add(new Item(R.drawable.ic_man,"محمد","bb","زفازيف"));
-        items.add(new Item(R.drawable.ic_man,"محمد","b+","mini elqamh"));
+        items.add(new Item(R.drawable.ic_man,"محمد","b+","مينيا القمح"));
         items.add(new Item(R.drawable.ic_man,"ابراهيم","A+","منياالفمح"));
         items.add(new Item(R.drawable.ic_man,"محمد","bb","زفازيف"));
-        items.add(new Item(R.drawable.ic_man,"محمد","b+","mini elqamh"));
+        items.add(new Item(R.drawable.ic_man,"محمد","b+","منيا القمح"));
 
 
 

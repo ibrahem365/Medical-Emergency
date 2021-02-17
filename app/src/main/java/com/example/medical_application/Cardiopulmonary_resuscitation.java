@@ -9,20 +9,13 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class Cardiopulmonary_resuscitation extends AppCompatActivity {
-    ImageButton iv;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_cardiopulmonary_resuscitation);
-        iv=findViewById(R.id.arrow_img);
-        iv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent b=new Intent(Cardiopulmonary_resuscitation.this ,first_aid_lv.class);
-                startActivity(b);
-            }
-        });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
