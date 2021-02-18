@@ -193,7 +193,7 @@
         </LinearLayout>
         <Button
             style="@style/ButtonStyle"
-            android:text="@string/bttn0"
+            android:text="@string/sign_in"
             android:layout_width="match_parent"
             android:layout_margin="20dp"
             />

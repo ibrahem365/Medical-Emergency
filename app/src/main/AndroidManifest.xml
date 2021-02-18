@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".drowning" android:label="@string/fa_name"
+            android:parentActivityName=".first_aid_lv"
+            android:theme="@style/signup_theme" ></activity>
         <activity
             android:name=".login_screen"
             android:theme="@style/sign_in">
@@ -22,7 +25,7 @@
             android:name=".bloodbank_recycle"
             android:label="بنك الدم"
             android:parentActivityName=".main_screen"
-            android:theme="@style/signup_theme"></activity>
+            android:theme="@style/signup_theme" />
         <activity
             android:name=".emgnum_listview"
             android:label="أرقام الطوارئ"
@@ -31,7 +34,7 @@
         <activity
             android:name=".signup_user"
             android:label="التسجيل كمستخدم"
-            android:theme="@style/signup_theme"></activity>
+            android:theme="@style/signup_theme" />
         <activity
             android:name=".new_report"
             android:label="بلاغ جديد"

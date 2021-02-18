@@ -77,6 +77,10 @@ public class first_aid_lv extends AppCompatActivity {
                     Intent i=new Intent(first_aid_lv.this,fractures.class);
                     startActivity(i);
                 }
+                if(position==6){
+                    Intent i=new Intent(first_aid_lv.this,drowning.class);
+                    startActivity(i);
+                }
 
                 if(position==7){
                     Intent i=new Intent(first_aid_lv.this,poisoning2.class);
