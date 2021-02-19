@@ -31,22 +31,22 @@ public class first_aid_lv extends AppCompatActivity {
 
 
         final ArrayList<fa_info> fa_infos = new ArrayList<>();
-         fa_infos.add(new fa_info(R.drawable.azma10,R.string.item_title_azmakalbia));
-        fa_infos.add(new fa_info(R.drawable.darbetshams, R.string.item_title_darbetshams));
-        fa_infos.add(new fa_info(R.drawable.ekhtnak10, R.string.item_title_ekhtnak));
-        fa_infos.add(new fa_info(R.drawable.rabw, R.string.item_title_rabw));
-        fa_infos.add(new fa_info(R.drawable.modadalaelard2, R.string.item_title_momdadalaelard));
-        fa_infos.add(new fa_info(R.drawable.ksoor100, R.string.item_title_ksoor));
-        fa_infos.add(new fa_info(R.drawable.ghrak, R.string.item_title_ghark));
-        fa_infos.add(new fa_info(R.drawable.tasmom2, R.string.item_title_tasmom));
-        fa_infos.add(new fa_info(R.drawable.daghtat, R.string.item_title_enashkalby));
-        fa_infos.add(new fa_info(R.drawable.yanzefbeghzara, R.string.item_title_yanzefbaghzara));
-        fa_infos.add(new fa_info(R.drawable.sokar44, R.string.item_title_sokary));
-        fa_infos.add(new fa_info(R.drawable.taskef1, R.string.item_title_takef));
-        fa_infos.add(new fa_info(R.drawable.saraa4, R.string.item_title_saraa));
-        fa_infos.add(new fa_info(R.drawable.reaf2, R.string.item_title_reaf));
-        fa_infos.add(new fa_info(R.drawable.sakta100, R.string.item_title_saktademaghia));
-        fa_infos.add(new fa_info(R.drawable.hrook100, R.string.item_title_hrook));
+         fa_infos.add(new fa_info(R.drawable.azma10,R.string.item_title_azmakalbia,R.string.item_disc_azma));
+        fa_infos.add(new fa_info(R.drawable.darbetshams, R.string.item_title_darbetshams,R.string.item_disc_darbet));
+        fa_infos.add(new fa_info(R.drawable.ekhtnak10, R.string.item_title_ekhtnak,R.string.item_disc_ekhtnak));
+        fa_infos.add(new fa_info(R.drawable.rabw, R.string.item_title_rabw,R.string.item_disc_rabw));
+        fa_infos.add(new fa_info(R.drawable.modadalaelard2, R.string.item_title_momdadalaelard,R.string.item_disc_fahs));
+        fa_infos.add(new fa_info(R.drawable.ksoor100, R.string.item_title_ksoor,R.string.item_disc_ksoor));
+        fa_infos.add(new fa_info(R.drawable.ghrak, R.string.item_title_ghark,R.string.item_disc_ghark));
+        fa_infos.add(new fa_info(R.drawable.tasmom2, R.string.item_title_tasmom,R.string.item_disc_tasmom));
+        fa_infos.add(new fa_info(R.drawable.daghtat, R.string.item_title_enashkalby,R.string.item_disc_enash));
+        fa_infos.add(new fa_info(R.drawable.yanzefbeghzara, R.string.item_title_yanzefbaghzara,R.string.item_dis_cynzef));
+        fa_infos.add(new fa_info(R.drawable.sokar44, R.string.item_title_sokary,R.string.item_disc_sokary));
+        fa_infos.add(new fa_info(R.drawable.taskef1, R.string.item_title_takef,R.string.item_disc_taskef));
+        fa_infos.add(new fa_info(R.drawable.saraa4, R.string.item_title_saraa,R.string.item_disc_saraa));
+        fa_infos.add(new fa_info(R.drawable.reaf2, R.string.item_title_reaf,R.string.item_disc_reaf));
+        fa_infos.add(new fa_info(R.drawable.sakta100, R.string.item_title_saktademaghia,R.string.item_disc_sakta));
+        fa_infos.add(new fa_info(R.drawable.hrook100, R.string.item_title_hrook,R.string.item_disc_hrook));
 
         final first_aidAdapter adapter = new first_aidAdapter(this, R.layout.fa_lv_item_layout, fa_infos);
         lv.setAdapter(adapter);

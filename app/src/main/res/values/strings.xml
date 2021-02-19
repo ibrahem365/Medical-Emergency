@@ -73,6 +73,23 @@
     <string name="item_title_azmakalbia">Heart attacks</string>
     <string name="item_title_hrook">Burns</string>
     <string name="item_title_sokary">Diabetes and diabetic coma</string>
+    <string name="item_disc_sokary">مرض السكري وغيبوبة السكر</string>
+    <string name="item_disc_taskef">هل افحص المصاب واقدم له العناية الاسعافية الطارئة في موقعه؟... </string>
+    <string name="item_disc_sakta">الستة الدماغية تعني حدوث تلف في الخلايا او المراكز العصبية...</string>
+    <string name="item_disc_azma">الازمات القلبية كثير منها الجلطة حيث يتوقف تنفس المصاب...</string>
+    <string name="item_disc_rabw">ما هو الربو؟</string>
+    <string name="item_disc_saraa">هو مرض حميد ينجم عن سلوك غسر عادي ومؤقت بمسار العصبي الكهربي...</string>
+    <string name="item_dis_cynzef">كيف اسعف مصابا لديه جرح مفتوح كبير ينزف بغزارة؟</string>
+    <string name="item_disc_reaf">ماذا افعل اذا وجدت شخص لديه رعاف (نزيف من الانف)</string>
+    <string name="item_disc_ksoor">كيف اعرف ان عظام الساق او الذراع مكسورة؟</string>
+    <string name="item_disc_hrook">ما انواع الحروق؟</string>
+    <string name="item_disc_ghark">ماذا افعل اذا رايت شخصا يصارع الغرق في البحر او في حمام السباحةظ</string>
+    <string name="item_disc_tasmom">ما هو التسمم؟</string>
+    <string name="item_disc_darbet">ضربة الشمس (الصدمة الحرارية)</string>
+    <string name="item_disc_enash">هو اجراءات ميانيكية جسدية يطبقها المسعف الاولي علي شخص توقف عنده القلب والتنفس...</string>
+    <string name="item_disc_fahs">ماذا افعل اذا وجدت شخص بالغ او طفل رضيع ممدد علي الارض في الطريق العام؟</string>
+    <string name="item_disc_ekhtnak">الاختناق هو احد الحالات المهددة للحياة وحيث يتوقف تنفس المصاب ويحدث اعاقة لدخول....</string>
+
     <!--    login_screen-->
     <!--    login_screen-->
     <string name="signin">sign in</string>

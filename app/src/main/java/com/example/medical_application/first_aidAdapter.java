@@ -48,9 +48,11 @@ public class first_aidAdapter extends BaseAdapter{
         }
         TextView tv_name=v.findViewById(R.id.item_title);
         ImageView iv_img=v.findViewById(R.id.item_image);
+        TextView tv_disc=v.findViewById(R.id.item_disc);
         fa_info f=getItem(position);
         tv_name.setText(f.getName());
        iv_img.setImageResource(f.getImg());
+       tv_disc.setText(f.getDisc());
         return v;
     }
 
