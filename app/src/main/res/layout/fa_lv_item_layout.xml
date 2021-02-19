@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="10dp"
             android:text="@string/item_title_takef"
             android:textColor="@color/black"
             android:textSize="15sp"
@@ -43,14 +43,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_margin="10dp"
+
                 android:background="@android:color/darker_gray" />
 
             <TextView
                 android:id="@+id/item_disc"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginBottom="10dp"
                 android:text="@string/item_disc_taskef"
                 android:textSize="12sp" />
