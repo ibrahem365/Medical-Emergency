@@ -46,7 +46,7 @@ public class bloodbank_recycle extends AppCompatActivity {
         MenuInflater menuInflater= getMenuInflater();
         menuInflater.inflate(R.menu.menu,menu);
         MenuItem mI = menu.findItem(R.id.search_view);
-//        SearchView searchView = (SearchView) MenuItemCompat.getActionView(mI);
+//       SearchView searchView = (SearchView) MenuItemCompat.getActionView(mI);
 //        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 //            @Override
 //            public boolean onQueryTextSubmit(String s) {
