@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
@@ -121,74 +119,75 @@
             android:textColor="@color/bbbblue"
             android:textStyle="bold"
             />
+
         <LinearLayout
+            android:id="@+id/ll_cars"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginBottom="15dp"
-            >
+            android:orientation="horizontal">
+
             <ImageView
-                android:src="@drawable/images7"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="30dp"
-                />
+                android:layout_weight="1"
+                android:src="@drawable/images7" />
+
             <EditText
                 style="@style/EditText"
                 android:layout_width="0dp"
                 android:layout_weight="8"
                 android:hint="@string/hint4"
-                android:textSize="15sp"
                 android:inputType="number"
-                />
+                android:textSize="15sp" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_beds"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginBottom="15dp"
             android:background="@android:color/background_light"
-            >
+            android:orientation="horizontal">
+
             <ImageView
-                android:src="@drawable/images8"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="30dp"
-                />
+                android:layout_weight="1"
+                android:src="@drawable/images8" />
+
             <EditText
                 style="@style/EditText"
                 android:layout_width="0dp"
                 android:layout_weight="8"
                 android:hint="@string/hint5"
-                android:textSize="15sp"
                 android:inputType="number"
-                />
+                android:textSize="15sp" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_rooms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginBottom="15dp"
             android:background="@android:color/background_light"
-            >
+            android:orientation="horizontal">
+
             <ImageView
-                android:src="@drawable/images9"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="30dp"
-                />
+                android:layout_weight="1"
+                android:src="@drawable/images9" />
+
             <EditText
                 style="@style/EditText"
                 android:layout_width="0dp"
                 android:layout_weight="8"
                 android:hint="@string/hint6"
-                android:textSize="15sp"
                 android:inputType="number"
-                />
+                android:textSize="15sp" />
 
         </LinearLayout>
         <Button

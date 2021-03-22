@@ -266,7 +266,7 @@
                     android:text="@string/sign_as"
                     android:textColor="@color/bbbblue" />
 
-                <LinearLayout
+              <LinearLayout
                     android:id="@+id/newlog"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -303,6 +303,25 @@
                         app:iconSize="30dp" />
 
                 </LinearLayout>
+                <Button
+                    android:id="@+id/signupp_btn"
+                    style='"@style/Widget.MaterialComponents.Button.colored.TextButton.Icon"'
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/signupp"
+
+
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/bbbblue" />
 
             </LinearLayout>
 

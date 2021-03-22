@@ -88,7 +88,7 @@
     <string name="item_disc_darbet">Heat stroke (heat shock)</string>
     <string name="item_disc_enash">It is a physical mechanical procedure that the first medic applies to a person who has stopped the heart and breathing ...</string>
     <string name="item_disc_fahs">What do I do if I find an adult or a baby lying on the ground on a public highway?</string>
-    <string name="item_disc_ekhtnak" >Asphyxia is one of the life-threatening cases where the patient breathing stops and entry is obstructed ....</string>
+    <string name="item_disc_ekhtnak">Asphyxia is one of the life-threatening cases where the patient breathing stops and entry is obstructed ....</string>
 
     <!--    login_screen-->
     <!--    login_screen-->
@@ -106,6 +106,7 @@
     <string name="or">or</string>
     <string name="faid">First Aid</string>
     <string name="emg_num">Emergency numbers</string>
+    <string name="signupp"> Sign up</string>
     <!--    الانعاش القلبي الرئوي-->
     <string name="defenash">It is a serious mechanical procedure applied by it, which leads to the stopping of the brain and lungs work in order to deliver blood and oxygen to the brain:</string>
     <string name="egra1">•	Chest compressions with the hands </string>

@@ -13,6 +13,7 @@ Button sign_in;
     Button emg_num;
     Button medic;
     Button user;
+    Button sign_up;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,14 @@ Button sign_in;
       emg_num=findViewById(R.id.emg_btn);
         medic=findViewById(R.id.paramedic);
         user=findViewById(R.id.user);
+        sign_up=findViewById(R.id.signupp_btn);
+        sign_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i =new Intent(login_screen.this, sign_up.class);
+                startActivity(i);
+            }
+        });
         sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

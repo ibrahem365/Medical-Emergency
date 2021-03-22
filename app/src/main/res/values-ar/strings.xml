@@ -106,6 +106,7 @@
     <string name="or">او</string>
     <string name="faid">الاسعافات الاولية</string>
     <string name="emg_num">ارقام الطوارئ</string>
+    <string name="signupp"> التسجيل</string>
 <!--    الانعاش القلبي الرئوي-->
    <string name="defenash">هو اجرءات ميكانيكية جسدية يطبقها المسعف الاولي ع شخص توقف عنده القلب والتنفس عن العمل محاولا تقليد وظيفة القلب والرئتين بهدف ايصال الدم والأوكسجين الي الدماغ وهذه الاجراءات هي:</string>
     <string name="egra1">•	الضغطات الصدرية بواسطة اليدين </string>
@@ -276,7 +277,7 @@
     <string name="full_name">الاسم بالكامل</string>
     <string name="first_name">الاسم الاول</string>
     <string name="last_name">الاسم الاخير</string>
-    <string name="birthday">عيد الميلاد</string>
+    <string name="birthday">تاريخ الميلاد</string>
     <string name="city">المدينة</string>
     <string name="sex">النوع</string>
     <string name="phone">التليفون</string>

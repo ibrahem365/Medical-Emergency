@@ -9,9 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".drowning" android:label="@string/fa_name"
+        <activity android:name=".sign_up" android:theme="@style/signup_theme">
+
+        </activity>
+        <activity
+            android:name=".drowning"
+            android:label="@string/fa_name"
             android:parentActivityName=".first_aid_lv"
-            android:theme="@style/signup_theme" ></activity>
+            android:theme="@style/signup_theme" />
         <activity
             android:name=".login_screen"
             android:theme="@style/sign_in">
@@ -20,6 +25,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".bloodbank_recycle"
