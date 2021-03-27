@@ -21,8 +21,8 @@ Button sign_in;
         sign_in=findViewById(R.id.signin_btn);
         first_aid=findViewById(R.id.fa_btn);
       emg_num=findViewById(R.id.emg_btn);
-        medic=findViewById(R.id.paramedic);
-        user=findViewById(R.id.user);
+       // medic=findViewById(R.id.paramedic);
+       // user=findViewById(R.id.user);
         sign_up=findViewById(R.id.signupp_btn);
         sign_up.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,21 +56,21 @@ Button sign_in;
 
             }
         });
-        medic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i=new Intent(login_screen.this,signup_medic.class);
-                startActivity(i);
+    //    medic.setOnClickListener(new View.OnClickListener() {
+         //   @Override
+           // public void onClick(View v) {
+          //      Intent i=new Intent(login_screen.this,signup_medic.class);
+               // startActivity(i);
 
-            }
-        });
-       user.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i=new Intent(login_screen.this,signup_user.class);
-                startActivity(i);
+         //   }
+       // });
+      // user.setOnClickListener(new View.OnClickListener() {
+           // @Override
+           // public void onClick(View v) {
+               // Intent i=new Intent(login_screen.this,signup_user.class);
+               // startActivity(i);
 
-            }
-        });
+           // }
+      //  });
     }
 }
