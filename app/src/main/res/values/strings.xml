@@ -278,7 +278,7 @@ Opening the airway:
     <string name="full_name">Full Name</string>
     <string name="city">City</string>
     <string name="birthday">Birthday</string>
-    <string name="sex">Sex</string>
+    <string name="gender">gender</string>
     <string name="phone">Phone</string>
     <string name="phone_number">Phone Number</string>
     <string name="length">Length</string>
@@ -591,6 +591,8 @@ Opening the airway:
     <string name="t_444">4.اقلب الرضيع المختنق بحيث يكون ظهره مستندا علي ساعدك الآخر مع المحافظه علي جعل الرأس في مستوي اسفل من الجذع</string>
     <string name="t_445">5.باستخدام طرفي الاصبعين (الوسطي والسبابه)اضغط علي وسط عظم القص بين الحلمتين</string>
     <string name="t_446">كرر الخطوات السابقه حتي خروج الجسم الغريب وبدء الرضيع في الصياح او فقد الرضيع وعيه </string>
+    <!--    map-->
+    <string name="google_map_key">AIzaSyCK8Ftmmd-PbfRWqugK7Tufw2YmEZPyyk4</string>
 
 
 </resources>

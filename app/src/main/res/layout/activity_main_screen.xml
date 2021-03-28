@@ -55,13 +55,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+<!--            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="10dp">
 
-                <Button
+               <Button
                     android:id="@+id/button3"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
@@ -86,7 +86,7 @@
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:backgroundTint="@color/white" />
-            </LinearLayout>
+            </LinearLayout>-->
         </LinearLayout>
 
         <LinearLayout
@@ -126,6 +126,19 @@
                     android:textSize="20sp"
                     android:backgroundTint="@color/white" />
             </LinearLayout>
+            <Button
+                android:id="@+id/button_nearst"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_circle"
+                android:drawableTop="@drawable/ic_placeholder"
+                android:text="اقرب مركز صحي"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="@color/white" />
 
         </LinearLayout>
 

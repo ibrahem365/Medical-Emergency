@@ -107,7 +107,7 @@
                     android:id="@+id/tv_sex"
                     android:padding="10dp"
                     android:textStyle="bold"
-                    android:text="@string/sex"
+                    android:text="@string/gender"
                     android:textColor="@color/bbbblue"
                     android:layout_toEndOf="@+id/sex_icon"
                     android:layout_toRightOf="@+id/sex_icon" />

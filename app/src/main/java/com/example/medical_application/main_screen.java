@@ -14,7 +14,7 @@ Button blood_btn;
 Button report_btn;
 Button fa_btn;
 Button emg_btn;
-
+Button nearst_btn;
 
 
 
@@ -23,12 +23,20 @@ Button emg_btn;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
+        nearst_btn=findViewById(R.id.button_nearst);
 
         blood_btn=findViewById(R.id.button_blood);
         report_btn=findViewById(R.id.button2);
         fa_btn=findViewById(R.id.button);
         emg_btn=findViewById(R.id.button7);
+        nearst_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t=new Intent(main_screen.this,nearst_center.class);
+                startActivity(t);
 
+            }
+        });
         blood_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
