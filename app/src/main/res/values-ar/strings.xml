@@ -595,6 +595,9 @@
     <string name="t_446">كرر الخطوات السابقه حتي خروج الجسم الغريب وبدء الرضيع في الصياح او فقد الرضيع وعيه </string>
     <!--    map-->
     <string name="google_map_key">AIzaSyCK8Ftmmd-PbfRWqugK7Tufw2YmEZPyyk4</string>
+    <string name="man">رجل</string>
+    <string name="woman">امرأه</string>
+    <string name="child">طفل</string>
 
 
 </resources>

@@ -15,5 +15,6 @@ public class airwayobstruction extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_airwayobstruction);
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 }

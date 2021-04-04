@@ -27,8 +27,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="صاحب البلاغ"
-                android:textStyle="bold"
                 android:textColor="@color/bbbblue"
+                android:textStyle="bold"
                 android:textSize="20sp" />
 
             <EditText
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-android:textStyle="bold"
+            android:textStyle="bold"
             android:gravity="right"
             android:padding="7dp"
             android:text="اختر نوع البلاغ"
@@ -111,52 +111,182 @@ android:textStyle="bold"
                 android:text="عدد المصابين"
                 android:textStyle="bold"
                 android:textColor="@color/bbbblue"
-                android:textSize="20sp" />
-
-<!--            <LinearLayout
-                android:layout_width="100dp"
-                android:layout_height="30dp"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-
-                android:background="@drawable/stroke"
-                >
-
-                <ImageView
-                    android:id="@+id/p"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-
-                    android:src="@drawable/ic_baseline_add_24" />
-                <View
-                    android:layout_width="3dp"
-                    android:layout_height="30dp"
-                    android:background="@color/black"
-                    />
-
-                <TextView
-                    android:id="@+id/c"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:gravity="center"
-                    android:text="1" />
-                <View
-                    android:layout_width="3dp"
-                    android:layout_height="30dp"
-                    android:background="@color/black"/>
-
-                <ImageView
-                    android:id="@+id/m"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_baseline_remove_24" />
-
-
-
-
-            </LinearLayout>-->
+                android:textSize="20sp"
+                />
+            <!--linear1-->
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/header_of_patient_number_men1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/man"
+                        android:textStyle="bold"
+                        android:textColor="@color/bbbblue"
+                        android:textSize="20sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_add_24"
+                        app:fabSize="mini"
+                        android:layout_margin="16dp" />
+                    <TextView
+                        android:id="@+id/c"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:layout_margin="16dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="1" />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/m"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_remove_24"
+                        android:layout_margin="16dp"
+                        app:fabSize="mini"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--linear2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/header_of_patient_number_Woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/woman"
+                        android:textStyle="bold"
+                        android:textColor="@color/bbbblue"
+                        android:textSize="20sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/p1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_add_24"
+                        app:fabSize="mini"
+                        android:layout_margin="16dp" />
+                    <TextView
+                        android:id="@+id/c1"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:layout_margin="16dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="1" />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/m1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_remove_24"
+                        android:layout_margin="16dp"
+                        app:fabSize="mini"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <!--linear3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/header_of_patient_number_child"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/child"
+                        android:textStyle="bold"
+                        android:textColor="@color/bbbblue"
+                        android:textSize="20sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/p2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_add_24"
+                        app:fabSize="mini"
+                        android:layout_margin="16dp" />
+                    <TextView
+                        android:id="@+id/c2"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:layout_margin="16dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="1" />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/m2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_remove_24"
+                        android:layout_margin="16dp"
+                        app:fabSize="mini"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!--<LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -189,7 +319,7 @@ android:textStyle="bold"
                     />
 
 
-            </LinearLayout>
+            </LinearLayout>-->
 
 
 
@@ -201,7 +331,10 @@ android:textStyle="bold"
             android:layout_height="wrap_content"
             android:text="ارسال" />
 
+
+
     </LinearLayout>
+
 </ScrollView>
 
 
