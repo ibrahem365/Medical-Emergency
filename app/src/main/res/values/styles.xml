@@ -35,7 +35,7 @@
         <item name="android:textAllCaps">true</item>
         <item name="android:textSize">15sp</item>
     </style>
-    <style name="EditText">
+    <style name="EditText">w
         <!-- Customize your Edit Text style. -->
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -51,6 +51,12 @@
         <item name="android:textColor">@android:color/white</item>
         <item name="android:layout_marginTop">20dp</item>
         <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="chip_color" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor" >@color/chip_background</item>
+        <item name="chipStrokeColor">@color/chip_stroke</item>
+
     </style>
 
 

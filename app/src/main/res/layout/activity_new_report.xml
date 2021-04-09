@@ -130,7 +130,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/man"
                         android:textStyle="bold"
-                        android:textColor="@color/bbbblue"
+                        android:textColor="@color/black"
                         android:textSize="20sp"
                         />
 
@@ -188,7 +188,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/woman"
                         android:textStyle="bold"
-                        android:textColor="@color/bbbblue"
+                        android:textColor="@color/black"
                         android:textSize="20sp"
                         />
 
@@ -244,7 +244,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/child"
                         android:textStyle="bold"
-                        android:textColor="@color/bbbblue"
+                        android:textColor="@color/black"
                         android:textSize="20sp"
                         />
 

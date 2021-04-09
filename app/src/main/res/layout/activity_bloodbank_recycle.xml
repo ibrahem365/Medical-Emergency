@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".bloodbank_recycle">
+    tools:context=".bloodbank_recycle"
+    android:background="@color/white">
 
     <!--    <SearchView-->
     <!--        android:layout_width="match_parent"-->
@@ -37,10 +38,88 @@
     <!--            android:entries="@array/spinner"-->
     <!--            />-->
     <!--    </LinearLayout>-->
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:singleSelection="true"
+        android:background="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/chip_color"
+            app:chipStrokeWidth="1dp"
+            android:text="@string/a1"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            style="@style/chip_color"
+            android:text="@string/b1"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            style="@style/chip_color"
+            android:text="@string/o1"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            style="@style/chip_color"
+            android:text="@string/a"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            style="@style/chip_color"
+            android:text="@string/b"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/chip_color"
+            app:chipStrokeWidth="1dp"
+            android:text="@string/o"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            style="@style/chip_color"
+            android:text="@string/ab1"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            style="@style/chip_color"
+            android:text="@string/ab"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipStrokeWidth="1dp"
+            style="@style/chip_color"
+            android:text="@string/all"/>
+    </com.google.android.material.chip.ChipGroup>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/chip_group"
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

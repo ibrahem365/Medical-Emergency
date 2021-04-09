@@ -3,6 +3,7 @@ package com.example.medical_application;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -51,6 +52,10 @@ public class new_report extends AppCompatActivity {
         plus2=findViewById(R.id.p2);
         minus2=findViewById(R.id.m2);
         count2=findViewById(R.id.c2);
+
+        count.setText(counter+"");
+        count1.setText(counter+"");
+        count2.setText(counter+"");
 
 plus.setOnClickListener(new View.OnClickListener() {
     @Override

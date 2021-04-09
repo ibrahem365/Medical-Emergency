@@ -598,6 +598,17 @@
     <string name="man">رجل</string>
     <string name="woman">امرأه</string>
     <string name="child">طفل</string>
+    <string name="cancel">cancel</string>
+    <!--    blood type-->
+    <string name="a1">A+</string>
+    <string name="b1">B+</string>
+    <string name="a">A-</string>
+    <string name="b">B-</string>
+    <string name="ab1">AB+</string>
+    <string name="ab">AB-</string>
+    <string name="o1">O+</string>
+    <string name="o">O-</string>
+    <string name="all">All</string>
 
 
 </resources>
