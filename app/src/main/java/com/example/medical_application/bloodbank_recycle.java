@@ -23,15 +23,15 @@ public class bloodbank_recycle extends AppCompatActivity {
         rv =findViewById(R.id.rvv);
 
         ArrayList<Item> items = new ArrayList<>();
-        items.add(new Item(R.drawable.ic_man,"ابراهيم","A+","منياالفمح"));
-        items.add(new Item(R.drawable.ic_man,"محمد","bb","زفازيف"));
-        items.add(new Item(R.drawable.ic_man,"محمد","b+","منيا القمح"));
-        items.add(new Item(R.drawable.ic_man,"ابراهيم","A+","منياالفمح"));
-        items.add(new Item(R.drawable.ic_man,"محمد","bb","زفازيف"));
-        items.add(new Item(R.drawable.ic_man,"محمد","b+","مينيا القمح"));
-        items.add(new Item(R.drawable.ic_man,"ابراهيم","A+","منياالفمح"));
-        items.add(new Item(R.drawable.ic_man,"محمد","bb","زفازيف"));
-        items.add(new Item(R.drawable.ic_man,"محمد","b+","منيا القمح"));
+        items.add(new Item(R.drawable.ic_man,"ابراهيم","A+","منياالفمح","011"));
+        items.add(new Item(R.drawable.ic_man,"محمد","bb","زفازيف","011"));
+        items.add(new Item(R.drawable.ic_man,"محمد","b+","منيا القمح","011"));
+        items.add(new Item(R.drawable.ic_man,"ابراهيم","A+","منياالفمح","011"));
+        items.add(new Item(R.drawable.ic_man,"محمد","bb","زفازيف","011"));
+        items.add(new Item(R.drawable.ic_man,"محمد","b+","مينيا القمح","011"));
+        items.add(new Item(R.drawable.ic_man,"ابراهيم","A+","منياالفمح","011"));
+        items.add(new Item(R.drawable.ic_man,"محمد","bb","زفازيف","011"));
+        items.add(new Item(R.drawable.ic_man,"محمد","b+","منيا القمح","011"));
 
 
 

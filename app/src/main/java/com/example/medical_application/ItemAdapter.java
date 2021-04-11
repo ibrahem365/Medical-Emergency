@@ -43,6 +43,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
         holder.txName.setText(i.getTxt1());
         holder.txAddress.setText(i.getTxt2());
         holder.txBloodType.setText(i.getTxt3());
+        holder.phone.setText(i.getTxt5());
 
     }
 
@@ -55,7 +56,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
     public class ItemHolder extends RecyclerView.ViewHolder {
         // Define variables for every content of item
         CircularImageView image1; Button btn; ImageView image2; TextView txName; TextView txBloodType;
-        TextView txAddress; ImageView image3; ImageView image4;
+        TextView txAddress; ImageView image3; ImageView image4; ImageView image5; TextView phone;
         public ItemHolder(@NonNull View itemView) {
             super(itemView);
             image1 = itemView.findViewById(R.id.image_1);
@@ -66,6 +67,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
             txBloodType = itemView.findViewById(R.id.txt_2);
             image4 = itemView.findViewById(R.id.image_4);
             txAddress = itemView.findViewById(R.id.txt_3);
+            image5=itemView.findViewById(R.id.image_5);
+            phone=itemView.findViewById(R.id.txt_5);
         }
     }
 }
