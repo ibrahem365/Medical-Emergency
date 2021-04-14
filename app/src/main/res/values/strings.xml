@@ -1,5 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">medical-application</string>
+    <string name="full">full name</string>
     <string-array name="Sp_sex">
         <item>Male</item>
         <item>Female</item>
@@ -94,7 +95,7 @@
     <!--    login_screen-->
     <string name="signin">sign in</string>
     <string name="phn">phone number</string>
-    <string name="phnet">Phone number</string>
+    <string name="phnet">email address</string>
     <string name="passtv">Password</string>
     <string name="passet">Password</string>
     <string name="newacc">Or create a new account?</string>

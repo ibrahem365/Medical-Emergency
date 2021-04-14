@@ -32,21 +32,21 @@
                 android:textStyle="bold"
                 android:textColor="@color/bbbblue"
                 android:text="@string/full_name" />
-            <EditText
+<!--            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/first_name"
                 android:layout_toEndOf="@+id/name_icon"
                 android:layout_below="@id/full_name"
                 android:hint="@string/first_name"
-                android:layout_toRightOf="@+id/name_icon" />
+                android:layout_toRightOf="@+id/name_icon" />-->
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/last_name"
                 android:layout_toEndOf="@+id/name_icon"
-                android:layout_below="@id/first_name"
-                android:hint="@string/last_name"
+                android:layout_below="@id/full_name"
+                android:hint="@string/full"
                 android:layout_toRightOf="@+id/name_icon" />
 
         </RelativeLayout>

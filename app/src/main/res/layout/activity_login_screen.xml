@@ -46,16 +46,18 @@
                     android:layout_marginBottom="10dp"
                     android:contentDescription="@string/todo"
                     app:srcCompat="@drawable/tawreklogoooo" />
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="@string/phnet"
-                    android:drawableStart="@drawable/phon_nof"
-                    android:padding="10dp"
-                    android:drawablePadding="10dp"
                     android:layout_margin="10dp"
-                    android:drawableLeft="@drawable/phon_nof"
-                    android:background="@drawable/edittext"/>
+                    android:background="@drawable/edittext"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/phnet"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
                 <EditText
                     android:layout_width="match_parent"
                     android:padding="10dp"
