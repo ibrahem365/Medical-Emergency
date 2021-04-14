@@ -278,11 +278,11 @@
     <string name="full_name">الاسم بالكامل</string>
     <string name="first_name">الاسم الاول</string>
     <string name="last_name">الاسم الاخير</string>
-    <string name="birthday">تاريخ الميلاد</string>
+    <string name="birthday">العمر</string>
     <string name="city">المدينة</string>
     <string name="gender">النوع</string>
-    <string name="phone">التليفون</string>
-    <string name="phone_number">رقم التليفون</string>
+    <string name="phone">البريد الالكتروني</string>
+    <string name="phone_number">البريد الالكتروني</string>
     <string name="length">الطول</string>
     <string name="weight">الوزن</string>
     <string name="address">العنوان</string>

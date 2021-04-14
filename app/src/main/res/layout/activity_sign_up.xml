@@ -61,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/phone_icon"
-                android:src="@drawable/ic_phone" />
+                android:src="@drawable/ic_email_sign" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                 android:layout_below="@id/tv_phone"
                 android:layout_toEndOf="@+id/phone_icon"
                 android:hint="@string/phone_number"
-                android:inputType="phone"
+                android:inputType="textEmailAddress"
                 android:layout_toRightOf="@+id/phone_icon" />
 
         </RelativeLayout>
@@ -330,12 +330,12 @@
 
 
         </RelativeLayout>
-        <CheckBox
+<!--        <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/cb_deaf_dumb"
             android:padding="10dp"
-            android:text="@string/are_you_from_the_deaf_and_dumb_category"/>
+            android:text="@string/are_you_from_the_deaf_and_dumb_category"/>-->
         <Switch
             android:layout_width="match_parent"
             android:id="@+id/sw_diabetic"

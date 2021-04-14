@@ -278,10 +278,10 @@ Opening the airway:
     <string name="last_name">Last Name</string>
     <string name="full_name">Full Name</string>
     <string name="city">City</string>
-    <string name="birthday">Birthday</string>
+    <string name="birthday">Age</string>
     <string name="gender">gender</string>
-    <string name="phone">Phone</string>
-    <string name="phone_number">Phone Number</string>
+    <string name="phone">Email address</string>
+    <string name="phone_number">Email address</string>
     <string name="length">Length</string>
     <string name="weight">Weight</string>
     <string name="address">Address</string>
