@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">medical-application</string>
     <string name="full">full name</string>
+    <string name="passee">password</string>
     <string-array name="Sp_sex">
         <item>Male</item>
         <item>Female</item>

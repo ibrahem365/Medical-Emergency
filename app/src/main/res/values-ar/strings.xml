@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">تطبيق طبي</string>
     <string name="full">الاسم بالكامل</string>
+    <string name="passee">كلمة المرور</string>
     <string-array name="Sp_sex">
         <item>ذكر</item>
         <item>أنثي</item>
