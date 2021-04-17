@@ -23,7 +23,7 @@
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
-                android:id="@+id/full_name"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/name_icon"
@@ -41,50 +41,53 @@
                 android:hint="@string/first_name"
                 android:layout_toRightOf="@+id/name_icon" />-->
             <EditText
+                android:id="@+id/full_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/last_name"
+                style="@style/EditText"
                 android:layout_toEndOf="@+id/name_icon"
-                android:layout_below="@id/full_name"
+
                 android:hint="@string/full"
                 android:layout_toRightOf="@+id/name_icon" />
 
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/RL_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/RL_number"
             android:padding="20dp">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/phone_icon"
-                android:src="@drawable/ic_email_sign" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/tv_phone"
-                android:padding="10dp"
-                android:textStyle="bold"
-                android:text="@string/phone"
-                android:textColor="@color/bbbblue"
-                android:layout_toEndOf="@+id/phone_icon"
-                android:layout_toRightOf="@+id/phone_icon" />
-
-
             <EditText
-                android:id="@+id/et_phone"
+                android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_phone"
                 android:layout_toEndOf="@+id/phone_icon"
+                android:layout_toRightOf="@+id/phone_icon"
                 android:hint="@string/phone_number"
-                android:inputType="textEmailAddress"
-                android:layout_toRightOf="@+id/phone_icon" />
+                android:inputType="textEmailAddress" />
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_email_sign" />
+
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/phone_icon"
+                android:layout_toRightOf="@+id/phone_icon"
+                android:padding="10dp"
+                android:text="@string/phone"
+                android:textColor="@color/bbbblue"
+                android:textStyle="bold" />
 
         </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -119,6 +122,7 @@
                 android:layout_toRightOf="@+id/pass_icon" />
 
         </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -130,16 +134,17 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/address_icon"
                 android:src="@drawable/ic_address" />
+
             <TextView
+                android:id="@+id/tv_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_address"
-                android:textColor="@color/bbbblue"
-                android:textStyle="bold"
+                android:layout_toEndOf="@+id/address_icon"
+                android:layout_toRightOf="@+id/address_icon"
                 android:padding="10dp"
                 android:text="@string/address"
-                android:layout_toEndOf="@+id/address_icon"
-                android:layout_toRightOf="@+id/address_icon" />
+                android:textColor="@color/bbbblue"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/et_Governorate"
@@ -215,8 +220,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="datetime"
-                android:id="@+id/et_birthday"
+                android:inputType="number"
+                android:id="@+id/et_age"
                 android:layout_toEndOf="@+id/birthday_icon"
                 android:layout_below="@id/tv_Birthday"
                 android:hint="@string/birthday"
@@ -408,6 +413,7 @@
                 android:text="@string/do_you_suffer_from_other_chronic_diseases"/>
 
             <EditText
+                android:id="@+id/et_diseases"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/enter_the_diseases"
@@ -450,6 +456,7 @@
                 android:src="@drawable/images7" />
 
             <EditText
+                 android:id="@+id/nummber_ambulanc"
                 style="@style/EditText"
                 android:layout_width="0dp"
                 android:layout_weight="8"
@@ -474,6 +481,7 @@
                 android:src="@drawable/images8" />
 
             <EditText
+                android:id="@+id/number_bed"
                 style="@style/EditText"
                 android:layout_width="0dp"
                 android:layout_weight="8"
@@ -498,6 +506,7 @@
                 android:src="@drawable/images9" />
 
             <EditText
+                android:id="@+id/number_careroom"
                 style="@style/EditText"
                 android:layout_width="0dp"
                 android:layout_weight="8"
@@ -509,6 +518,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sign_in"

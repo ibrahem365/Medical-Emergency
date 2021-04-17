@@ -48,6 +48,7 @@
                     app:srcCompat="@drawable/tawreklogoooo" />
 
                 <EditText
+                    android:id="@+id/et_email_login"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_margin="10dp"
@@ -59,6 +60,7 @@
                     android:inputType="textEmailAddress"
                     android:padding="10dp" />
                 <EditText
+                    android:id="@+id/et_pasaword_login"
                     android:layout_width="match_parent"
                     android:padding="10dp"
                     android:layout_height="50dp"
@@ -151,7 +153,7 @@
                 </com.google.android.material.textfield.TextInputLayout>-->
 
                 <Button
-                    android:id="@+id/signin_btn"
+                    android:id="@+id/sigin_btn"
                     style='"@style/Widget.MaterialComponents.Button.colored.TextButton.Icon"'
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
