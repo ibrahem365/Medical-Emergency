@@ -376,25 +376,25 @@
             android:id="@+id/cb_deaf_dumb"
             android:padding="10dp"
             android:text="@string/are_you_from_the_deaf_and_dumb_category"/>-->
-        <Switch
+        <CheckBox
             android:layout_width="match_parent"
-            android:id="@+id/sw_diabetic"
+            android:id="@+id/cb_diabetic"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="@string/are_you_diabetic"
             tools:ignore="UseSwitchCompatOrMaterialXml" />
-        <Switch
+        <CheckBox
             android:layout_width="match_parent"
-            android:id="@+id/sw_blood_pressure"
+            android:id="@+id/cb_blood_pressure"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:drawableStart="@drawable/ic_blood_pressure_gauge"
             android:text="@string/are_you_sick_with_blood_pressure"
             tools:ignore="UseSwitchCompatOrMaterialXml"
             android:drawableLeft="@drawable/ic_blood_pressure_gauge" />
-        <Switch
+        <CheckBox
             android:layout_width="match_parent"
-            android:id="@+id/sw_heart"
+            android:id="@+id/cb_heart"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:drawableStart="@drawable/ic_heart"

@@ -28,8 +28,10 @@ Button sign_in;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //database
         final FirebaseAuth mAuth;
         mAuth = FirebaseAuth.getInstance();
+        //
         setContentView(R.layout.activity_login_screen);
         sign_in=findViewById(R.id.sigin_btn);
         first_aid=findViewById(R.id.fa_btn);
@@ -72,7 +74,7 @@ Button sign_in;
                  }
              }
                 if(!Patterns.EMAIL_ADDRESS.matcher(email_login).matches()) {
-                    et_email.setError("ee-mail is wrong");
+                    et_email.setError("e-mail is wrong");
                     et_email.requestFocus();
                     return;
 
@@ -95,9 +97,10 @@ Button sign_in;
                                  public void onComplete(@NonNull Task<AuthResult> task) {
                                      if(task.isSuccessful())
                                      {
-                                        // Intent i=new Intent(login_screen.this,main_screen.class);
-                                         //startActivity(i);
+
                                         // startActivity(new Intent(login_screen.this,main_screen.class));
+
+                                  // startActivity(new Intent(login_screen.this, main_screen.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                                      }
 
                                      //else Toast.makeText(login_screen.this ,"login error ",Toast.LENGTH_LONG).show();

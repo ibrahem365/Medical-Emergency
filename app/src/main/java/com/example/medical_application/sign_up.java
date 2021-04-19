@@ -46,9 +46,11 @@ public class sign_up extends AppCompatActivity {
     //user
     private  EditText et_age,et_length,et_weight;
     private  Spinner sp_sex ,sp_blood;
-    private Switch sw_diabetic,sw_bloodpressure,sw_heartpation;
+    private   CheckBox cb_diabetic,cb_bloodpressure,cb_heartpation;
     private CheckBox checkBox_diseases;
     private  EditText et_didiseases;
+    private String item_select_gender;
+    private String item_select_bloodtpye;
 
 
 
@@ -66,6 +68,7 @@ public class sign_up extends AppCompatActivity {
         prainfo = findViewById(R.id.parainfo);
         userinfo.setVisibility(View.GONE);
         prainfo.setVisibility(View.GONE);
+
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -86,8 +89,14 @@ public class sign_up extends AppCompatActivity {
                 }
             }
         });
+
+
+
+
        //database
         mAuth = FirebaseAuth.getInstance();
+
+
 
         //iflate items register
 
@@ -106,35 +115,39 @@ public class sign_up extends AppCompatActivity {
         et_numCareroom=findViewById(R.id.number_careroom);
 
         //iflate items  register user
-         /*
+
         et_age=findViewById(R.id.et_age);
         et_length=findViewById(R.id.et_length);
         et_weight=findViewById(R.id.et_weight);
-        sw_diabetic=findViewById(R.id.sw_diabetic) ;
-        sw_bloodpressure=findViewById(sw_blood_pressure);
-        sw_heartpation=findViewById(R.id.sw_heart);
+        cb_diabetic=findViewById(R.id.cb_diabetic) ;
+        cb_bloodpressure=findViewById(R.id.cb_blood_pressure);
+        cb_heartpation=findViewById(R.id.cb_heart);
         checkBox_diseases=findViewById(R.id.cb_diseases);
-        et_didiseases=(EditText)findViewById(R.id.et_diseases);
-        sp_sex=(Spinner)findViewById(R.id.sp_sex);
-        sp_blood=(Spinner)findViewById(R.id.sp_blood);
-
-          */
-
-/*
-         sp_sex.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-             @Override
-             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                 final   String item_gender=parent.getItemAtPosition(position).toString();
-             }
-         });
+        et_didiseases=findViewById(R.id.et_diseases);
+        sp_sex=findViewById(R.id.sp_sex);
+        sp_blood=findViewById(R.id.sp_blood);
+        /*
+        sp_sex.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                 item_select_gender=parent.getItemAtPosition(position).toString();
+            }
+        });
         sp_blood.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                  final  String item_bloodtype  =parent.getItemAtPosition(position).toString();
+                item_select_bloodtpye=parent.getItemAtPosition(position).toString();
             }
         });
 
- */
+         */
+
+
+
+
+
+
+
 
 
 
@@ -164,27 +177,34 @@ public class sign_up extends AppCompatActivity {
 
                 //to string  user  register
 
-                 /*
+
               final String age=et_age.getText().toString().trim();
               final String length=et_length.getText().toString().trim();
               final String weight=et_weight.getText().toString().trim();
-              final String diabetic;if(sw_diabetic.isChecked()) {
+              final String diabetic;if(cb_diabetic.isChecked()) {
                     diabetic="yes";
                 }else diabetic="no";
-              final String bloodPressure;if(sw_bloodpressure.isChecked()){
+              final String bloodPressure;if(cb_bloodpressure.isChecked()){
                     bloodPressure="yes";
                 }else bloodPressure="no";
-              final String heartPatient;if (sw_heartpation.isChecked()){
+              final String heartPatient;if (cb_heartpation.isChecked()){
                     heartPatient="yes";
                 }else heartPatient="no";
+
+
               final String  diseases;if(checkBox_diseases.isChecked()) {
                     diseases=et_didiseases.toString();
                 }else diseases="null";
              //المتغيرين دول مش null في مشكل spinner
-              final String gender ="null";
-              final String bloodType="null";
+                /*
+              final String gender =item_select_gender;
+              final String bloodType=item_select_bloodtpye;
 
-                  */
+                 */
+                final String gender ="null";
+                final String bloodType="null";
+
+
 
 
 
@@ -230,44 +250,54 @@ public class sign_up extends AppCompatActivity {
                 }
 
                 //para register error
+                if(para.isChecked())
+                {
+                   userinfo.setVisibility(View.GONE);
+                   prainfo.setVisibility(View.VISIBLE);
+                    if (numberAmblanc.isEmpty()) {
+                        et_numAmblanc.setError("Enter number ambulance");
+                        et_numAmblanc.requestFocus();
+                        return;
 
-                if (numberAmblanc.isEmpty()) {
-                    et_numAmblanc.setError("Enter number ambulance");
-                    et_numAmblanc.requestFocus();
-                    return;
+                    }
+                    if (numberBeds.isEmpty()) {
+                        et_numBed.setError("Enter number Beds");
+                        et_numBed.requestFocus();
+                        return;
 
+                    }
+                    if (numberCareroom.isEmpty()) {
+                        et_numCareroom.setError("Enter number carerooms");
+                        et_numCareroom.requestFocus();
+                        return;
+
+                    }
                 }
-                if (numberBeds.isEmpty()) {
-                   et_numBed.setError("Enter number Beds");
-                    et_numBed.requestFocus();
-                    return;
 
-                }
-                if (numberCareroom.isEmpty()) {
-                    et_numCareroom.setError("Enter number carerooms");
-                    et_numCareroom.requestFocus();
-                    return;
-
-                }
                 //user register error
-                /*
-                if(age.isEmpty()) {
-                    et_age.setError("enter age ");
-                    et_age.requestFocus();
-                    return;
-                }
-                if(length.isEmpty()) {
-                    et_age.setError("enter length ");
-                    et_age.requestFocus();
-                    return;
-                }
-                if(weight.isEmpty()) {
-                    et_age.setError("enter weight ");
-                    et_age.requestFocus();
-                    return;
-                }
+                 if(user.isChecked())
+                 {
+                    userinfo.setVisibility(View.VISIBLE);
+                    prainfo.setVisibility(View.GONE);
+                     if(age.isEmpty()) {
+                         et_age.setError("enter age ");
+                         et_age.requestFocus();
+                         return;
+                     }
+                     if(length.isEmpty()) {
+                         et_age.setError("enter length ");
+                         et_age.requestFocus();
+                         return;
+                     }
+                     if(weight.isEmpty()) {
+                         et_age.setError("enter weight ");
+                         et_age.requestFocus();
+                         return;
+                     }
+                 }
 
-                 */
+
+
 
                 //code data base para
 
@@ -293,18 +323,16 @@ public class sign_up extends AppCompatActivity {
 
                 // code date base user
 
-                 // this is problem here
-                /*
                 mAuth.createUserWithEmailAndPassword(e_mail,passWord)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful())
                                 {
-                                    user_database user =new user_database(fullName,e_mail,passWord,governorate,city,age,length,weight,diabetic,bloodPressure,heartPatient,diseases,gender,bloodType);
-                                    FirebaseDatabase.getInstance().getReference("user ")
+                                     user_database users=new user_database(fullName,e_mail,passWord,governorate,city,age,length,weight,diseases,gender,bloodType,diabetic,bloodPressure,heartPatient );
+                                    FirebaseDatabase.getInstance().getReference("users")
                                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                           .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                            .setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
 
@@ -314,7 +342,9 @@ public class sign_up extends AppCompatActivity {
                             }
                         });
 
-                 */
+
+
+
 
 
 
