@@ -30,8 +30,10 @@
                 android:layout_toRightOf="@+id/name_icon"
                 android:padding="10dp"
                 android:textStyle="bold"
+                android:id="@+id/name_tv"
                 android:textColor="@color/bbbblue"
-                android:text="@string/full_name" />
+                android:text="@string/full_name"
+                />
 <!--            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -42,13 +44,14 @@
                 android:layout_toRightOf="@+id/name_icon" />-->
             <EditText
                 android:id="@+id/full_name"
+                style="@style/EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/EditText"
                 android:layout_toEndOf="@+id/name_icon"
+                android:layout_below="@id/name_tv"
 
-                android:hint="@string/full"
-                android:layout_toRightOf="@+id/name_icon" />
+                android:layout_toRightOf="@+id/name_icon"
+                android:hint="@string/full" />
 
         </RelativeLayout>
 
