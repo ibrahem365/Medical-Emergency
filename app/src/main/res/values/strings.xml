@@ -550,7 +550,7 @@ Opening the airway:
     <string name="t_41">Airway obstruction (choking or choking)</string>
     <string name="t_42">الاختناق هو احد الحالات المهدده للحياه ، حيث يتوقف التنفس للمصاب ويحدث اعاقه لدخول وخروج الهواء الي رئتيه  </string>
     <string name="t_43">كيف اتصرف اذا تأكدت ان هناك شخصا مصابا بانسداد مجري الهواء:</string>
-    <string name="t_44">يجب ان تحدد اولا هل الانسداد بسيط ام شديد</string>
+    <string name="t_44">You have to determine first whether the blockage is simple or severe.</string>
     <string name="t_45">اذا كان الانسداد بسيطا فان المصاب يعني:</string>
     <string name="t_46">-سعالا مستمرا</string>
     <string name="t_47">-حشرجه وخشونه فالصوت</string>
