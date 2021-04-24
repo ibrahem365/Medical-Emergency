@@ -474,30 +474,30 @@ Opening the airway:
 </string>
     <!--    esraatask-->
     <!--    1-->
-    <string name="t_1">ضربة الشمس ( الصدمة الحرارية)</string>
-    <string name="t_2">يتعرض الانسان لضربات الشمس ، نتيجة التعرض الي جو حار ورطب لمدة طويلة ، مع عدم التخلص من السوائل عن طريق العرق.</string>
-    <string name="t_3">كيف اعرف ان هذا الشخص مصاب بضربة الشمس؟</string>
-    <string name="t_4">اذا كان يعاني من الاعراض والعلامات الآتيه:- </string>
-    <string name="t_5">.صداع و دوخة و اعياء </string>
-    <string name="t_6">.اختلاف في درجة الوعي </string>
-    <string name="t_7">.الجلد:جاف و حار(قد يكون رطبا في بعض الحالات)</string>
-    <string name="t_8">.النبض:سريع و ضعيف </string>
-    <string name="t_9">.تشنجات في العضلات </string>
-    <string name="t_10">.اتساع حدقة العين </string>
-    <string name="t_11">    كيف اسعف الشخص المصاب بضربة الشمس ؟</string>
-    <string name="t_12">هناك عدد من الاجراءات التي يجب اتباعها لإنقاذ المصاب بضربة الشمس وهي:  </string>
-    <string name="t_13">.انقل المصاب الي مكان بارد : اخلع عنه ملابسه الخارجيه  </string>
-    <string name="t_14">.لف المصاب بمنشف مبلل بالماء البارد كل 10 دقلئق حتي تنخفض درجة حرارته</string>
-    <string name="t_15">.ضع المصاب في تيار هوائي (مروحه او مكيف) </string>
-    <string name="t_16">.يمكن رش الجسم المصاب بالماء اذا لم يتوفر المنشف </string>
-    <string name="t_17">.اتصل علي الرقم 123 (الاسعاف) لنقل المصاب الي اقرب مستشفي</string>
+    <string name="t_1">Sunstroke (heat shock) </string>
+    <string name="t_2">Human beings are exposed to sun blows, as a result of exposure to hot and humid atmosphere for a long time, with no disposal of fluids through sweat.</string>
+    <string name="t_3">How do I know this guys got a sunstroke? </string>
+    <string name="t_4">If he suffers from the following symptoms and signs:  </string>
+    <string name="t_5">Headache, dizziness and fatigue  </string>
+    <string name="t_6">Difference in the degree of awareness  </string>
+    <string name="t_7">Skin: Dry and hot (may be wet in some cases) </string>
+    <string name="t_8">Pulse: Fast and weak </string>
+    <string name="t_9">.Muscle spasms </string>
+    <string name="t_10">Widening pupils </string>
+    <string name="t_11">  How did he help the person with the sunstroke?</string>
+    <string name="t_12">There are a number of measures to be followed to save the sun-struck person: </string>
+    <string name="t_13">.Move the injured person to a cold place: take off his outer clothes.   </string>
+    <string name="t_14">.Wrap the patient with a cold water wet towel every 10 laps until his temperature drops. </string>
+    <string name="t_15">Place the injured person in an air current (fan or air conditioner)  </string>
+    <string name="t_16">The body can be sprayed with water if the towel is not available  </string>
+    <string name="t_17">.Call 123 ambulance to take the injured person to the nearest hospital. </string>
     <!--    2-->
-    <string name="t_21">الأزمات القلبيه</string>
-    <string name="t_22"> الأزمات القلبيه كثيره منها الجلطة(احتشاء عضلة القلب) والتي تحدث نتيجة انسداد كلي في شريان او اكثر من الشرايين التاجيه التي تغذي عضلة القلب ب الاوكسجين والغذاء الاازم ، ومنها الذبحه الصدريه التي تحدث نتيجة الشرايين التاجيه وحدوث نقص في جريان الدم فيها ، وهو ما يسبب الآما مبرحه. </string>
-    <string name="t_23"> ما التصرف اذا وجدت شخصا يشكو من ألم شديد في الصدر ؟</string>
-    <string name="t_24">أولا :-باالنسبه الي الذبحه الصدريه</string>
-    <string name="t_25">الألم الذي تحدثه الذبحه الصدريه شديد ، وقد تمتد آثاره الي كثير من اعضاء الجسم وتكون صفات الألم كالتالي :-</string>
-    <string name="t_26">1.يحدث بعد مجهود عضلي (صعود السلالم ، ممارسة الرياضه) او مجهود نفسي (الانفعال الشديد)</string>
+    <string name="t_21">heart attacks</string>
+    <string name="t_22">Heart attacks are many, including thrombosis (myocardial infarction) which occurs as a result of a total blockage in one or more arteries of the coronary arteries that feed the heart muscle with oxygen and food, including angina that occurs as a result of coronary arteries and a decrease in blood flow in it, which causes severe pain </string>
+    <string name="t_23">What do you do if you find someone with severe chest pain? </string>
+    <string name="t_24">First: - For angina. </string>
+    <string name="t_25">The pain caused by angina is severe, and its effects may extend to many organs of the body and the characteristics of pain are as follows:  </string>
+    <string name="t_26">1.It happens after a muscular effort (climbing stairs, exercising) or a psychological effort (intense emotion).</string>
     <string name="t_27">2.الم ضاغط او احساس بوجود ثقل علي وسط الصدر</string>
     <string name="t_28">3.قد يمتد الألم الي الكتف الأيسر ، داخل الذراع الأيسر و اصابع اليد اليسري ، الرقبه ، الفك السفلي بين عضمتين اللوح بظهر المريض </string>
     <string name="t_29">4.يستمر الألم ما بين (5-10 دقائق)</string>
