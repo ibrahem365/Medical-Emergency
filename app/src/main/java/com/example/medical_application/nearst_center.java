@@ -23,6 +23,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.internal.ICameraUpdateFactoryDelegate;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -49,7 +50,8 @@ public class nearst_center extends AppCompatActivity {
     GoogleMap map;
     Spinner sp_type;
     Button pt_View;
-    double currentlat = 0 , currentlong=0;
+    double currentlat = 22, currentlong=44;
+    private LatLng LatLng;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,7 +115,8 @@ public class nearst_center extends AppCompatActivity {
                         public void onMapReady(GoogleMap googleMap) {
                             map=googleMap;
                             //initialize lat lng
-                            googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(currentlat,currentlong),10));
+                            googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(currentlat,currentlong),16));
+                            googleMap.moveCamera(CameraUpdateFactory.newLatLng(LatLng));
 
                         }
                     });
@@ -196,6 +199,7 @@ public class nearst_center extends AppCompatActivity {
                 MarkerOptions markerOptions=new MarkerOptions();
                 markerOptions.position(latLng);
                 markerOptions.title(name);
+                markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET));
                 map.addMarker(markerOptions);
             }
         }
