@@ -2,7 +2,11 @@ package com.example.medical_application;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -28,5 +32,52 @@ public class emgnum_listview extends AppCompatActivity {
         ListView numList = (ListView)findViewById(R.id.num_list);
 
         numList.setAdapter(adapter1);
+        numList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position==0)
+                {
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse(("tel:"+"123")));
+                    startActivity(intent);
+                }
+                if(position==1)
+                {
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse(("tel:"+"180")));
+                    startActivity(intent);
+                }
+                if(position==2)
+                {
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse(("tel:"+"122")));
+                    startActivity(intent);
+                }
+                if(position==3)
+                {
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse(("tel:"+"012111000")));
+                    startActivity(intent);
+                }
+                if(position==4)
+                {
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse(("tel:"+"16023")));
+                    startActivity(intent);
+                }
+                if(position==5)
+                {
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse(("tel:"+"137")));
+                    startActivity(intent);
+                }
+                if(position==6)
+                {
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse(("tel:"+"105")));
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }

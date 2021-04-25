@@ -43,8 +43,7 @@
                     android:id="@+id/first_name"
                     android:layout_toEndOf="@+id/name_icon"
                     android:layout_below="@id/full_name"
-                    android:hint="frit name"
-
+                    android:hint="@string/first_name"
                     android:layout_toRightOf="@+id/name_icon" />
                 <EditText
                     android:layout_width="match_parent"
@@ -57,42 +56,40 @@
 
 
             </RelativeLayout>
-
             <RelativeLayout
-                android:id="@+id/RL_birthday"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/RL_birthday"
                 android:padding="20dp">
 
-                <EditText
-                    android:id="@+id/et_birthday"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_Birthday"
-                    android:layout_toEndOf="@+id/birthday_icon"
-                    android:layout_toRightOf="@+id/birthday_icon"
-                    android:hint="@string/birthday"
-                    android:inputType="datetime" />
-
                 <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:id="@+id/birthday_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:src="@drawable/ic_calender" />
-
                 <TextView
-                    android:id="@+id/tv_Birthday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/birthday_icon"
-                    android:layout_toRightOf="@+id/birthday_icon"
+                    android:id="@+id/tv_Birthday"
+                    android:textStyle="bold"
                     android:text="@string/birthday"
                     android:textColor="@color/bbbblue"
-                    android:textStyle="bold" />
+                    android:layout_toEndOf="@+id/birthday_icon"
+                    android:layout_toRightOf="@+id/birthday_icon" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="datetime"
+                    android:id="@+id/et_birthday"
+                    android:layout_toEndOf="@+id/birthday_icon"
+                    android:layout_below="@id/tv_Birthday"
+                    android:hint="@string/birthday"
+                    android:layout_toRightOf="@+id/birthday_icon" />
+
+
 
 
             </RelativeLayout>
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
