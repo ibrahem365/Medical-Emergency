@@ -600,7 +600,7 @@ Opening the airway:
     <string name="child">child</string>
 
     <string name="cancel">cancel</string>
-<!--    blood type-->
+    <!--    blood type-->
     <string name="a1">A+</string>
     <string name="b1">B+</string>
     <string name="a">A-</string>
@@ -610,7 +610,9 @@ Opening the airway:
     <string name="o1">O+</string>
     <string name="o">O-</string>
     <string name="all">All</string>
-
+<!--    nav drawe-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 
 </resources>

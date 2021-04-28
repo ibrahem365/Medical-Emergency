@@ -106,7 +106,7 @@ Button sign_in;
                                      //else Toast.makeText(login_screen.this ,"login error ",Toast.LENGTH_LONG).show();
                                  }
                              });
-                startActivity(new Intent(login_screen.this,main_screen.class));
+                startActivity(new Intent(login_screen.this,nav_drawer.class));
 
 
 

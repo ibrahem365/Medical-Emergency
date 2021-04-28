@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".main_screen"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            tools:context=".main_screen">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_circle"
+                android:drawableTop="@drawable/ic_first_aid_kit"
+                android:text="اسعافات اوليه"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_circle"
+                android:drawableTop="@drawable/ic_ambulance"
+                android:text="بلاغ جديد"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                           <Button
+                                android:id="@+id/button3"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/background_circle"
+                                android:drawableTop="@drawable/ic_placeholder"
+                                android:text="اقرب صيدليه"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:backgroundTint="@color/white" />
+
+                            <Button
+                                android:id="@+id/button5"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/background_circle"
+                                android:drawableTop="@drawable/ic_placeholder"
+                                android:text="اقرب مستشفى"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:backgroundTint="@color/white" />
+                        </LinearLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/button_blood"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_circle"
+                    android:drawableTop="@drawable/ic_donor"
+                    android:text="بنك الدم"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/white" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_circle"
+                    android:drawableTop="@drawable/ic_emergency_call"
+                    android:text="ارقام الطوارئ"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/white" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/button_nearst"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_circle"
+                android:drawableTop="@drawable/ic_placeholder"
+                android:text="اقرب مركز صحي"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="@color/white" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
