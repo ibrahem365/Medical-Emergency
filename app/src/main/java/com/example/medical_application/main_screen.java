@@ -14,7 +14,6 @@ public class main_screen extends AppCompatActivity {
 
 Button blood_btn;
 Button report_btn;
-Button fa_btn;
 Button emg_btn;
 Button nearst_btn;
 Button recieve_btn ;
@@ -32,7 +31,6 @@ Button recieve_btn ;
 
         blood_btn=findViewById(R.id.button_blood);
         report_btn=findViewById(R.id.button2);
-        fa_btn=findViewById(R.id.button);
         emg_btn=findViewById(R.id.button7);
         nearst_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,13 +70,7 @@ Button recieve_btn ;
             }
         });
 
-        fa_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent t=new Intent(main_screen.this,first_aid_lv.class);
-                startActivity(t);
-            }
-        });
+
         emg_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
