@@ -33,6 +33,7 @@ Button sign_in;
         final FirebaseAuth mAuth;
         mAuth = FirebaseAuth.getInstance();
         //
+        //commint
         setContentView(R.layout.activity_login_screen);
         sign_in=findViewById(R.id.sigin_btn);
         first_aid=findViewById(R.id.fa_btn);
