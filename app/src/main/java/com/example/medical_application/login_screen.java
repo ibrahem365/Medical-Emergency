@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class login_screen extends AppCompatActivity {
 Button sign_in;
@@ -97,16 +98,31 @@ Button sign_in;
                                  public void onComplete(@NonNull Task<AuthResult> task) {
                                      if(task.isSuccessful())
                                      {
+                                        FirebaseUser users =FirebaseAuth.getInstance().getCurrentUser();
+                                         if(users.isEmailVerified())
+                                         {
+                                             startActivity(new Intent(login_screen.this,MainActivity.class));
+                                         }
+                                         else {
+                                             users.sendEmailVerification();
+                                             Toast.makeText(login_screen.this ,"login Error ",Toast.LENGTH_LONG).show();
+                                         }
 
-                                        // startActivity(new Intent(login_screen.this,main_screen.class));
 
-                                  // startActivity(new Intent(login_screen.this, main_screen.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+
+
+
+
+                                       // startActivity(new Intent(login_screen.this,main_screen.class));
+
                                      }
 
-                                     //else Toast.makeText(login_screen.this ,"login error ",Toast.LENGTH_LONG).show();
+                                     else Toast.makeText(login_screen.this ,"login Error Go to Register  ",Toast.LENGTH_LONG).show();
                                  }
                              });
-                startActivity(new Intent(login_screen.this,MainActivity.class));
+
+
+
 
 
 
