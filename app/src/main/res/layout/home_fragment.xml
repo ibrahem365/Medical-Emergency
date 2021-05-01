@@ -24,7 +24,7 @@
             tools:context=".main_screen">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/fai_btn"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
@@ -37,7 +37,7 @@
                 android:backgroundTint="@color/white" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/nreport_btn"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
@@ -101,7 +101,7 @@
                 android:padding="10dp">
 
                 <Button
-                    android:id="@+id/button_blood"
+                    android:id="@+id/bblood_btn"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="5dp"
@@ -114,7 +114,7 @@
                     android:backgroundTint="@color/white" />
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/emnu_btn"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="5dp"
@@ -127,7 +127,7 @@
                     android:backgroundTint="@color/white" />
             </LinearLayout>
             <Button
-                android:id="@+id/button_nearst"
+                android:id="@+id/near_btn"
                 android:layout_gravity="center"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -139,6 +139,22 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:backgroundTint="@color/white" />
+
+            <Button
+
+                android:id="@+id/report_recieve_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="استقبال البلاغات"
+                android:textSize="25sp"
+                android:background="@drawable/background_circle"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:layout_weight="10"
+                android:layout_gravity="center"
+                />
+
+
 
         </LinearLayout>
 

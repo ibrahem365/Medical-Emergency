@@ -32,52 +32,6 @@ Button recieve_btn ;
         blood_btn=findViewById(R.id.button_blood);
         report_btn=findViewById(R.id.button2);
         emg_btn=findViewById(R.id.button7);
-        nearst_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent t=new Intent(main_screen.this,nearst_center.class);
-                startActivity(t);
-
-            }
-        });
-        blood_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent t=new Intent(main_screen.this,bloodbank_recycle.class);
-                startActivity(t);
-            }
-        });
-        report_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent t=new Intent(main_screen.this,new_report.class);
-                startActivity(t);
-            }
-        });
-
-        report_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent t=new Intent(main_screen.this,new_report.class);
-                startActivity(t);
-            }
-        });
-        report_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent t=new Intent(main_screen.this,new_report.class);
-                startActivity(t);
-            }
-        });
-
-
-        emg_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent t=new Intent(main_screen.this,emgnum_listview.class);
-                startActivity(t);
-            }
-        });
 
         recieve_btn.setVisibility(View.GONE);
        // if(user.equals(this will be authorized user verification ))
