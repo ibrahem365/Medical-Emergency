@@ -30,6 +30,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         home_fragment fragment =new home_fragment();
         FragmentManager manager=getSupportFragmentManager();
         manager.beginTransaction().add(R.id.nav_layout,fragment).commit();
+        profilefragment pro=new profilefragment();
+        FragmentManager managere=getSupportFragmentManager();
+        managere.beginTransaction().add(R.id.nav_layout,pro).commit();
+
         drawer=findViewById(R.id.drawer_layout);
         NavigationView navigationView =findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);

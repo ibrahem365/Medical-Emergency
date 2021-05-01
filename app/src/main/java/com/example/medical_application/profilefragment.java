@@ -1,15 +1,18 @@
 package com.example.medical_application;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -19,6 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class profilefragment extends Fragment {
+  FloatingActionButton edit_btn;
     private FirebaseUser user ;
     private DatabaseReference reference;
     private  String userID;
@@ -28,6 +32,14 @@ public class profilefragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
       View v= inflater.inflate(R.layout.profile_fragment,container,false);
+        edit_btn=v.findViewById(R.id.edit_btn);
+        edit_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getActivity().getBaseContext(),profile_edit.class);
+                startActivity(i);
+            }
+        });
 
         user = FirebaseAuth.getInstance().getCurrentUser();
         reference= FirebaseDatabase.getInstance().getReference("users");
@@ -77,6 +89,7 @@ public class profilefragment extends Fragment {
 
             }
         });
+
 
 
        return v;

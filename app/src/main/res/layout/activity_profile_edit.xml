@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".prof_edit"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/personpro"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="full name"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="address"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="age"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+        <Spinner
+            android:id="@+id/sp_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:entries="@array/Sp_sex"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="length"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="width"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+        <Spinner
+            android:id="@+id/sp_blood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Sp_blood_types"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

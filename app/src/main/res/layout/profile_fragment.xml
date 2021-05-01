@@ -175,7 +175,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/prof_edit"
             android:layout_margin="10dp"
-            android:id="@+id/salma"/>
+            android:id="@+id/edit_btn"/>
 
 
     </LinearLayout>
