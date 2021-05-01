@@ -27,18 +27,19 @@ public class profilefragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+      View v= inflater.inflate(R.layout.profile_fragment,container,false);
 
         user = FirebaseAuth.getInstance().getCurrentUser();
         reference= FirebaseDatabase.getInstance().getReference("users");
         userID=user.getUid();
-        fullname_tv=getView().findViewById(R.id.fullname);
-        email_tv=getView().findViewById(R.id.email);
-        address_tv=getView().findViewById(R.id.address);
-        age_tv=getView().findViewById(R.id.age);
-        gender_tv=getView().findViewById(R.id.gender);
-        lenthg_tv=getView().findViewById(R.id.length);
-        weight_tv=getView().findViewById(R.id.weight);
-        blooatype_tv=getView().findViewById(R.id.bloodtype);
+        fullname_tv=v.findViewById(R.id.fullname);
+        email_tv=v.findViewById(R.id.email);
+        address_tv=v.findViewById(R.id.address);
+        age_tv=v.findViewById(R.id.age);
+        gender_tv=v.findViewById(R.id.gender);
+        lenthg_tv=v.findViewById(R.id.length);
+        weight_tv=v.findViewById(R.id.weight);
+        blooatype_tv=v.findViewById(R.id.bloodtype);
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -78,7 +79,7 @@ public class profilefragment extends Fragment {
         });
 
 
-        return inflater.inflate(R.layout.profile_fragment,container,false);
+       return v;
 
     }
 
