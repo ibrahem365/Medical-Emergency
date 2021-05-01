@@ -39,7 +39,7 @@ public class sign_up extends AppCompatActivity {
     LinearLayout userinfo, prainfo;
 
     //declear variabels
-     private Button btn_register;
+    private Button btn_register;
     private EditText et_fullname, et_email, et_password, et_governorate, et_city ;
     // para
     private  EditText et_numAmblanc , et_numBed, et_numCareroom;
@@ -93,7 +93,7 @@ public class sign_up extends AppCompatActivity {
 
 
 
-       //database
+        //database
         mAuth = FirebaseAuth.getInstance();
 
 
@@ -178,24 +178,24 @@ public class sign_up extends AppCompatActivity {
                 //to string  user  register
 
 
-              final String age=et_age.getText().toString().trim();
-              final String length=et_length.getText().toString().trim();
-              final String weight=et_weight.getText().toString().trim();
-              final String diabetic;if(cb_diabetic.isChecked()) {
-                    diabetic="yes";
-                }else diabetic="no";
-              final String bloodPressure;if(cb_bloodpressure.isChecked()){
-                    bloodPressure="yes";
-                }else bloodPressure="no";
-              final String heartPatient;if (cb_heartpation.isChecked()){
-                    heartPatient="yes";
-                }else heartPatient="no";
+                final String age=et_age.getText().toString().trim();
+                final String length=et_length.getText().toString().trim();
+                final String weight=et_weight.getText().toString().trim();
+                final String diabetic;if(cb_diabetic.isChecked()) {
+                diabetic="yes";
+            }else diabetic="no";
+                final String bloodPressure;if(cb_bloodpressure.isChecked()){
+                bloodPressure="yes";
+            }else bloodPressure="no";
+                final String heartPatient;if (cb_heartpation.isChecked()){
+                heartPatient="yes";
+            }else heartPatient="no";
 
 
-              final String  diseases;if(checkBox_diseases.isChecked()) {
-                    diseases=et_didiseases.toString();
-                }else diseases="null";
-             //المتغيرين دول مش null في مشكل spinner
+                final String  diseases;if(checkBox_diseases.isChecked()) {
+                diseases=et_didiseases.toString();
+            }else diseases="null";
+                //المتغيرين دول مش null في مشكل spinner
                 /*
               final String gender =item_select_gender;
               final String bloodType=item_select_bloodtpye;
@@ -252,8 +252,8 @@ public class sign_up extends AppCompatActivity {
                 //para register error
                 if(para.isChecked())
                 {
-                   userinfo.setVisibility(View.GONE);
-                   prainfo.setVisibility(View.VISIBLE);
+                    userinfo.setVisibility(View.GONE);
+                    prainfo.setVisibility(View.VISIBLE);
                     if (numberAmblanc.isEmpty()) {
                         et_numAmblanc.setError("Enter number ambulance");
                         et_numAmblanc.requestFocus();
@@ -275,26 +275,26 @@ public class sign_up extends AppCompatActivity {
                 }
 
                 //user register error
-                 if(user.isChecked())
-                 {
+                if(user.isChecked())
+                {
                     userinfo.setVisibility(View.VISIBLE);
                     prainfo.setVisibility(View.GONE);
-                     if(age.isEmpty()) {
-                         et_age.setError("enter age ");
-                         et_age.requestFocus();
-                         return;
-                     }
-                     if(length.isEmpty()) {
-                         et_age.setError("enter length ");
-                         et_age.requestFocus();
-                         return;
-                     }
-                     if(weight.isEmpty()) {
-                         et_age.setError("enter weight ");
-                         et_age.requestFocus();
-                         return;
-                     }
-                 }
+                    if(age.isEmpty()) {
+                        et_age.setError("enter age ");
+                        et_age.requestFocus();
+                        return;
+                    }
+                    if(length.isEmpty()) {
+                        et_age.setError("enter length ");
+                        et_age.requestFocus();
+                        return;
+                    }
+                    if(weight.isEmpty()) {
+                        et_age.setError("enter weight ");
+                        et_age.requestFocus();
+                        return;
+                    }
+                }
 
 
 
@@ -329,7 +329,7 @@ public class sign_up extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful())
                                 {
-                                     user_database users=new user_database(fullName,e_mail,passWord,governorate,city,age,length,weight,diseases,gender,bloodType,diabetic,bloodPressure,heartPatient );
+                                    user_database users=new user_database(fullName,e_mail,passWord,governorate,city,age,length,weight,diseases,gender,bloodType,diabetic,bloodPressure,heartPatient );
                                     FirebaseDatabase.getInstance().getReference("users")
                                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                             .setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -354,6 +354,6 @@ public class sign_up extends AppCompatActivity {
         });
 
 
-       
+
     }
 }

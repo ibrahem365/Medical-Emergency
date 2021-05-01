@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class login_screen extends AppCompatActivity {
-Button sign_in;
+    Button sign_in;
     Button first_aid;
     Button emg_num;
     Button medic;
@@ -38,8 +38,8 @@ Button sign_in;
         sign_in=findViewById(R.id.sigin_btn);
         first_aid=findViewById(R.id.fa_btn);
         emg_num=findViewById(R.id.emg_btn);
-       // medic=findViewById(R.id.paramedic);
-       // user=findViewById(R.id.user);
+        // medic=findViewById(R.id.paramedic);
+        // user=findViewById(R.id.user);
         sign_up=findViewById(R.id.signupp_btn);
         et_email=findViewById(R.id.et_email_login);
         et_password=findViewById(R.id.et_pasaword_login);
@@ -59,22 +59,22 @@ Button sign_in;
             @Override
             public void onClick(View v) {
 
-             String email_login=et_email.getText().toString().trim();
-             String password_login=et_password.getText().toString().trim();
-                 if(email_login.isEmpty()) {
-                 if (email_login.isEmpty()) {
-                     et_email.setError("enter your e-mail");
-                     et_email.requestFocus();
-                     return;
-                 }
-                 if(!Patterns.EMAIL_ADDRESS.matcher(email_login).matches()) {
-                     et_email.setError("ee-mail is wrong");
-                     et_email.requestFocus();
-                     return;
+                String email_login=et_email.getText().toString().trim();
+                String password_login=et_password.getText().toString().trim();
+                if(email_login.isEmpty()) {
+                    if (email_login.isEmpty()) {
+                        et_email.setError("enter your e-mail");
+                        et_email.requestFocus();
+                        return;
+                    }
+                    if(!Patterns.EMAIL_ADDRESS.matcher(email_login).matches()) {
+                        et_email.setError("ee-mail is wrong");
+                        et_email.requestFocus();
+                        return;
 
 
-                 }
-             }
+                    }
+                }
                 if(!Patterns.EMAIL_ADDRESS.matcher(email_login).matches()) {
                     et_email.setError("e-mail is wrong");
                     et_email.requestFocus();
@@ -93,34 +93,34 @@ Button sign_in;
                     return;
                 }
 
-                     mAuth.signInWithEmailAndPassword(email_login,password_login)
-                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                                 @Override
-                                 public void onComplete(@NonNull Task<AuthResult> task) {
-                                     if(task.isSuccessful())
-                                     {
-                                        FirebaseUser users =FirebaseAuth.getInstance().getCurrentUser();
-                                         if(users.isEmailVerified())
-                                         {
-                                             startActivity(new Intent(login_screen.this,MainActivity.class));
-                                         }
-                                         else {
-                                             users.sendEmailVerification();
-                                             Toast.makeText(login_screen.this ,"login Error ",Toast.LENGTH_LONG).show();
-                                         }
+                mAuth.signInWithEmailAndPassword(email_login,password_login)
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if(task.isSuccessful())
+                                {
+                                    FirebaseUser users =FirebaseAuth.getInstance().getCurrentUser();
+                                    if(users.isEmailVerified())
+                                    {
+                                        startActivity(new Intent(login_screen.this,MainActivity.class));
+                                    }
+                                    else {
+                                        users.sendEmailVerification();
+                                        Toast.makeText(login_screen.this ,"login Error ",Toast.LENGTH_LONG).show();
+                                    }
 
 
 
 
 
 
-                                       // startActivity(new Intent(login_screen.this,main_screen.class));
+                                    // startActivity(new Intent(login_screen.this,main_screen.class));
 
-                                     }
+                                }
 
-                                     else Toast.makeText(login_screen.this ,"login Error Go to Register  ",Toast.LENGTH_LONG).show();
-                                 }
-                             });
+                                else Toast.makeText(login_screen.this ,"login Error Go to Register  ",Toast.LENGTH_LONG).show();
+                            }
+                        });
 
 
 
@@ -131,7 +131,7 @@ Button sign_in;
 
             }
         });
-     first_aid.setOnClickListener(new View.OnClickListener() {
+        first_aid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i=new Intent(login_screen.this,first_aid_lv.class);
@@ -147,21 +147,21 @@ Button sign_in;
 
             }
         });
-    //    medic.setOnClickListener(new View.OnClickListener() {
-         //   @Override
-           // public void onClick(View v) {
-          //      Intent i=new Intent(login_screen.this,signup_medic.class);
-               // startActivity(i);
+        //    medic.setOnClickListener(new View.OnClickListener() {
+        //   @Override
+        // public void onClick(View v) {
+        //      Intent i=new Intent(login_screen.this,signup_medic.class);
+        // startActivity(i);
 
-         //   }
-       // });
-      // user.setOnClickListener(new View.OnClickListener() {
-           // @Override
-           // public void onClick(View v) {
-               // Intent i=new Intent(login_screen.this,signup_user.class);
-               // startActivity(i);
+        //   }
+        // });
+        // user.setOnClickListener(new View.OnClickListener() {
+        // @Override
+        // public void onClick(View v) {
+        // Intent i=new Intent(login_screen.this,signup_user.class);
+        // startActivity(i);
 
-           // }
-      //  });
+        // }
+        //  });
     }
 }
