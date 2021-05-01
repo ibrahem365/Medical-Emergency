@@ -13,7 +13,6 @@ public class user_database {
         this.age=age;
         this.length=length;
         this.weight=weight;
-
         this.diseases=diseases;
         this.gender=gender;
         this.bloodType=bloodType;
