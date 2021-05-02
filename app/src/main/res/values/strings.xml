@@ -613,6 +613,12 @@ Opening the airway:
     <!--    nav drawe-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+<!--    profile_edit-->
+    <string name="pro_full">Full name</string>
+    <string name="pro_add">Adress</string>
+    <string name="pro_age">Age</string>
+    <string name="pro_length">length</string>
+    <string name="pro_weight">Weight</string>
 
 
 </resources>

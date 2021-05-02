@@ -18,21 +18,21 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="full name"
+            android:hint="@string/pro_full"
             android:layout_margin="5dp"
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="address"
+            android:hint="@string/pro_add"
             android:layout_margin="5dp"
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="age"
+            android:hint="@string/pro_age"
             android:layout_margin="5dp"
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
@@ -45,14 +45,14 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="length"
+            android:hint="@string/pro_length"
             android:layout_margin="5dp"
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="width"
+            android:hint="@string/pro_weight"
             android:layout_margin="5dp"
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
