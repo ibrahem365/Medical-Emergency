@@ -34,6 +34,7 @@
             android:layout_height="50dp"
             android:hint="@string/pro_age"
             android:layout_margin="5dp"
+            android:inputType="number"
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
         <Spinner
@@ -47,10 +48,12 @@
             android:layout_height="50dp"
             android:hint="@string/pro_length"
             android:layout_margin="5dp"
+            android:inputType="number"
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
         <EditText
             android:layout_width="match_parent"
+            android:inputType="number"
             android:layout_height="50dp"
             android:hint="@string/pro_weight"
             android:layout_margin="5dp"
