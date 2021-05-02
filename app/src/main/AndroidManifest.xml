@@ -16,7 +16,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".profile_edit"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity" android:label="الصفحة الرئيسية"
             android:theme="@style/first_aid"></activity>
 
         <meta-data

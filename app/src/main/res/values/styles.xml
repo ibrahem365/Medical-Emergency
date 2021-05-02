@@ -21,13 +21,15 @@
         <item name="colorPrimaryDark">@color/bbbblue</item>
         <item name="colorAccent">@color/bbbblue</item>
     </style>
-    <style name="signup_theme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="signup_theme" parent="Theme.MaterialComponents.Light.DarkActionBar"  >
+
 
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/bbbblue</item>
         <item name="colorPrimaryDark">@color/bbbblue</item>
         <item name="colorAccent">@color/bbbblue</item>
     </style>
+
     <style name="SecondTextStyle">
         <!-- Customize your Second Text Style here. -->
         <item name="android:layout_width">wrap_content</item>
