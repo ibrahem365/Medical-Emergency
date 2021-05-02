@@ -620,5 +620,7 @@
     <string name="pro_age">العمر</string>
     <string name="pro_length">الطول</string>
     <string name="pro_weight">الوزن</string>
-
+    <!--nav menu-->
+    <string name="prof">الملف الشخصي</string>
+    <string name="home">الصفحة الرئيسية</string>
 </resources>

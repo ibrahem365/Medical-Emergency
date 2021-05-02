@@ -619,6 +619,8 @@ Opening the airway:
     <string name="pro_age">Age</string>
     <string name="pro_length">length</string>
     <string name="pro_weight">Weight</string>
-
+<!--nav menu-->
+    <string name="prof">Profile</string>
+    <string name="home">Home</string>
 
 </resources>

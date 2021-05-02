@@ -6,11 +6,12 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/homenav"
-            android:title="home" />
+            android:title="@string/home"
+             />
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/profile"
-            android:title="profile" />
+            android:title="@string/prof" />
 
     </group>
 </menu>
