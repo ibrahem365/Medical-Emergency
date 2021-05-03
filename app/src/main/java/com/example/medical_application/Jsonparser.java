@@ -25,7 +25,7 @@ public class Jsonparser {
     }
     private List<HashMap<String,String>> parseJsonArray(JSONArray jsonArray){
         List<HashMap<String,String>> dataList=new ArrayList<>();
-        for (int i=0; i>jsonArray.length();i++){
+        for (int i=0; i<jsonArray.length();i++){
             try {
                 HashMap<String,String> data=ParseJsonObject((JSONObject)jsonArray.get(i));
                 dataList.add(data);
