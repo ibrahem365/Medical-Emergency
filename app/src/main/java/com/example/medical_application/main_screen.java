@@ -14,9 +14,10 @@ public class main_screen extends AppCompatActivity {
 
 Button blood_btn;
 Button report_btn;
+Button fa_btn;
 Button emg_btn;
 Button nearst_btn;
-Button recieve_btn ;
+
 
 
 
@@ -27,15 +28,65 @@ Button recieve_btn ;
         setContentView(R.layout.activity_main_screen);
         nearst_btn=findViewById(R.id.button_nearst);
 
-        recieve_btn = findViewById(R.id.button_receiving) ;
+
 
         blood_btn=findViewById(R.id.button_blood);
         report_btn=findViewById(R.id.button2);
+        fa_btn=findViewById(R.id.button);
         emg_btn=findViewById(R.id.button7);
+        nearst_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t=new Intent(main_screen.this,nearst_center.class);
+                startActivity(t);
 
-        recieve_btn.setVisibility(View.GONE);
-       // if(user.equals(this will be authorized user verification ))
-        //    recieve_btn.setVisibility(View.VISIBLE);  if its مسعف
+            }
+        });
+        blood_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t=new Intent(main_screen.this,bloodbank_recycle.class);
+                startActivity(t);
+            }
+        });
+        report_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t=new Intent(main_screen.this,new_report.class);
+                startActivity(t);
+            }
+        });
+
+        report_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t=new Intent(main_screen.this,new_report.class);
+                startActivity(t);
+            }
+        });
+        report_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t=new Intent(main_screen.this,new_report.class);
+                startActivity(t);
+            }
+        });
+
+        fa_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t=new Intent(main_screen.this,first_aid_lv.class);
+                startActivity(t);
+            }
+        });
+        emg_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t=new Intent(main_screen.this,emgnum_listview.class);
+                startActivity(t);
+            }
+        });
+
 
 
 

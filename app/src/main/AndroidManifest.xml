@@ -14,10 +14,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".profile_edit" android:theme="@style/signup_theme" android:label=" "></activity>
+        <activity android:name=".paramedic"></activity>
         <activity
-            android:name=".MainActivity" android:label="الصفحة الرئيسية"
-            android:theme="@style/first_aid"></activity>
+            android:name=".profile_edit"
+            android:label=" "
+            android:theme="@style/signup_theme" />
+        <activity
+            android:name=".MainActivity"
+            android:label="الصفحة الرئيسية"
+            android:theme="@style/first_aid" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

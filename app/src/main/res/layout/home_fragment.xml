@@ -140,20 +140,6 @@
                 android:textSize="20sp"
                 android:backgroundTint="@color/white" />
 
-            <Button
-
-                android:id="@+id/report_recieve_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="استقبال البلاغات"
-                android:textSize="25sp"
-                android:background="@drawable/background_circle"
-                android:textColor="@color/black"
-                android:layout_margin="10dp"
-                android:layout_weight="10"
-                android:layout_gravity="center"
-                />
-
 
 
         </LinearLayout>

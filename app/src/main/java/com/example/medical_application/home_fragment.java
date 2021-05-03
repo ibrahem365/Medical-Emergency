@@ -24,7 +24,7 @@ public class home_fragment extends Fragment {
      emnu_btn=v.findViewById(R.id.emnu_btn);
         near_btn=v.findViewById(R.id.near_btn);
         bloodb_btn=v.findViewById(R.id.bblood_btn);
-        reportrec_btn=v.findViewById(R.id.report_recieve_btn);
+       // reportrec_btn=v.findViewById(R.id.report_recieve_btn);
         faa_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,11 +60,12 @@ public class home_fragment extends Fragment {
                 startActivity(i);
             }
         });
-reportrec_btn.setVisibility(View.GONE);
+//reportrec_btn.setVisibility(View.GONE);
 
       return v;
 
 
     }
+
 
 }
