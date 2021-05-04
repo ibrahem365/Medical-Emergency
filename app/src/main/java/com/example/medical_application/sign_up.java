@@ -27,8 +27,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
 import java.util.regex.Pattern;
 
 import static com.example.medical_application.R.id.sw_blood_pressure;
@@ -51,6 +54,11 @@ public class sign_up extends AppCompatActivity {
     private  EditText et_didiseases;
     private String item_select_gender;
     private String item_select_bloodtpye;
+    private String  userType;
+    private FirebaseDatabase db_real_time =FirebaseDatabase.getInstance();
+    private DatabaseReference root;
+    private FirebaseUser current_user;
+    private  String userID;
 
 
 
@@ -126,61 +134,47 @@ public class sign_up extends AppCompatActivity {
         et_didiseases=findViewById(R.id.et_diseases);
         sp_sex=findViewById(R.id.sp_sex);
         sp_blood=findViewById(R.id.sp_blood);
-        /*
-        sp_sex.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        sp_sex.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                 item_select_gender=parent.getItemAtPosition(position).toString();
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                item_select_gender=parent.getItemAtPosition(position).toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
             }
         });
-        sp_blood.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        sp_blood.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 item_select_bloodtpye=parent.getItemAtPosition(position).toString();
             }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
         });
-
-         */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
                 //to string  register
 
-                final String fullName = et_fullname.getText().toString().trim();
-                final String e_mail = et_email.getText().toString().trim();
-                final String passWord = et_password.getText().toString().trim();
-                final String governorate = et_governorate.getText().toString().trim();
-                final String city = et_city.getText().toString().trim();
-
+                final String fullName = et_fullname.getText().toString();
+                final String e_mail = et_email.getText().toString();
+                final String passWord = et_password.getText().toString();
+                final String governorate = et_governorate.getText().toString();
+                final String city = et_city.getText().toString();
                 //to string  para register
-
-
-                final String numberAmblanc =et_numAmblanc.getText().toString().trim();
-                final String numberBeds =et_numBed.getText().toString().trim();
-                final String numberCareroom=et_numAmblanc.getText().toString().trim();
-
-
+                final String numberAmblanc =et_numAmblanc.getText().toString();
+                final String numberBeds =et_numBed.getText().toString();
+                final String numberCareroom=et_numAmblanc.getText().toString();
                 //to string  user  register
-
-
-                final String age=et_age.getText().toString().trim();
-                final String length=et_length.getText().toString().trim();
-                final String weight=et_weight.getText().toString().trim();
+                final String age=et_age.getText().toString();
+                final String length=et_length.getText().toString();
+                final String weight=et_weight.getText().toString();
                 final String diabetic;if(cb_diabetic.isChecked()) {
                 diabetic="yes";
             }else diabetic="no";
@@ -190,25 +184,17 @@ public class sign_up extends AppCompatActivity {
                 final String heartPatient;if (cb_heartpation.isChecked()){
                 heartPatient="yes";
             }else heartPatient="no";
-
-
                 final String  diseases;if(checkBox_diseases.isChecked()) {
                 diseases=et_didiseases.toString();
             }else diseases="null";
-                //المتغيرين دول مش null في مشكل spinner
-                /*
-              final String gender =item_select_gender;
-              final String bloodType=item_select_bloodtpye;
-
-                 */
-                final String gender ="null";
-                final String bloodType="null";
-
-
-
-
-
-
+               final String gender =item_select_gender;
+               final String bloodType=item_select_bloodtpye;
+               if(user.isChecked()){
+                   userType="normal user ";
+               }
+               if(para.isChecked()){
+                   userType="paramedic user";
+               }
                 //informeation for register error
 
                 if (fullName.isEmpty()) {
@@ -296,11 +282,7 @@ public class sign_up extends AppCompatActivity {
                     }
                 }
 
-
-
-
-                //code data base para
-
+                //code  auth data base para
 
                 mAuth.createUserWithEmailAndPassword(e_mail,passWord)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -308,7 +290,7 @@ public class sign_up extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful())
                                 {
-                                    para_medic_database para=new para_medic_database(fullName,e_mail,passWord,governorate,city,numberAmblanc,numberBeds,numberCareroom);
+                                    para_medic_database para=new para_medic_database(e_mail,passWord);
                                     FirebaseDatabase.getInstance().getReference("para medic")
                                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                             .setValue(para).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -321,7 +303,7 @@ public class sign_up extends AppCompatActivity {
                             }
                         });
 
-                // code date base user
+                // code  auth date base user
 
                 mAuth.createUserWithEmailAndPassword(e_mail,passWord)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -329,7 +311,7 @@ public class sign_up extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful())
                                 {
-                                    user_database users=new user_database(fullName,e_mail,passWord,governorate,city,age,length,weight,diseases,gender,bloodType,diabetic,bloodPressure,heartPatient );
+                                    user_database users=new user_database(e_mail,passWord );
                                     FirebaseDatabase.getInstance().getReference("users")
                                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                             .setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -343,6 +325,60 @@ public class sign_up extends AppCompatActivity {
                         });
 
 
+                current_user=FirebaseAuth.getInstance().getCurrentUser();
+                userID=current_user.getUid();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             // sotre data in real time
+                if(user.isChecked())
+                { root=db_real_time.getReference().child("Normal User");
+                    HashMap<String,String> normal_user=new HashMap<>();
+                    normal_user.put("User Type ",userType);
+                    normal_user.put("Full Name ",fullName);
+                    normal_user.put("Governorate",governorate);
+                    normal_user.put("City",city);
+                    normal_user.put("Age",age);
+                    normal_user.put("Length",length);
+                    normal_user.put("Weight",weight);
+                    normal_user.put("Blood Type ",bloodType);
+                   // root.setValue(normal_user);
+                    root.child(userID).setValue(normal_user);
+
+
+
+                }
+                if(para.isChecked()){
+                    root=db_real_time.getReference().child("Paramedic User ");
+                    HashMap<String,String> paramedic_user=new HashMap<>();
+                    paramedic_user.put("User Type ",userType);
+                    paramedic_user.put("Full Name ",fullName);
+                    paramedic_user.put("Governorate",governorate);
+                    paramedic_user.put("City",city);
+                    paramedic_user.put("Number of ambulances",numberAmblanc);
+                    paramedic_user.put("Number of beds",numberBeds);
+                    paramedic_user.put("Number of care rooms ",numberCareroom);
+                   // root.setValue(paramedic_user);
+                    root.child(userID).setValue(paramedic_user);
+
+
+                }
 
 
 

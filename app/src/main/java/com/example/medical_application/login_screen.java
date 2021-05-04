@@ -59,8 +59,9 @@ public class login_screen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String email_login=et_email.getText().toString().trim();
-                String password_login=et_password.getText().toString().trim();
+                String email_login=et_email.getText().toString();
+                String password_login=et_password.getText().toString();
+             /*
                 if(email_login.isEmpty()) {
                     if (email_login.isEmpty()) {
                         et_email.setError("enter your e-mail");
@@ -121,6 +122,10 @@ public class login_screen extends AppCompatActivity {
                                 else Toast.makeText(login_screen.this ,"login Error Go to Register  ",Toast.LENGTH_LONG).show();
                             }
                         });
+
+              */
+                // اهو عشان خاطركم
+                startActivity(new Intent(login_screen.this,MainActivity.class));
 
 
 

@@ -41,7 +41,7 @@ public class profilefragment extends Fragment {
             }
         });
 
-        user = FirebaseAuth.getInstance().getCurrentUser();
+        /*user = FirebaseAuth.getInstance().getCurrentUser();
         reference= FirebaseDatabase.getInstance().getReference("users");
         userID=user.getUid();
         fullname_tv=v.findViewById(R.id.fullname);
@@ -89,6 +89,8 @@ public class profilefragment extends Fragment {
 
             }
         });
+
+         */
 
 
 

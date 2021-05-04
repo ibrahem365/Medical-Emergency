@@ -2,10 +2,11 @@ package com.example.medical_application;
 
 public class para_medic_database {
 
-    public  String fullname ,email, password ,governorate,city,numambulancs,numbeds,numcarerooms;
+    //public  String fullname ,email, password ,governorate,city,numambulancs,numbeds,numcarerooms;
+    public  String email ,password;
     public para_medic_database()
     {}
-    public para_medic_database(String fullname,String email,String password,String governorate,String city,String numambulancs,String numbeds,String numcarerooms )
+   /*public para_medic_database(String fullname,String email,String password,String governorate,String city,String numambulancs,String numbeds,String numcarerooms )
     {
         this.fullname=fullname;
         this.email=email;
@@ -16,6 +17,15 @@ public class para_medic_database {
         this.numbeds=numbeds;
         this.numcarerooms=numcarerooms;
 
+    }
+
+    */
+
+
+    public para_medic_database(String email ,String password)
+    {
+        this.email=email;
+        this.password=password;
     }
 
 }
