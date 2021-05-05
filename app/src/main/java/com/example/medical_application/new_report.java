@@ -36,6 +36,7 @@ public class new_report extends AppCompatActivity {
     TextView bl_text;
     private AlertDialog.Builder dialogbuilder;
     private AlertDialog dialog;
+    Button cancel_btn;
 
 
 
@@ -117,13 +118,17 @@ minus2.setOnClickListener(new View.OnClickListener() {
         fa=findViewById(R.id.fa_btn);
         bl_text=findViewById(R.id.bl_text);
         bl=findViewById(R.id.bl_btn);
+        cancel_btn=findViewById(R.id.cancel_btn);
+
         dialogbuilder.setView(dilaog_sc);
         dialog=dialogbuilder.create();
         dialog.setCanceledOnTouchOutside(false);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.dialog_shape));
-            dialog.setCancelable(false);
+
+
         }
+
 
         dialog.show();
     }
