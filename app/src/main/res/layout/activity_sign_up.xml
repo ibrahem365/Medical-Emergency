@@ -90,6 +90,41 @@
                 android:textStyle="bold" />
 
         </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/RL_numberr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/et_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_phonereg"
+                android:layout_toEndOf="@+id/phonereg_icon"
+                android:layout_toRightOf="@+id/phonereg_icon"
+                android:hint="@string/num"
+                android:inputType="phone" />
+
+            <ImageView
+                android:id="@+id/phonereg_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone_reg" />
+
+
+            <TextView
+                android:id="@+id/tv_phonereg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/phonereg_icon"
+                android:layout_toRightOf="@+id/phonereg_icon"
+                android:padding="10dp"
+                android:text="@string/num"
+                android:textColor="@color/bbbblue"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"

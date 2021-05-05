@@ -611,6 +611,8 @@
     <string name="o1">O+</string>
     <string name="o">O-</string>
     <string name="all">All</string>
+    <!--    regphone-->
+    <string name="num">رقم الهاتف</string>
     <!--    nav drawe-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
