@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -119,6 +120,10 @@ minus2.setOnClickListener(new View.OnClickListener() {
         dialogbuilder.setView(dilaog_sc);
         dialog=dialogbuilder.create();
         dialog.setCanceledOnTouchOutside(false);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.dialog_shape));
+            dialog.setCancelable(false);
+        }
 
         dialog.show();
     }
