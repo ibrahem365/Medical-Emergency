@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 public class home_fragment extends Fragment {
-    Button faa_btn,emnu_btn,bloodb_btn,near_btn,nrepoort_btn,reportrec_btn;
+    Button faa_btn,emnu_btn,bloodb_btn,near_btn,nrepoort_btn;
 
 
     @Nullable
@@ -24,7 +24,7 @@ public class home_fragment extends Fragment {
      emnu_btn=v.findViewById(R.id.emnu_btn);
         near_btn=v.findViewById(R.id.near_btn);
         bloodb_btn=v.findViewById(R.id.bblood_btn);
-       // reportrec_btn=v.findViewById(R.id.report_recieve_btn);
+
         faa_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

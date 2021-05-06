@@ -27,6 +27,9 @@ public class medic_main extends AppCompatActivity implements NavigationView.OnNa
         setContentView(R.layout.activity_main);
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        medic_home_frag fragment=new medic_home_frag();
+        FragmentManager manager=getSupportFragmentManager();
+        manager.beginTransaction().add(R.id.nav_layout,fragment).commit();
         drawer=findViewById(R.id.drawer_layout);
         NavigationView navigationView =findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
