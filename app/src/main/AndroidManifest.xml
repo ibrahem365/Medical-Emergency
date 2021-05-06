@@ -13,11 +13,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".medic_main"
-            android:label="الصفحة الرئيسية"
-            android:theme="@style/first_aid"
-            >
 
+        <activity android:name=".medic_prof_edit" android:theme="@style/signup_theme">
+
+
+        </activity>
+
+        <activity
+            android:name=".medic_main"
+            android:label="الصفحة الرئيسية"
+            android:theme="@style/first_aid">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".paramedic" />
         <activity
@@ -47,11 +57,7 @@
         <activity
             android:name=".login_screen"
             android:theme="@style/sign_in">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".bloodbank_recycle"

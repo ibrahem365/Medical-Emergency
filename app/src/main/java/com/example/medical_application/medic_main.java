@@ -30,6 +30,9 @@ public class medic_main extends AppCompatActivity implements NavigationView.OnNa
         medic_home_frag fragment=new medic_home_frag();
         FragmentManager manager=getSupportFragmentManager();
         manager.beginTransaction().add(R.id.nav_layout,fragment).commit();
+        medic_home_frag medicprof_fragment=new medic_home_frag();
+        FragmentManager fmanager=getSupportFragmentManager();
+        fmanager.beginTransaction().add(R.id.nav_layout,medicprof_fragment).commit();
         drawer=findViewById(R.id.drawer_layout);
         NavigationView navigationView =findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);

@@ -610,7 +610,13 @@ Opening the airway:
     <string name="o1">O+</string>
     <string name="o">O-</string>
     <string name="all">All</string>
-<!--    regphone-->
+    <!--    medic_profile-->
+    <string name="no_beds"> Number of beds</string>
+    <string name="no_rooms">Number of care rooms</string>
+    <string name="no_ambulances">Number of ambulances</string>
+    <string name="save_btn">Save data</string>
+    <string name="hos_data">Entity-specific information</string>
+    <!--    regphone-->
     <string name="num">Phone number</string>
     <!--    nav drawe-->
     <string name="navigation_drawer_open">Open navigation drawer</string>

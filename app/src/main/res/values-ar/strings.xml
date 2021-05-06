@@ -611,6 +611,12 @@
     <string name="o1">O+</string>
     <string name="o">O-</string>
     <string name="all">All</string>
+<!--    medic_profile-->
+    <string name="no_beds">عدد السراير </string>
+    <string name="no_rooms"> عدد غرف الرعاية</string>
+    <string name="no_ambulances"> عدد سيارات الاسعاف</string>
+    <string name="save_btn">حفظ البيانات</string>
+    <string name="hos_data">معلومات خاصة بالجهة:</string>
     <!--    regphone-->
     <string name="num">رقم الهاتف</string>
     <!--    nav drawe-->

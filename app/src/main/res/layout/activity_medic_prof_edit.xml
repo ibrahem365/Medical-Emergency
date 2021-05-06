@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medic_prof_edit">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".prof_edit"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_margin="15dp"
-            android:src="@drawable/personpro"
             android:layout_gravity="center"
-            />
+            android:layout_margin="10dp"
+            android:src="@drawable/pro_img"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -28,9 +28,9 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="@string/num"
+            android:layout_margin="5dp"
             android:drawableStart="@drawable/phone_reg"
             android:drawablePadding="10dp"
-            android:layout_margin="5dp"
             android:inputType="number"
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
@@ -43,57 +43,61 @@
             android:drawablePadding="10dp"
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
-
         <EditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:drawableStart="@drawable/age_edit"
-            android:drawablePadding="10dp"
             android:hint="@string/pro_age"
             android:layout_margin="5dp"
             android:inputType="number"
+            android:drawableStart="@drawable/age_edit"
+            android:drawablePadding="10dp"
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
-        <Spinner
-            android:id="@+id/sp_sex"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:entries="@array/Sp_sex"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/bbbblue"
+           android:text="@string/hos_data"
+           android:layout_margin="5dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="@string/pro_length"
+            android:hint="@string/no_ambulances"
             android:layout_margin="5dp"
             android:inputType="number"
-            android:drawableStart="@drawable/ic_length"
+            android:drawableStart="@drawable/no_ambulance_edit"
             android:drawablePadding="10dp"
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
         <EditText
             android:layout_width="match_parent"
-            android:inputType="number"
             android:layout_height="50dp"
-            android:hint="@string/pro_weight"
+            android:hint="@string/no_beds"
             android:layout_margin="5dp"
-            android:drawableStart="@drawable/ic_weight"
+            android:inputType="number"
+            android:drawableStart="@drawable/no_bed_edit"
             android:drawablePadding="10dp"
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
-        <Spinner
-            android:id="@+id/sp_blood"
+        <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/Sp_blood_types"
-            android:layout_margin="10dp"/>
+            android:layout_height="50dp"
+            android:hint="@string/no_rooms"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:padding="15dp"
+            android:drawableStart="@drawable/no_room_edit"
+            android:drawablePadding="10dp"
+            android:background="@drawable/edit_shape"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/user_save"
+            android:id="@+id/medic_save"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:text="save data"/>
+            android:text="save"/>
 
 
     </LinearLayout>
+
 </ScrollView>
