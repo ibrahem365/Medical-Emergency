@@ -23,11 +23,7 @@
             android:name=".medic_main"
             android:label="الصفحة الرئيسية"
             android:theme="@style/first_aid">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".paramedic" />
         <activity
@@ -57,7 +53,11 @@
         <activity
             android:name=".login_screen"
             android:theme="@style/sign_in">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".bloodbank_recycle"
