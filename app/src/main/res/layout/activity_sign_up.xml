@@ -97,7 +97,7 @@
             android:padding="20dp">
 
             <EditText
-                android:id="@+id/et_num"
+                android:id="@+id/numberphone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_phonereg"

@@ -16,6 +16,7 @@
             android:layout_gravity="center"
             />
         <EditText
+            android:id="@+id/udatename"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="@string/pro_full"
@@ -25,6 +26,7 @@
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
         <EditText
+            android:id="@+id/updatephone"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="@string/num"
@@ -35,9 +37,20 @@
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
         <EditText
+            android:id="@+id/updategovernorate"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="@string/pro_add"
+            android:hint="@string/governorate"
+            android:layout_margin="5dp"
+            android:drawableStart="@drawable/ic_address"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+        <EditText
+            android:id="@+id/updatecity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/city"
             android:layout_margin="5dp"
             android:drawableStart="@drawable/ic_address"
             android:drawablePadding="10dp"
@@ -45,6 +58,7 @@
             android:background="@drawable/edit_shape"/>
 
         <EditText
+            android:id="@+id/updateage"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:drawableStart="@drawable/age_edit"
@@ -55,12 +69,13 @@
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
         <Spinner
-            android:id="@+id/sp_sex"
+            android:id="@+id/update_sp_sex"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:entries="@array/Sp_sex"/>
         <EditText
+            android:id="@+id/updatelenthg"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="@string/pro_length"
@@ -71,6 +86,7 @@
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
         <EditText
+            android:id="@+id/updateweight"
             android:layout_width="match_parent"
             android:inputType="number"
             android:layout_height="50dp"
@@ -81,18 +97,20 @@
             android:padding="15dp"
             android:background="@drawable/edit_shape"/>
         <Spinner
-            android:id="@+id/sp_blood"
+
+            android:id="@+id/update_sp_blood"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/Sp_blood_types"
             android:layout_margin="10dp"/>
         <Button
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/user_save"
+            android:id="@+id/user_update"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:text="save data"/>
+            android:text="udate data"/>
 
 
     </LinearLayout>

@@ -61,8 +61,9 @@ public class login_screen extends AppCompatActivity {
 
                 String email_login=et_email.getText().toString();
                 String password_login=et_password.getText().toString();
-             /*
-                if(email_login.isEmpty()) {
+
+
+            /*    if(email_login.isEmpty()) {
                     if (email_login.isEmpty()) {
                         et_email.setError("enter your e-mail");
                         et_email.requestFocus();
@@ -103,12 +104,12 @@ public class login_screen extends AppCompatActivity {
                                     FirebaseUser users =FirebaseAuth.getInstance().getCurrentUser();
                                     if(users.isEmailVerified())
                                     {
+
                                         startActivity(new Intent(login_screen.this,MainActivity.class));
                                     }
-                                    else {
-                                        users.sendEmailVerification();
-                                        Toast.makeText(login_screen.this ,"login Error ",Toast.LENGTH_LONG).show();
-                                    }
+                                    else
+                                        Toast.makeText(login_screen.this ,"خطا في عملية تسجيل الدخول  ",Toast.LENGTH_LONG).show();
+
 
 
 
@@ -119,13 +120,14 @@ public class login_screen extends AppCompatActivity {
 
                                 }
 
-                                else Toast.makeText(login_screen.this ,"login Error Go to Register  ",Toast.LENGTH_LONG).show();
+                                else Toast.makeText(login_screen.this ," انت مش مسجل اصلا   ",Toast.LENGTH_LONG).show();
                             }
                         });
+*/
 
-              */
+
                 // اهو عشان خاطركم
-                startActivity(new Intent(login_screen.this,MainActivity.class));
+               startActivity(new Intent(login_screen.this,MainActivity.class));
 
 
 

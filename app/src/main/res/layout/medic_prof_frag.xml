@@ -24,7 +24,7 @@
                 android:layout_height="match_parent"
                 android:id="@+id/medic_fullname"
                 android:textColor="@color/white"
-                android:text="medic_name"
+
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:gravity="center"
                 android:layout_marginBottom="15dp"
@@ -74,9 +74,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/phone"
+                    android:id="@+id/medic_phone"
                     android:layout_margin="5dp"
-                    android:text="0111223455"
+
                     android:textSize="16dp"/>
             </LinearLayout>
 
@@ -94,12 +94,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/address"
+                    android:id="@+id/medic_address"
                     android:layout_margin="5dp"
-                    android:text="medic_address"
+
                     android:textSize="16dp"/>
             </LinearLayout>
-            <LinearLayout
+           <!-- <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -121,14 +121,14 @@
                     android:layout_margin="5dp"
                     android:text="medic_age"
                     android:textSize="16dp"/>
-            </LinearLayout>
+            </LinearLayout>-->
 
-            <TextView
+            <!--<TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/bbbblue"
                 android:text="@string/hos_data"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"/>-->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -147,9 +147,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/no_ambulace"
+                    android:id="@+id/medic_ambulace"
                     android:layout_margin="5dp"
-                    android:text="10"
+
                     android:textSize="16dp"/>
             </LinearLayout>
             <LinearLayout
@@ -170,9 +170,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/no_rooms"
+                    android:id="@+id/medic_rooms"
                     android:layout_margin="5dp"
-                    android:text="50"
+
                     android:textSize="16dp"/>
             </LinearLayout>
             <LinearLayout
@@ -193,9 +193,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/no_bed"
+                    android:id="@+id/medic_bed"
                     android:layout_margin="5dp"
-                    android:text="10"
+
                     android:textSize="16dp"/>
 
             </LinearLayout>

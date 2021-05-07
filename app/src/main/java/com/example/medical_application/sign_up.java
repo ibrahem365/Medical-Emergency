@@ -20,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.google.android.gms.tasks.OnCanceledListener;
@@ -43,7 +44,7 @@ public class sign_up extends AppCompatActivity {
 
     //declear variabels
     private Button btn_register;
-    private EditText et_fullname, et_email, et_password, et_governorate, et_city ;
+    private EditText et_fullname, et_email, et_password, et_governorate, et_city ,et_numberphone;
     // para
     private  EditText et_numAmblanc , et_numBed, et_numCareroom;
     //user
@@ -110,9 +111,11 @@ public class sign_up extends AppCompatActivity {
 
         et_fullname =  findViewById(R.id.full_name);
         et_email = findViewById(R.id.et_email);
+        et_numberphone=findViewById(R.id.numberphone);
         et_password =  findViewById(R.id.et_pass);
         et_governorate = findViewById(R.id.et_Governorate);
         et_city = findViewById(R.id.et_city);
+
 
         btn_register = findViewById(R.id.btn_register);
 
@@ -164,6 +167,7 @@ public class sign_up extends AppCompatActivity {
 
                 final String fullName = et_fullname.getText().toString();
                 final String e_mail = et_email.getText().toString();
+                final String numberphone=et_numberphone.getText().toString();
                 final String passWord = et_password.getText().toString();
                 final String governorate = et_governorate.getText().toString();
                 final String city = et_city.getText().toString();
@@ -202,6 +206,11 @@ public class sign_up extends AppCompatActivity {
                     et_fullname.requestFocus();
                     return;
                 }
+                if(numberphone.isEmpty())
+                {
+                    et_numberphone.setError("enter your number phone");
+                    et_numberphone.requestFocus();
+                }
                 if (e_mail.isEmpty()) {
                     et_email.setError("enter your e-mail");
                     et_email.requestFocus();
@@ -236,8 +245,7 @@ public class sign_up extends AppCompatActivity {
                 }
 
                 //para register error
-                if(para.isChecked())
-                {
+                if(para.isChecked()) {
                     userinfo.setVisibility(View.GONE);
                     prainfo.setVisibility(View.VISIBLE);
                     if (numberAmblanc.isEmpty()) {
@@ -261,8 +269,7 @@ public class sign_up extends AppCompatActivity {
                 }
 
                 //user register error
-                if(user.isChecked())
-                {
+                if(user.isChecked()) {
                     userinfo.setVisibility(View.VISIBLE);
                     prainfo.setVisibility(View.GONE);
                     if(age.isEmpty()) {
@@ -283,107 +290,112 @@ public class sign_up extends AppCompatActivity {
                 }
 
                 //code  auth data base para
-
-                mAuth.createUserWithEmailAndPassword(e_mail,passWord)
-                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if(task.isSuccessful())
-                                {
-                                    para_medic_database para=new para_medic_database(e_mail,passWord);
-                                    FirebaseDatabase.getInstance().getReference("para medic")
-                                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                            .setValue(para).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
-
-                                        }
-                                    });
-                                }
-                            }
-                        });
-
-                // code  auth date base user
-
-                mAuth.createUserWithEmailAndPassword(e_mail,passWord)
-                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if(task.isSuccessful())
-                                {
-                                    user_database users=new user_database(e_mail,passWord );
-                                    FirebaseDatabase.getInstance().getReference("users")
-                                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                            .setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
-
-                                        }
-                                    });
-                                }
-                            }
-                        });
-
-
                 current_user=FirebaseAuth.getInstance().getCurrentUser();
                 userID=current_user.getUid();
 
+               if(para.isChecked())
+               {
+                   mAuth.createUserWithEmailAndPassword(e_mail,passWord)
+                           .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                               @Override
+                               public void onComplete(@NonNull Task<AuthResult> task) {
+                                   if(task.isSuccessful())
+                                   {
+
+
+                                           root=db_real_time.getReference().child("Paramedic User");
+                                           HashMap<String,String> paramedic_user=new HashMap<>();
+                                           paramedic_user.put("User Type ",userType);
+                                           paramedic_user.put("P_FullName",fullName);
+                                           paramedic_user.put("P_Numberphone",numberphone);
+                                           paramedic_user.put("P_Governorate",governorate);
+                                           paramedic_user.put("P_City",city);
+                                           paramedic_user.put("P_NumberAmbulances",numberAmblanc);
+                                           paramedic_user.put("P_NumberBeds",numberBeds);
+                                           paramedic_user.put("P_NumberCareRooms",numberCareroom);
+                                           // root.setValue(paramedic_user);
+                                           root.child(userID).setValue(paramedic_user);
+
+
+
+
+
+                                       para_medic_database para=new para_medic_database(e_mail,passWord);
+                                       FirebaseDatabase.getInstance().getReference("E-mail,Password paramedic")
+                                               .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                               .setValue(para).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                           @Override
+                                           public void onComplete(@NonNull Task<Void> task) {
+                                               FirebaseDatabase.getInstance().getReference("users")
+                                                       .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                                       .setValue("userId",userID);
+
+                                           }
+                                       });
+                                   }
+                               }
+                           });
+               }
+
+                // code  auth date base user
+
+              if(user.isChecked())
+              {
+                  mAuth.createUserWithEmailAndPassword(e_mail,passWord)
+                          .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                              @Override
+                              public void onComplete(@NonNull Task<AuthResult> task) {
+                                  if(task.isSuccessful())
+                                  {
+
+                                      // sotre data in real time
+
+                                       root=db_real_time.getReference().child("Normal User");
+                                          HashMap<String,String> normal_user=new HashMap<>();
+                                          normal_user.put("UserType ",userType);
+                                          normal_user.put("N_FullName",fullName);
+                                          normal_user.put("N_PhoneNumber",numberphone);
+                                          normal_user.put("N_Governorate",governorate);
+                                          normal_user.put("N_City",city);
+                                          normal_user.put("N_Age",age);
+                                          normal_user.put("N_Length",length);
+                                          normal_user.put("N_Weight",weight);
+                                          normal_user.put("N_BloodType",bloodType);
+                                          normal_user.put("N_Gender",gender);
+                                          // root.setValue(normal_user);
+                                          root.child(userID).setValue(normal_user);
 
 
 
 
 
 
+                                      user_database users=new user_database(e_mail,passWord );
+                                      FirebaseDatabase.getInstance().getReference("E-mail,Password Normaluser")
+                                              .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                              .setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                          @Override
+                                          public void onComplete(@NonNull Task<Void> task) {
+                                              if(task.isSuccessful()){
+                                                  FirebaseDatabase.getInstance().getReference("users")
+                                                          .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                                          .setValue(userID,"normalUser");
+
+                                              }
+
+                                          }
+                                      });
+                                  }
+                              }
+                          });
+              }
 
 
 
 
 
 
-
-
-
-
-
-
-             // sotre data in real time
-                if(user.isChecked())
-                { root=db_real_time.getReference().child("Normal User");
-                    HashMap<String,String> normal_user=new HashMap<>();
-                    normal_user.put("User Type ",userType);
-                    normal_user.put("Full Name ",fullName);
-                    normal_user.put("Governorate",governorate);
-                    normal_user.put("City",city);
-                    normal_user.put("Age",age);
-                    normal_user.put("Length",length);
-                    normal_user.put("Weight",weight);
-                    normal_user.put("Blood Type ",bloodType);
-                   // root.setValue(normal_user);
-                    root.child(userID).setValue(normal_user);
-
-
-
-                }
-                if(para.isChecked()){
-                    root=db_real_time.getReference().child("Paramedic User ");
-                    HashMap<String,String> paramedic_user=new HashMap<>();
-                    paramedic_user.put("User Type ",userType);
-                    paramedic_user.put("Full Name ",fullName);
-                    paramedic_user.put("Governorate",governorate);
-                    paramedic_user.put("City",city);
-                    paramedic_user.put("Number of ambulances",numberAmblanc);
-                    paramedic_user.put("Number of beds",numberBeds);
-                    paramedic_user.put("Number of care rooms ",numberCareroom);
-                   // root.setValue(paramedic_user);
-                    root.child(userID).setValue(paramedic_user);
-
-
-                }
-
-
-
-
-
+                Toast.makeText(sign_up.this ,"ضفتك في الداتا بيز خلاص  ",Toast.LENGTH_LONG).show();
             }
 
 
