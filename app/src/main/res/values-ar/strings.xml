@@ -611,8 +611,24 @@
     <string name="o1">O+</string>
     <string name="o">O-</string>
     <string name="all">All</string>
+<!--    medic_profile-->
+    <string name="no_beds">عدد السراير </string>
+    <string name="no_rooms"> عدد غرف الرعاية</string>
+    <string name="no_ambulances"> عدد سيارات الاسعاف</string>
+    <string name="save_btn">حفظ البيانات</string>
+    <string name="hos_data">معلومات خاصة بالجهة:</string>
+    <!--    regphone-->
+    <string name="num">رقم الهاتف</string>
     <!--    nav drawe-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <!--    profile_edit-->
+    <string name="pro_full">الاسم بالكامل</string>
+    <string name="pro_add">العنوان</string>
+    <string name="pro_age">العمر</string>
+    <string name="pro_length">الطول</string>
+    <string name="pro_weight">الوزن</string>
+    <!--nav menu-->
+    <string name="prof">الملف الشخصي</string>
+    <string name="home">الصفحة الرئيسية</string>
 </resources>

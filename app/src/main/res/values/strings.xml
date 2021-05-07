@@ -610,9 +610,25 @@ Opening the airway:
     <string name="o1">O+</string>
     <string name="o">O-</string>
     <string name="all">All</string>
+    <!--    medic_profile-->
+    <string name="no_beds"> Number of beds</string>
+    <string name="no_rooms">Number of care rooms</string>
+    <string name="no_ambulances">Number of ambulances</string>
+    <string name="save_btn">Save data</string>
+    <string name="hos_data">Entity-specific information</string>
+    <!--    regphone-->
+    <string name="num">Phone number</string>
     <!--    nav drawe-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <!--    profile_edit-->
+    <string name="pro_full">Full name</string>
+    <string name="pro_add">Adress</string>
+    <string name="pro_age">Age</string>
+    <string name="pro_length">length</string>
+    <string name="pro_weight">Weight</string>
+    <!--nav menu-->
+    <string name="prof">Profile</string>
+    <string name="home">Home</string>
 
 </resources>

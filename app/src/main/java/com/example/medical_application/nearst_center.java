@@ -3,6 +3,7 @@ package com.example.medical_application;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
 import android.app.VoiceInteractor;
@@ -42,7 +43,7 @@ import java.nio.Buffer;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-public class nearst_center extends AppCompatActivity {
+public class nearst_center extends FragmentActivity {
 
 
     SupportMapFragment supportMapFragment;
@@ -50,41 +51,29 @@ public class nearst_center extends AppCompatActivity {
     GoogleMap map;
     Spinner sp_type;
     Button pt_View;
-    double currentlat = 22, currentlong=44;
-    private LatLng LatLng;
+    double currentlat = 0, currentlong=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nearst_center);
-
-        //Assign variable
         supportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.google_map);
         sp_type=findViewById(R.id.sp_type);
         pt_View=findViewById(R.id.pt_View);
-        //initialize array of places type
         final String[] PlaceTypeList={"hospital","pharmacy"};
-        //initialize array of place name
         String[] PlaceNameList={"Hospital","Pharmacy"};
-        // adapter on spinner
         sp_type.setAdapter(new ArrayAdapter<>(nearst_center.this,android.R.layout.simple_spinner_dropdown_item,PlaceNameList));
-
-        //initialize fused location
         client = LocationServices.getFusedLocationProviderClient(this);
-
-        //check permission
         if (ActivityCompat.checkSelfPermission(nearst_center.this,Manifest.permission.ACCESS_FINE_LOCATION) ==PackageManager.PERMISSION_GRANTED) {
-            //when permission graded call this method
             getCurrentlocation();
         }else {
-            //when permission denied};
-            ActivityCompat.requestPermissions(nearst_center.this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},44);
+            ActivityCompat.requestPermissions(nearst_center.this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44 );
         }
         pt_View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int i=sp_type.getSelectedItemPosition();
-                String url="https://maps.googleapis.com/maps/apis/places/MyProject/json"+
+                String url="https://maps.googleapis.com/maps/api/place/MyProject/json"+
                         "?location="+currentlat+","+ currentlong +
                         "&radius=5000"+
                         "&types"+PlaceTypeList[i]+
@@ -97,7 +86,6 @@ public class nearst_center extends AppCompatActivity {
     }
 
     private void getCurrentlocation() {
-        //initialize task location
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)== PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
         }
@@ -109,14 +97,11 @@ public class nearst_center extends AppCompatActivity {
                 if(location!=null){
                     currentlat=location.getLatitude();
                     currentlong=location.getLongitude();
-                    //sync map
                     supportMapFragment.getMapAsync(new OnMapReadyCallback() {
                         @Override
                         public void onMapReady(GoogleMap googleMap) {
                             map=googleMap;
-                            //initialize lat lng
-                            googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(currentlat,currentlong),16));
-                            googleMap.moveCamera(CameraUpdateFactory.newLatLng(LatLng));
+                           googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(currentlat,currentlong),16));
 
                         }
                     });
@@ -176,7 +161,7 @@ public class nearst_center extends AppCompatActivity {
         @Override
         protected List<HashMap<String, String>> doInBackground(String... strings) {
             com.example.medical_application.Jsonparser jsonparser=new com.example.medical_application.Jsonparser();
-            List<HashMap<String,String>> mapList=null;
+            List<HashMap<String,String>> mapList = null;
             JSONObject object=null;
             try {
                 object=new JSONObject(strings[0]);
@@ -191,7 +176,7 @@ public class nearst_center extends AppCompatActivity {
         protected  void onPostExecute(List<HashMap<String,String>>hashMaps){
             map.clear();
             for (int i=0;i<hashMaps.size();i++){
-                HashMap<String,String> hashMapList=hashMaps.get(i);
+                HashMap<String,String> hashMapList = hashMaps.get(i);
                 double lat= Double.parseDouble(hashMapList.get("lat"));
                 double lng= Double.parseDouble(hashMapList.get("lng"));
                 String name=hashMapList.get("name");

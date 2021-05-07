@@ -20,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.google.android.gms.tasks.OnCanceledListener;
@@ -27,8 +28,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
 import java.util.regex.Pattern;
 
 import static com.example.medical_application.R.id.sw_blood_pressure;
@@ -39,8 +43,8 @@ public class sign_up extends AppCompatActivity {
     LinearLayout userinfo, prainfo;
 
     //declear variabels
-     private Button btn_register;
-    private EditText et_fullname, et_email, et_password, et_governorate, et_city ;
+    private Button btn_register;
+    private EditText et_fullname, et_email, et_password, et_governorate, et_city ,et_numberphone;
     // para
     private  EditText et_numAmblanc , et_numBed, et_numCareroom;
     //user
@@ -51,6 +55,11 @@ public class sign_up extends AppCompatActivity {
     private  EditText et_didiseases;
     private String item_select_gender;
     private String item_select_bloodtpye;
+    private String  userType;
+    private FirebaseDatabase db_real_time =FirebaseDatabase.getInstance();
+    private DatabaseReference root;
+    private FirebaseUser current_user;
+    private  String userID;
 
 
 
@@ -93,7 +102,7 @@ public class sign_up extends AppCompatActivity {
 
 
 
-       //database
+        //database
         mAuth = FirebaseAuth.getInstance();
 
 
@@ -102,9 +111,11 @@ public class sign_up extends AppCompatActivity {
 
         et_fullname =  findViewById(R.id.full_name);
         et_email = findViewById(R.id.et_email);
+        et_numberphone=findViewById(R.id.numberphone);
         et_password =  findViewById(R.id.et_pass);
         et_governorate = findViewById(R.id.et_Governorate);
         et_city = findViewById(R.id.et_city);
+
 
         btn_register = findViewById(R.id.btn_register);
 
@@ -126,95 +137,79 @@ public class sign_up extends AppCompatActivity {
         et_didiseases=findViewById(R.id.et_diseases);
         sp_sex=findViewById(R.id.sp_sex);
         sp_blood=findViewById(R.id.sp_blood);
-        /*
-        sp_sex.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        sp_sex.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                 item_select_gender=parent.getItemAtPosition(position).toString();
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                item_select_gender=parent.getItemAtPosition(position).toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
             }
         });
-        sp_blood.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        sp_blood.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 item_select_bloodtpye=parent.getItemAtPosition(position).toString();
             }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
         });
-
-         */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
                 //to string  register
 
-                final String fullName = et_fullname.getText().toString().trim();
-                final String e_mail = et_email.getText().toString().trim();
-                final String passWord = et_password.getText().toString().trim();
-                final String governorate = et_governorate.getText().toString().trim();
-                final String city = et_city.getText().toString().trim();
-
+                final String fullName = et_fullname.getText().toString();
+                final String e_mail = et_email.getText().toString();
+                final String numberphone=et_numberphone.getText().toString();
+                final String passWord = et_password.getText().toString();
+                final String governorate = et_governorate.getText().toString();
+                final String city = et_city.getText().toString();
                 //to string  para register
-
-
-                final String numberAmblanc =et_numAmblanc.getText().toString().trim();
-                final String numberBeds =et_numBed.getText().toString().trim();
-                final String numberCareroom=et_numAmblanc.getText().toString().trim();
-
-
+                final String numberAmblanc =et_numAmblanc.getText().toString();
+                final String numberBeds =et_numBed.getText().toString();
+                final String numberCareroom=et_numAmblanc.getText().toString();
                 //to string  user  register
-
-
-              final String age=et_age.getText().toString().trim();
-              final String length=et_length.getText().toString().trim();
-              final String weight=et_weight.getText().toString().trim();
-              final String diabetic;if(cb_diabetic.isChecked()) {
-                    diabetic="yes";
-                }else diabetic="no";
-              final String bloodPressure;if(cb_bloodpressure.isChecked()){
-                    bloodPressure="yes";
-                }else bloodPressure="no";
-              final String heartPatient;if (cb_heartpation.isChecked()){
-                    heartPatient="yes";
-                }else heartPatient="no";
-
-
-              final String  diseases;if(checkBox_diseases.isChecked()) {
-                    diseases=et_didiseases.toString();
-                }else diseases="null";
-             //المتغيرين دول مش null في مشكل spinner
-                /*
-              final String gender =item_select_gender;
-              final String bloodType=item_select_bloodtpye;
-
-                 */
-                final String gender ="null";
-                final String bloodType="null";
-
-
-
-
-
-
+                final String age=et_age.getText().toString();
+                final String length=et_length.getText().toString();
+                final String weight=et_weight.getText().toString();
+                final String diabetic;if(cb_diabetic.isChecked()) {
+                diabetic="yes";
+            }else diabetic="no";
+                final String bloodPressure;if(cb_bloodpressure.isChecked()){
+                bloodPressure="yes";
+            }else bloodPressure="no";
+                final String heartPatient;if (cb_heartpation.isChecked()){
+                heartPatient="yes";
+            }else heartPatient="no";
+                final String  diseases;if(checkBox_diseases.isChecked()) {
+                diseases=et_didiseases.toString();
+            }else diseases="null";
+               final String gender =item_select_gender;
+               final String bloodType=item_select_bloodtpye;
+               if(user.isChecked()){
+                   userType="normal user ";
+               }
+               if(para.isChecked()){
+                   userType="paramedic user";
+               }
                 //informeation for register error
 
                 if (fullName.isEmpty()) {
                     et_fullname.setError("enter your name");
                     et_fullname.requestFocus();
                     return;
+                }
+                if(numberphone.isEmpty())
+                {
+                    et_numberphone.setError("enter your number phone");
+                    et_numberphone.requestFocus();
                 }
                 if (e_mail.isEmpty()) {
                     et_email.setError("enter your e-mail");
@@ -250,10 +245,9 @@ public class sign_up extends AppCompatActivity {
                 }
 
                 //para register error
-                if(para.isChecked())
-                {
-                   userinfo.setVisibility(View.GONE);
-                   prainfo.setVisibility(View.VISIBLE);
+                if(para.isChecked()) {
+                    userinfo.setVisibility(View.GONE);
+                    prainfo.setVisibility(View.VISIBLE);
                     if (numberAmblanc.isEmpty()) {
                         et_numAmblanc.setError("Enter number ambulance");
                         et_numAmblanc.requestFocus();
@@ -275,85 +269,139 @@ public class sign_up extends AppCompatActivity {
                 }
 
                 //user register error
-                 if(user.isChecked())
-                 {
+                if(user.isChecked()) {
                     userinfo.setVisibility(View.VISIBLE);
                     prainfo.setVisibility(View.GONE);
-                     if(age.isEmpty()) {
-                         et_age.setError("enter age ");
-                         et_age.requestFocus();
-                         return;
-                     }
-                     if(length.isEmpty()) {
-                         et_age.setError("enter length ");
-                         et_age.requestFocus();
-                         return;
-                     }
-                     if(weight.isEmpty()) {
-                         et_age.setError("enter weight ");
-                         et_age.requestFocus();
-                         return;
-                     }
-                 }
+                    if(age.isEmpty()) {
+                        et_age.setError("enter age ");
+                        et_age.requestFocus();
+                        return;
+                    }
+                    if(length.isEmpty()) {
+                        et_age.setError("enter length ");
+                        et_age.requestFocus();
+                        return;
+                    }
+                    if(weight.isEmpty()) {
+                        et_age.setError("enter weight ");
+                        et_age.requestFocus();
+                        return;
+                    }
+                }
+
+                //code  auth data base para
+                current_user=FirebaseAuth.getInstance().getCurrentUser();
+                userID=current_user.getUid();
+
+               if(para.isChecked())
+               {
+                   mAuth.createUserWithEmailAndPassword(e_mail,passWord)
+                           .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                               @Override
+                               public void onComplete(@NonNull Task<AuthResult> task) {
+                                   if(task.isSuccessful())
+                                   {
 
 
-
-
-                //code data base para
-
-
-                mAuth.createUserWithEmailAndPassword(e_mail,passWord)
-                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if(task.isSuccessful())
-                                {
-                                    para_medic_database para=new para_medic_database(fullName,e_mail,passWord,governorate,city,numberAmblanc,numberBeds,numberCareroom);
-                                    FirebaseDatabase.getInstance().getReference("para medic")
-                                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                            .setValue(para).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
-
-                                        }
-                                    });
-                                }
-                            }
-                        });
-
-                // code date base user
-
-                mAuth.createUserWithEmailAndPassword(e_mail,passWord)
-                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if(task.isSuccessful())
-                                {
-                                     user_database users=new user_database(fullName,e_mail,passWord,governorate,city,age,length,weight,diseases,gender,bloodType,diabetic,bloodPressure,heartPatient );
-                                    FirebaseDatabase.getInstance().getReference("users")
-                                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                            .setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
-
-                                        }
-                                    });
-                                }
-                            }
-                        });
+                                           root=db_real_time.getReference().child("Paramedic User");
+                                           HashMap<String,String> paramedic_user=new HashMap<>();
+                                           paramedic_user.put("User Type ",userType);
+                                           paramedic_user.put("P_FullName",fullName);
+                                           paramedic_user.put("P_Numberphone",numberphone);
+                                           paramedic_user.put("P_Governorate",governorate);
+                                           paramedic_user.put("P_City",city);
+                                           paramedic_user.put("P_NumberAmbulances",numberAmblanc);
+                                           paramedic_user.put("P_NumberBeds",numberBeds);
+                                           paramedic_user.put("P_NumberCareRooms",numberCareroom);
+                                           // root.setValue(paramedic_user);
+                                           root.child(userID).setValue(paramedic_user);
 
 
 
 
 
+                                       para_medic_database para=new para_medic_database(e_mail,passWord);
+                                       FirebaseDatabase.getInstance().getReference("E-mail,Password paramedic")
+                                               .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                               .setValue(para).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                           @Override
+                                           public void onComplete(@NonNull Task<Void> task) {
+                                               FirebaseDatabase.getInstance().getReference("users")
+                                                       .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                                       .setValue("userId",userID);
+
+                                           }
+                                       });
+                                   }
+                               }
+                           });
+               }
+
+                // code  auth date base user
+
+              if(user.isChecked())
+              {
+                  mAuth.createUserWithEmailAndPassword(e_mail,passWord)
+                          .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                              @Override
+                              public void onComplete(@NonNull Task<AuthResult> task) {
+                                  if(task.isSuccessful())
+                                  {
+
+                                      // sotre data in real time
+
+                                       root=db_real_time.getReference().child("Normal User");
+                                          HashMap<String,String> normal_user=new HashMap<>();
+                                          normal_user.put("UserType ",userType);
+                                          normal_user.put("N_FullName",fullName);
+                                          normal_user.put("N_PhoneNumber",numberphone);
+                                          normal_user.put("N_Governorate",governorate);
+                                          normal_user.put("N_City",city);
+                                          normal_user.put("N_Age",age);
+                                          normal_user.put("N_Length",length);
+                                          normal_user.put("N_Weight",weight);
+                                          normal_user.put("N_BloodType",bloodType);
+                                          normal_user.put("N_Gender",gender);
+                                          // root.setValue(normal_user);
+                                          root.child(userID).setValue(normal_user);
 
 
+
+
+
+
+                                      user_database users=new user_database(e_mail,passWord );
+                                      FirebaseDatabase.getInstance().getReference("E-mail,Password Normaluser")
+                                              .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                              .setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                          @Override
+                                          public void onComplete(@NonNull Task<Void> task) {
+                                              if(task.isSuccessful()){
+                                                  FirebaseDatabase.getInstance().getReference("users")
+                                                          .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                                          .setValue(userID,"normalUser");
+
+                                              }
+
+                                          }
+                                      });
+                                  }
+                              }
+                          });
+              }
+
+
+
+
+
+
+                Toast.makeText(sign_up.this ,"ضفتك في الداتا بيز خلاص  ",Toast.LENGTH_LONG).show();
             }
 
 
         });
 
 
-       
+
     }
 }

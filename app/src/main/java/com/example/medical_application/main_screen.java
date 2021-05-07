@@ -17,7 +17,7 @@ Button report_btn;
 Button fa_btn;
 Button emg_btn;
 Button nearst_btn;
-Button recieve_btn ;
+
 
 
 
@@ -28,7 +28,7 @@ Button recieve_btn ;
         setContentView(R.layout.activity_main_screen);
         nearst_btn=findViewById(R.id.button_nearst);
 
-        recieve_btn = findViewById(R.id.button_receiving) ;
+
 
         blood_btn=findViewById(R.id.button_blood);
         report_btn=findViewById(R.id.button2);
@@ -87,9 +87,6 @@ Button recieve_btn ;
             }
         });
 
-        recieve_btn.setVisibility(View.GONE);
-       // if(user.equals(this will be authorized user verification ))
-        //    recieve_btn.setVisibility(View.VISIBLE);  if its مسعف
 
 
 

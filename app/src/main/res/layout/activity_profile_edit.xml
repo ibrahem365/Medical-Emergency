@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".prof_edit"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/personpro"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:id="@+id/udatename"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/pro_full"
+            android:layout_margin="5dp"
+            android:drawableStart="@drawable/ic_add_person"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+        <EditText
+            android:id="@+id/updatephone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/num"
+            android:drawableStart="@drawable/phone_reg"
+            android:drawablePadding="10dp"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+        <EditText
+            android:id="@+id/updategovernorate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/governorate"
+            android:layout_margin="5dp"
+            android:drawableStart="@drawable/ic_address"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+        <EditText
+            android:id="@+id/updatecity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/city"
+            android:layout_margin="5dp"
+            android:drawableStart="@drawable/ic_address"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+
+        <EditText
+            android:id="@+id/updateage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableStart="@drawable/age_edit"
+            android:drawablePadding="10dp"
+            android:hint="@string/pro_age"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+        <Spinner
+            android:id="@+id/update_sp_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:entries="@array/Sp_sex"/>
+        <EditText
+            android:id="@+id/updatelenthg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/pro_length"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:drawableStart="@drawable/ic_length"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+        <EditText
+            android:id="@+id/updateweight"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="50dp"
+            android:hint="@string/pro_weight"
+            android:layout_margin="5dp"
+            android:drawableStart="@drawable/ic_weight"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_shape"/>
+        <Spinner
+
+            android:id="@+id/update_sp_blood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Sp_blood_types"
+            android:layout_margin="10dp"/>
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_update"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="udate data"/>
+
+
+    </LinearLayout>
+</ScrollView>

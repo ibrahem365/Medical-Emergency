@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".paramedic">
+
+    <Button
+        android:id="@+id/firstaid_states"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+
+        android:background="@drawable/background_circle"
+        android:backgroundTint="@color/white"
+        android:drawableTop="@drawable/ic_first_aid_kit"
+        android:text="اسعافات اوليه"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <Button
+
+        android:id="@+id/report_recieve_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+
+        android:layout_margin="10dp"
+        android:drawableBottom="@drawable/inboxx"
+        android:background="@drawable/background_circle"
+        android:text="استقبال البلاغات"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+</LinearLayout>
