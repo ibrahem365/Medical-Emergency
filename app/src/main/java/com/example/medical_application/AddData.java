@@ -37,6 +37,7 @@ public class AddData extends AppCompatActivity {
     private static final int Gallary_Code=1;
     Uri imageUri=null;
 
+
     ProgressDialog progressDialog;
 
 
