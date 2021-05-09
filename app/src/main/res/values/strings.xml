@@ -50,6 +50,11 @@
     <string name="text_1">انقر للبحث</string>
     <string name="text_2">البحث عن طریق :</string>
     <string name="text_4">أبلغ المستخدم</string>
+    <string name="text_6">العنوان</string>
+    <string name="text_7">الاسم بالكامل</string>
+    <string name="text_8">رقم الهاتف</string>
+    <string name="text_9">فصيلة الدم</string>
+    <string name="text_10">تسجيل</string>
     <string-array name="spinner">
         <item>- إختر -</item>
         <item>الإسم</item>

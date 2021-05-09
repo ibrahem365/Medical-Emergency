@@ -1,21 +1,25 @@
 package com.example.medical_application;
 
 public class Item {
-    private int image1; private String txt1; private String txt2; private String  txt3; private String  txt5;
+    private String image1; private String txt1; private String txt2; private String  txt3; private String txt4;
 
-    public Item(int image1, String txt1, String txt2, String txt3, String txt5) {
+    public Item(){
+
+    }
+
+    public Item(String image1, String txt1, String txt2, String txt3, String txt4) {
         this.image1 = image1;
         this.txt1 = txt1;
         this.txt2 = txt2;
         this.txt3 = txt3;
-        this.txt5 = txt5;
+        this.txt4 = txt4;
     }
 
-    public int getImage1() {
+    public String getImage1() {
         return image1;
     }
 
-    public void setImage1(int image1) {
+    public void setImage1(String image1) {
         this.image1 = image1;
     }
 
@@ -43,12 +47,11 @@ public class Item {
         this.txt3 = txt3;
     }
 
-    public String getTxt5() {
-        return txt5;
+    public String getTxt4() {
+        return txt4;
     }
 
-    public void setTxt5(String txt5) {
-        this.txt5 = txt5;
+    public void setTxt4(String txt4) {
+        this.txt4 = txt4;
     }
 }
-
