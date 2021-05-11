@@ -61,35 +61,24 @@ public class login_screen extends AppCompatActivity {
 
                 String email_login=et_email.getText().toString();
                 String password_login=et_password.getText().toString();
-
-
-            /*    if(email_login.isEmpty()) {
                     if (email_login.isEmpty()) {
                         et_email.setError("enter your e-mail");
                         et_email.requestFocus();
                         return;
                     }
-                    if(!Patterns.EMAIL_ADDRESS.matcher(email_login).matches()) {
-                        et_email.setError("ee-mail is wrong");
-                        et_email.requestFocus();
-                        return;
-
-
-                    }
-                }
-                if(!Patterns.EMAIL_ADDRESS.matcher(email_login).matches()) {
+                     if(!Patterns.EMAIL_ADDRESS.matcher(email_login).matches()) {
                     et_email.setError("e-mail is wrong");
                     et_email.requestFocus();
                     return;
 
 
                 }
-                if (password_login.isEmpty()) {
+                     if (password_login.isEmpty()) {
                     et_password.setError("enter your password");
                     et_password.requestFocus();
                     return;
                 }
-                if(password_login.length() <8) {
+                      if(password_login.length() <8) {
                     et_password.setError(" password is short should be 8 character");
                     et_password.requestFocus();
                     return;
@@ -104,37 +93,51 @@ public class login_screen extends AppCompatActivity {
                                     FirebaseUser users =FirebaseAuth.getInstance().getCurrentUser();
                                     if(users.isEmailVerified())
                                     {
+                                        //comment verfaction data
 
+
+                                        /* String typeID= mAuth.getCurrentUser().getUid();
+                                        DatabaseReference s= FirebaseDatabase.getInstance().getReference("E-mail,Password");
+                                        s.child(typeID).addListenerForSingleValueEvent(new ValueEventListener() {
+                                            @Override
+                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                DatabaseUser x=snapshot.getValue(DatabaseUser.class);
+                                                if(x!=null)
+                                                {
+                                                    if(x.getTypeUser()=="normaluser")
+                                                    {
+                                                        startActivity(new Intent(login_screen.this,MainActivity.class));
+                                                    }
+                                                    if(x.getTypeUser()=="paramedicuser")
+                                                    {
+                                                        startActivity(new Intent(login_screen.this,medic_main.class));
+                                                    }
+
+                                                }
+                                            }
+
+                                            @Override
+                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                            }
+                                        });*/
+                                        //normal user
                                         startActivity(new Intent(login_screen.this,MainActivity.class));
+                                        //paramedicuser
+                                        //startActivity(new Intent(login_screen.this,medic_main.class));
+
                                     }
-                                    else
-                                        Toast.makeText(login_screen.this ,"خطا في عملية تسجيل الدخول  ",Toast.LENGTH_LONG).show();
-
-
-
-
-
-
-
-                                    // startActivity(new Intent(login_screen.this,main_screen.class));
+                                    else {
+                                        users.sendEmailVerification();
+                                        Toast.makeText(login_screen.this, "روح للايميل بتاعك عشان لان انت اول مرة تعمل login", Toast.LENGTH_LONG).show();
+                                    }
+                                    
 
                                 }
 
                                 else Toast.makeText(login_screen.this ," انت مش مسجل اصلا   ",Toast.LENGTH_LONG).show();
                             }
                         });
-*/
-
-
-                // اهو عشان خاطركم
-               startActivity(new Intent(login_screen.this,MainActivity.class));
-
-
-
-
-
-
-
 
             }
         });
