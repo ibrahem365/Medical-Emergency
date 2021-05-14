@@ -90,7 +90,7 @@
                 android:textStyle="bold" />
 
         </RelativeLayout>
-        <RelativeLayout
+       <RelativeLayout
             android:id="@+id/RL_numberr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
