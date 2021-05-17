@@ -42,7 +42,8 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:17.0.0'
     implementation 'com.google.firebase:firebase-firestore:17.0.4'
     implementation 'com.google.firebase:firebase-core:16.0.1'
-    implementation 'com.squareup.picasso:picasso:2.71828' // picasso libereary need for imageUri
+    // picasso libereary need for imageUri
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
 
 

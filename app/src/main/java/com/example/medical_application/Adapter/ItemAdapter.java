@@ -1,8 +1,7 @@
-package com.example.medical_application;
+package com.example.medical_application.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.media.Image;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +13,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.medical_application.Item;
+import com.example.medical_application.R;
 import com.mikhaellopez.circularimageview.CircularImageView;
 import com.squareup.picasso.Picasso;
 

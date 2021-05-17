@@ -1,4 +1,4 @@
-package com.example.medical_application;
+package com.example.medical_application.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
+
+import com.example.medical_application.R;
+import com.example.medical_application.bloodbank_recycle;
+import com.example.medical_application.emgnum_listview;
+import com.example.medical_application.first_aid_lv;
+import com.example.medical_application.nearst_center;
+import com.example.medical_application.new_report;
 
 public class main_screen extends AppCompatActivity {
 
@@ -37,7 +42,7 @@ Button nearst_btn;
         nearst_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent t=new Intent(main_screen.this,nearst_center.class);
+                Intent t=new Intent(main_screen.this, nearst_center.class);
                 startActivity(t);
 
             }
@@ -45,14 +50,14 @@ Button nearst_btn;
         blood_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent t=new Intent(main_screen.this,bloodbank_recycle.class);
+                Intent t=new Intent(main_screen.this, bloodbank_recycle.class);
                 startActivity(t);
             }
         });
         report_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent t=new Intent(main_screen.this,new_report.class);
+                Intent t=new Intent(main_screen.this, new_report.class);
                 startActivity(t);
             }
         });
@@ -75,14 +80,14 @@ Button nearst_btn;
         fa_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent t=new Intent(main_screen.this,first_aid_lv.class);
+                Intent t=new Intent(main_screen.this, first_aid_lv.class);
                 startActivity(t);
             }
         });
         emg_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent t=new Intent(main_screen.this,emgnum_listview.class);
+                Intent t=new Intent(main_screen.this, emgnum_listview.class);
                 startActivity(t);
             }
         });

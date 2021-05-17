@@ -3,19 +3,16 @@ package com.example.medical_application;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.MenuItemCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.SearchView;
 
+import com.example.medical_application.Adapter.ItemAdapter;
+import com.example.medical_application.UI.Admin.AddData;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -102,7 +99,7 @@ public class bloodbank_recycle extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i =new Intent(bloodbank_recycle.this,AddData.class);
+                Intent i =new Intent(bloodbank_recycle.this, AddData.class);
                 startActivity(i);
             }
         });

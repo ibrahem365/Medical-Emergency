@@ -6,11 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
-import android.widget.Toast;
+
+import com.example.medical_application.Adapter.first_aidAdapter;
+import com.example.medical_application.UI.Diabetes;
+import com.example.medical_application.UI.firstaid_States.airwayobstruction;
 
 import java.util.ArrayList;
 
@@ -31,7 +32,7 @@ public class first_aid_lv extends AppCompatActivity {
 
 
         final ArrayList<fa_info> fa_infos = new ArrayList<>();
-         fa_infos.add(new fa_info(R.drawable.azma10,R.string.item_title_azmakalbia,R.string.item_disc_azma));
+        fa_infos.add(new fa_info(R.drawable.azma10,R.string.item_title_azmakalbia,R.string.item_disc_azma));
         fa_infos.add(new fa_info(R.drawable.darbetshams, R.string.item_title_darbetshams,R.string.item_disc_darbet));
         fa_infos.add(new fa_info(R.drawable.ekhtnak10, R.string.item_title_ekhtnak,R.string.item_disc_ekhtnak));
         fa_infos.add(new fa_info(R.drawable.rabw, R.string.item_title_rabw,R.string.item_disc_rabw));
@@ -49,6 +50,7 @@ public class first_aid_lv extends AppCompatActivity {
         fa_infos.add(new fa_info(R.drawable.hrook100, R.string.item_title_hrook,R.string.item_disc_hrook));
 
         final first_aidAdapter adapter = new first_aidAdapter(this, R.layout.fa_lv_item_layout, fa_infos);
+
         lv.setAdapter(adapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -62,7 +64,7 @@ public class first_aid_lv extends AppCompatActivity {
                     startActivity(i);
                 }
                 if(position==2){
-                    Intent i=new Intent(first_aid_lv.this,airwayobstruction.class);
+                    Intent i=new Intent(first_aid_lv.this, airwayobstruction.class);
                     startActivity(i);
                 }
                 if(position==3){
@@ -95,7 +97,7 @@ public class first_aid_lv extends AppCompatActivity {
                     startActivity(i);
                 }
                 if(position==10){
-                    Intent i=new Intent(first_aid_lv.this,Diabetes.class);
+                    Intent i=new Intent(first_aid_lv.this, Diabetes.class);
                     startActivity(i);
                 }
                 if(position==11){
@@ -121,6 +123,18 @@ public class first_aid_lv extends AppCompatActivity {
             }
         });
 
+        sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
+                return true;
+            }
+        });
 
     }
 }

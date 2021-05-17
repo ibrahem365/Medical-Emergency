@@ -1,4 +1,4 @@
-package com.example.medical_application;
+package com.example.medical_application.UI.firstaid_States;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,13 +8,15 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
-public class Diabetes extends AppCompatActivity {
+import com.example.medical_application.R;
 
+public class airwayobstruction extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_diabetes);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setContentView(R.layout.activity_airwayobstruction);
+       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 }

@@ -1,4 +1,4 @@
-package com.example.medical_application;
+package com.example.medical_application.UI;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -14,6 +14,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.medical_application.R;
+import com.example.medical_application.home_fragment;
+import com.example.medical_application.profilefragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {

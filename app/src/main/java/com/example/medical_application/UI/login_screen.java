@@ -1,4 +1,4 @@
-package com.example.medical_application;
+package com.example.medical_application.UI;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +11,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.medical_application.Database.DatabaseUser;
+import com.example.medical_application.R;
+import com.example.medical_application.emgnum_listview;
+import com.example.medical_application.first_aid_lv;
+import com.example.medical_application.medic_main;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -55,7 +59,7 @@ public class login_screen extends AppCompatActivity {
         sign_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(login_screen.this, sign_up.class);
+                Intent i = new Intent(login_screen.this, com.example.medical_application.sign_up.class);
                 startActivity(i);
             }
         });

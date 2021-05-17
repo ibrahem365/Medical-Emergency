@@ -1,4 +1,4 @@
-package com.example.medical_application;
+package com.example.medical_application.UI.Admin;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,6 +14,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 
+import com.example.medical_application.R;
+import com.example.medical_application.bloodbank_recycle;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -109,7 +111,7 @@ public class AddData extends AppCompatActivity {
                                     newPost.child("image").setValue(task.getResult().toString());
                                     progressDialog.dismiss();
 
-                                    Intent intent = new Intent(AddData.this,bloodbank_recycle.class);
+                                    Intent intent = new Intent(AddData.this, bloodbank_recycle.class);
                                     startActivity(intent);
 
                                 }

@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddData"></activity>
+        <activity android:name=".UI.Admin.AddData"></activity>
         <activity
             android:name=".medic_prof_edit"
             android:theme="@style/signup_theme" />
@@ -27,7 +27,7 @@
             android:label=" "
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".MainActivity"
+            android:name=".UI.MainActivity"
             android:label="الصفحة الرئيسية"
             android:theme="@style/first_aid" />
 
@@ -47,7 +47,7 @@
             android:parentActivityName=".first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".login_screen"
+            android:name=".UI.login_screen"
             android:theme="@style/sign_in">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -58,12 +58,12 @@
         <activity
             android:name=".bloodbank_recycle"
             android:label="بنك الدم"
-            android:parentActivityName=".main_screen"
+            android:parentActivityName=".UI.main_screen"
             android:theme="@style/signup_theme" />
         <activity
             android:name=".emgnum_listview"
             android:label="أرقام الطوارئ"
-            android:parentActivityName=".login_screen"
+            android:parentActivityName=".UI.login_screen"
             android:theme="@style/signup_theme" />
         <activity
             android:name=".signup_user"
@@ -72,10 +72,10 @@
         <activity
             android:name=".new_report"
             android:label="بلاغ جديد"
-            android:parentActivityName=".main_screen"
+            android:parentActivityName=".UI.main_screen"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".main_screen"
+            android:name=".UI.main_screen"
             android:label="الصفحة الرئيسية" />
         <activity
             android:name=".signup_medic"
@@ -87,7 +87,7 @@
             android:parentActivityName=".first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".airwayobstruction"
+            android:name=".UI.firstaid_States.airwayobstruction"
             android:label="@string/fa_name"
             android:parentActivityName=".first_aid_lv"
             android:theme="@style/signup_theme" />
@@ -142,7 +142,7 @@
             android:parentActivityName=".first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".Diabetes"
+            android:name=".UI.Diabetes"
             android:label="@string/fa_name"
             android:parentActivityName=".first_aid_lv"
             android:theme="@style/signup_theme" />

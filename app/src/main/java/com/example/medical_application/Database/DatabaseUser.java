@@ -1,4 +1,4 @@
-package com.example.medical_application;
+package com.example.medical_application.Database;
 
 public class DatabaseUser {
     public  String email,password ,typeUser;
