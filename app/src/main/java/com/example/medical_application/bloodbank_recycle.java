@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.example.medical_application.Adapter.ItemAdapter;
 import com.example.medical_application.UI.Admin.AddData;
@@ -104,8 +105,9 @@ public class bloodbank_recycle extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i =new Intent(bloodbank_recycle.this, AddData.class);
-                startActivity(i);
+//                Intent i =new Intent(bloodbank_recycle.this, AddData.class);
+//                startActivity(i);
+                Toast.makeText(bloodbank_recycle.this,"حاسك عايز تلعب ههههه جرب علي الي موجود وخلاص ",Toast.LENGTH_SHORT).show();
             }
         });
 
