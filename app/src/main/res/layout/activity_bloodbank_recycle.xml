@@ -8,12 +8,15 @@
     tools:context=".bloodbank_recycle"
     android:background="@color/white">
 
-    <!--    <SearchView-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="0dp"-->
-    <!--        android:layout_weight="1"-->
-    <!--        android:queryHint="@string/text_1">-->
-    <!--    </SearchView>-->
+    <SearchView
+        android:id="@+id/searchBlood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:queryHint="@string/text_1"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/signinshape"
+        />
     <!--    <LinearLayout-->
     <!--        android:layout_width="match_parent"-->
     <!--        android:layout_height="0dp"-->
@@ -46,8 +49,8 @@
         android:layout_margin="10dp"
         app:singleSelection="true"
         android:background="@color/white"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true">
+        android:layout_below="@id/searchBlood"
+        >
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip3"
@@ -55,56 +58,72 @@
             android:layout_height="wrap_content"
             style="@style/chip_color"
             app:chipStrokeWidth="1dp"
-            android:text="@string/a1"/>
+            android:text="@string/a1"
+            android:onClick="apFilter"
+            />
         <com.google.android.material.chip.Chip
             android:id="@+id/chip4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:chipStrokeWidth="1dp"
             style="@style/chip_color"
-            android:text="@string/b1"/>
+            android:text="@string/b1"
+            android:onClick="bpFilter"
+            />
         <com.google.android.material.chip.Chip
             android:id="@+id/chip5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:chipStrokeWidth="1dp"
             style="@style/chip_color"
-            android:text="@string/o1"/>
+            android:text="@string/o1"
+            android:onClick="opFilter"
+            />
         <com.google.android.material.chip.Chip
             android:id="@+id/chip6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:chipStrokeWidth="1dp"
             style="@style/chip_color"
-            android:text="@string/a"/>
+            android:text="@string/a"
+            android:onClick="amFilter"
+            />
         <com.google.android.material.chip.Chip
             android:id="@+id/chip7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:chipStrokeWidth="1dp"
             style="@style/chip_color"
-            android:text="@string/b"/>
+            android:text="@string/b"
+            android:onClick="bmFilter"
+            />
         <com.google.android.material.chip.Chip
             android:id="@+id/chip8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/chip_color"
             app:chipStrokeWidth="1dp"
-            android:text="@string/o"/>
+            android:text="@string/o"
+            android:onClick="omFilter"
+            />
         <com.google.android.material.chip.Chip
             android:id="@+id/chip9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:chipStrokeWidth="1dp"
             style="@style/chip_color"
-            android:text="@string/ab1"/>
+            android:text="@string/ab1"
+            android:onClick="abpFilter"
+            />
         <com.google.android.material.chip.Chip
             android:id="@+id/chip2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:chipStrokeWidth="1dp"
             style="@style/chip_color"
-            android:text="@string/ab"/>
+            android:text="@string/ab"
+            android:onClick="abmFilter"
+            />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip"
@@ -112,7 +131,9 @@
             android:layout_height="wrap_content"
             app:chipStrokeWidth="1dp"
             style="@style/chip_color"
-            android:text="@string/all"/>
+            android:text="@string/all"
+            android:onClick="allFilter"
+            />
     </com.google.android.material.chip.ChipGroup>
 
     <androidx.recyclerview.widget.RecyclerView

@@ -39,6 +39,10 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
         this.items = items;
     }
 
+    public ItemAdapter(ArrayList<Item> myList) {
+        this.items = myList;
+    }
+
     @NonNull
     @Override
     public ItemHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

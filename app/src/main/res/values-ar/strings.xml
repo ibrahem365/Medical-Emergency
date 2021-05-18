@@ -48,7 +48,7 @@
     <string name="med_num">105</string>
 <!--    bloodbank-->
     <string name="app_name3">بنك الدم</string>
-    <string name="text_1">انقر للبحث</string>
+    <string name="text_1">البحث عن طريق فصيلة الدم</string>
     <string name="text_2">البحث عن طریق :</string>
     <string name="text_4">أبلغ المستخدم</string>
     <string name="text_6">العنوان</string>

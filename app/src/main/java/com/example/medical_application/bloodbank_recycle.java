@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SearchView;
 
 import com.example.medical_application.Adapter.ItemAdapter;
 import com.example.medical_application.UI.Admin.AddData;
@@ -36,6 +37,9 @@ public class bloodbank_recycle extends AppCompatActivity {
     FloatingActionButton fab;
     Button btn;
     String phoneNum;
+    SearchView searchView;
+
+    private String selectedFilter= "all";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +54,7 @@ public class bloodbank_recycle extends AppCompatActivity {
 
         fab =findViewById(R.id.fab);
         btn = findViewById(R.id.btn);
+        searchView= findViewById(R.id.searchBlood);
 
         mDatabase=FirebaseDatabase.getInstance();
         dbRef = mDatabase.getReference().child("Blood Bank User");
@@ -105,7 +110,6 @@ public class bloodbank_recycle extends AppCompatActivity {
         });
 
 
-
     /*    btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -117,7 +121,90 @@ public class bloodbank_recycle extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
 
+        if (searchView != null){
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextSubmit(String s) {
+                    return false;
+                }
+
+                @Override
+                public boolean onQueryTextChange(String s) {
+                    search(s);
+                    return true;
+                }
+            });
+        }
+
+    }
+
+    private void search(String str){
+        ArrayList<Item> myList = new ArrayList<>();
+        for (Item object : items){
+            if (object.getTxt2().toLowerCase().contains(str.toLowerCase())){
+                myList.add(object);
+            }
+        }
+        ItemAdapter iAdapter = new ItemAdapter(myList);
+        rv.setAdapter(iAdapter);
+
+    }
+
+    private void filterList(String status){
+
+        selectedFilter = status;
+        ArrayList<Item> myList = new ArrayList<>();
+        for (Item object : items){
+            if (object.getTxt2().toLowerCase().contains(status.toLowerCase())){
+                myList.add(object);
+            }
+        }
+        ItemAdapter iAdapter = new ItemAdapter(myList);
+        rv.setAdapter(iAdapter);
+
+    }
+
+    public void apFilter(View view) {
+        filterList("a+");
+    }
+
+    public void bpFilter(View view) {
+        filterList("b+");
+    }
+
+    public void opFilter(View view) {
+        filterList("o+");
+    }
+
+    public void amFilter(View view) {
+        filterList("a-");
+    }
+
+    public void bmFilter(View view) {
+        filterList("b-");
+    }
+
+    public void omFilter(View view) {
+        filterList("o-");
+    }
+
+    public void abpFilter(View view) {
+        filterList("ab+");
+    }
+
+    public void abmFilter(View view) {
+        filterList("ab-");
+    }
+
+    public void allFilter(View view) {
+        selectedFilter="all";
+        ItemAdapter iAdapter = new ItemAdapter(items);
+        rv.setAdapter(iAdapter);
+    }
 
 /*    private void GetDataFromFirebase() {
 
