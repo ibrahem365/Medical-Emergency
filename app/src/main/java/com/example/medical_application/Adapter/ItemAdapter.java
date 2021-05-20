@@ -100,16 +100,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
                 @Override
                 public void onClick(View view) {
                     Intent i = new Intent(Intent.ACTION_DIAL);
-                    i.setData(Uri.parse("tel:12345"));
+                    i.setData(Uri.parse("tel:"+txPhone.getText().toString()));
                     mContext.startActivity(i);
                 }
             });
 
         }
 
-       /* @Override
-        public void onClick(View view) {
-
-        }*/
     }
 }
