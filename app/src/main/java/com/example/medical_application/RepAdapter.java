@@ -1,6 +1,8 @@
 package com.example.medical_application;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +36,7 @@ public class RepAdapter extends RecyclerView.Adapter<RepAdapter.ItemHolder> {
     @Override
     public ItemHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // Inflate the Item design and send to a view holder
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.rep_rec_item,null,false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.rep_rec_item,parent,false);
         ItemHolder holder = new ItemHolder(v);
         return holder;
     }
@@ -75,6 +77,16 @@ public class RepAdapter extends RecyclerView.Adapter<RepAdapter.ItemHolder> {
             txMan = itemView.findViewById(R.id.numMan);
             txWoman = itemView.findViewById(R.id.numWoman);
             txChild = itemView.findViewById(R.id.numChild);
+
+            itemView.findViewById(R.id.btnViewLOca).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i= new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse("geo:"+txLoca.getText().toString()));
+                    mContext.startActivity(i);
+                }
+            });
+
         }
     }
 }

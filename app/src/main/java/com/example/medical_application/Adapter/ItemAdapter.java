@@ -47,7 +47,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
     @Override
     public ItemHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // Inflate the Item design and send to a view holder
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.bloodbank_items,null,false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.bloodbank_items,parent,false);
         ItemHolder holder = new ItemHolder(v);
         return holder;
     }
