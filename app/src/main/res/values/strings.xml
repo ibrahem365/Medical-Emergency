@@ -30,6 +30,7 @@
     <string name="hint5">عدد السراير</string>
     <string name="hint6">عدد غرف العناية</string>
     <string name="bttn0">انشاء حساب</string>
+    <string name="getloc">الحصول علي المكان</string>
     <!--    medic-->
     <string name="amp_1">الإسعاف</string>
     <string name="amp_num">123</string>

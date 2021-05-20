@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.Admin.AddData"></activity>
+        <activity android:name=".ReceivingReports"></activity>
+        <activity android:name=".UI.Admin.AddData" />
         <activity
             android:name=".medic_prof_edit"
             android:theme="@style/signup_theme" />

@@ -34,6 +34,13 @@ public class medic_home_frag extends Fragment {
                 startActivity(i);
             }
         });
+        recieve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(getActivity().getBaseContext(),ReceivingReports.class);
+                startActivity(i);
+            }
+        });
         return v;
     }
 }
