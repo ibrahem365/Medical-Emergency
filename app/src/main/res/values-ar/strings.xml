@@ -636,4 +636,32 @@
     <!--nav menu-->
     <string name="prof">الملف الشخصي</string>
     <string name="home">الصفحة الرئيسية</string>
+    <string name="explosion">انفجار</string>
+    <string name="specialists_divide_the_explosions_into_high_intensity_accompanied_by_a_supersonic_air_shock_such_as_those_that_occur_from_dynamite_nitroglycerine_and_tnt_and_low_intensity_such_as_those_that_occur_from_the_explosion_of_gunpowder_or_oil_bombs">يقسم الأخصائيون الانفجارات إلى عالية الشدة، تصاحبها صدمة جوية أسرع من موجات الصوت، كتلك التي تحصل من الديناميت والنيتروغليسيرين والـ TNT، ومنخفضة الشدة، كتلك التي تحصل من انفجار البارود أو القنابل النفطية.</string>
+    <string name="they_also_divide_the_following_blast_injuries_into">كما يقسمون الإصابات التالية للانفجار إلى:</string>
+    <string name="primary_injuries_caused_by_strong_air_shock_in_high_intensity_explosions_and_are_injuries_to_the_lungs_abdominal_organs_middle_ear_and_brain_concussion">  أذيات أولية، تحصل من الصدمة الجوية القوية، في الانفجارات العالية الشدة وتتمثل في: أذيات الرئتين، وأحشاء البطن، والأذن المتوسطة، وارتجاج الدماغ.</string>
+    <string name="secondary_injuries_resulting_from_hitting_shrapnel_from_the_bomb_or_the_structures_that_were_exposed_to_the_explosion_and_resulting_in_most_of_the_other_injuries">أذيات ثانوية، تنتج من اصطدام شظايا القنبلة أو الإنشاءات التي تعرضت للانفجار، وينشأ عنها معظم الإصابات الأخرى</string>
+    <string name="symptoms_and_signs_of_injuries">أعراض الإصابات وعلاماتها:</string>
+    <string name="symptoms_and_signs_of_choking">-أعراض الاختناق وعلاماته.</string>
+    <string name="trauma">-الإصابة بالصدمة.</string>
+    <string name="hemoptysis_common_cough_with_blood_mixed_sputum">نفث الدم (السعال المشترك مع البصاق الممزوج بالدم).-</string>
+    <string name="ear_symptoms_including_bleeding_and_hearing_loss"> -أعراض أذنية بما فيها النزف ونقص السمع.</string>
+    <string name="eye_injuries">-أذيات العين.</string>
+    <string name="bleeding_from_visible_wounds"> -نزف دموي من جروح ظاهرة.</string>
+    <string name="fractions">-الكسور.</string>
+    <string name="burns">-الحروق.</string>
+    <string name="rupture_of_some_viscera_such_as_the_liver_spleen_intestine_or_kidneys">- تمزق بعض الأحشاء كالكبد أو الطحال أو الأمعاء أو الكليتين.</string>
+    <string name="brain_concussion_or_intracranial_hemorrhage">-ارتجاج الدماغ أو النزف داخل الجمجمة.</string>
+    <string name="the_purpose_of_the_ambulance">الغرض من الإسعاف:</string>
+    <string name="keeping_the_injured_person_in_his_place_unless_there_is_a_possibility_of_further_explosions_applying_first_aid_according_to_the_type_of_injury_and_reassuring_him_as_much_as_possible_along_with_arranging_his_transfer_to_the_nearest_hospital">إبقاء المصاب في مكانه (ما لم يكن هناك احتمال المزيد من الانفجارات)، وتطبيق الإسعافات الأولية بحسب نوع الإصابة، وطمأنته قدر المستطاع مع تدبير نقله لأقرب مستشفى.</string>
+    <string name="ambulance_steps">خطوات الإسعاف:</string>
+    <string name="move_the_casualty_to_a_minimum_and_it_is_preferable_to_raise_him_to_a_half_sitting_position_if_his_general_position_permits_and_support_his_head_and_shoulders">1- حرّك المصاب إلى أقل حد ممكن، ويفضل رفعه إلى وضعية نصف الجلوس إذا سمح وضعه العام بذلك، وادعم رأسه وكتفيه.</string>
+    <string name="relax_the_buttons_of_any_clothing_that_presses_on_his_neck_chest_and_sides">2- أرخ أزرار أية ملابس تضغط على عنقه وصدره وجانبيه.</string>
+    <string name="keep_the_person_warm_and_keep_him_from_getting_cold_if_the_weather_is_cold">3- أبق المصاب دافئاً وامنع عنه البرد إذا كان الجو بارداً.</string>
+    <string name="check_the_speed_of_the_pulse_the_speed_of_the_movements_of_the_breathing_and_the_extent_of_the_patient_s_response_and_repeat_this_every_ten_minutes"> 4- تفحص سرعة النبض، وسرعة حركات التنفس، ومدى تجاوب المريض، وكرر هذا كل عشر دقائق.</string>
+    <string name="stop_the_bleeding_from_the_wounds_and_if_the_bleeding_is_profuse_and_you_cannot_stop_it_it_is_okay_to_use_a_tourniquet_made_of_any_piece_of_cloth_or_piece_of_clothing_that_is_wrapped_tightly_around_the_upper_side_closest_to_the_heart_of_the_affected_limb"> 5- أوقف النزف الحاصل من الجروح، وإذا كان النزف غزيراً ولم تستطع إيقافه، فلا بأس من استخدام عاصبة من أي قطعة قماش (أو قطعة ملابس) تلفها بشدة حول الناحية الأعلى (الأقرب للقلب) للطرف المصاب.</string>
+    <string name="if_the_victim_is_unconscious_open_his_respiratory_tracts_and_perform_heart_and_lung_resuscitation_if_required_and_place_him_in_the_comfortable_rescue_position"> 6- إذا كان المصاب غائباً عن الوعي، فافتح مسالكه التنفسية، وقم بعمل إنعاش للقلب والرئتين إذا تطلب الأمر، وضعه في وضعية الإنقاذ المريحة.</string>
+    <string name="continue_to_reassure_him_while_arranging_his_urgent_transfer_to_the_hospital_and_to_be_transported_on_a_stretcher_equipped_crane_while_maintaining_the_treatment_procedures">7- داوم على تطمينه وأنت تدبر نقله العاجل للمستشفى، وليتم نقله على محفة (رافعة مجهزة)، مع المحافظة على إجراءات المعالجة.</string>
+    <string name="accompany_the_injured_person_to_the_hospital_if_you_can_to_give_a_report_to_those_responsible_for_all_your_observations_about_the_accident_and_the_injury">8- رافق المصاب للمستشفى إن استطعت، لتعطي تقريراً للمسؤولين عن كل ملاحظاتك عن الحادث وعن الإصابة.</string>
+
 </resources>

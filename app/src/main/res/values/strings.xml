@@ -635,5 +635,32 @@ Opening the airway:
     <!--nav menu-->
     <string name="prof">Profile</string>
     <string name="home">Home</string>
+    <string name="explosion">explosion</string>
+    <string name="specialists_divide_the_explosions_into_high_intensity_accompanied_by_a_supersonic_air_shock_such_as_those_that_occur_from_dynamite_nitroglycerine_and_tnt_and_low_intensity_such_as_those_that_occur_from_the_explosion_of_gunpowder_or_oil_bombs">Specialists divide the explosions into high-intensity, accompanied by a supersonic air shock, such as those that occur from dynamite, nitroglycerine and TNT, and low-intensity, such as those that occur from the explosion of gunpowder or oil bombs.</string>
+    <string name="they_also_divide_the_following_blast_injuries_into">They also divide the following blast injuries into:</string>
+    <string name="primary_injuries_caused_by_strong_air_shock_in_high_intensity_explosions_and_are_injuries_to_the_lungs_abdominal_organs_middle_ear_and_brain_concussion">Primary injuries, caused by strong air shock, in high-intensity explosions and are: injuries to the lungs, abdominal organs, middle ear, and brain concussion.</string>
+    <string name="secondary_injuries_resulting_from_hitting_shrapnel_from_the_bomb_or_the_structures_that_were_exposed_to_the_explosion_and_resulting_in_most_of_the_other_injuries">Secondary injuries, resulting from hitting shrapnel from the bomb or the structures that were exposed to the explosion, and resulting in most of the other injuries.</string>
+    <string name="symptoms_and_signs_of_injuries">Symptoms and signs of injuries:</string>
+    <string name="symptoms_and_signs_of_choking">Symptoms and signs of choking.</string>
+    <string name="trauma">Trauma.</string>
+    <string name="hemoptysis_common_cough_with_blood_mixed_sputum">Hemoptysis (common cough with blood-mixed sputum).</string>
+    <string name="ear_symptoms_including_bleeding_and_hearing_loss">Ear symptoms, including bleeding and hearing loss.</string>
+    <string name="eye_injuries">Eye injuries</string>
+    <string name="bleeding_from_visible_wounds">Bleeding from visible wounds.</string>
+    <string name="fractions">Fractions.</string>
+    <string name="burns">Burns</string>
+    <string name="rupture_of_some_viscera_such_as_the_liver_spleen_intestine_or_kidneys">Rupture of some viscera, such as the liver, spleen, intestine, or kidneys</string>
+    <string name="brain_concussion_or_intracranial_hemorrhage">Brain concussion or intracranial hemorrhage.</string>
+    <string name="the_purpose_of_the_ambulance">The purpose of the ambulance:</string>
+    <string name="keeping_the_injured_person_in_his_place_unless_there_is_a_possibility_of_further_explosions_applying_first_aid_according_to_the_type_of_injury_and_reassuring_him_as_much_as_possible_along_with_arranging_his_transfer_to_the_nearest_hospital">Keeping the injured person in his place (unless there is a possibility of further explosions), applying first aid according to the type of injury, and reassuring him as much as possible, along with arranging his transfer to the nearest hospital.</string>
+    <string name="ambulance_steps">Ambulance steps:</string>
+    <string name="move_the_casualty_to_a_minimum_and_it_is_preferable_to_raise_him_to_a_half_sitting_position_if_his_general_position_permits_and_support_his_head_and_shoulders">1-Move the casualty to a minimum, and it is preferable to raise him to a half-sitting position if his general position permits, and support his head and shoulders.</string>
+    <string name="relax_the_buttons_of_any_clothing_that_presses_on_his_neck_chest_and_sides">2-Relax the buttons of any clothing that presses on his neck, chest and sides.</string>
+    <string name="keep_the_person_warm_and_keep_him_from_getting_cold_if_the_weather_is_cold">3-Keep the person warm and keep him from getting cold if the weather is cold.</string>
+    <string name="check_the_speed_of_the_pulse_the_speed_of_the_movements_of_the_breathing_and_the_extent_of_the_patient_s_response_and_repeat_this_every_ten_minutes">4-Check the speed of the pulse, the speed of the movements of the breathing, and the extent of the patient\'s response, and repeat this every ten minutes.</string>
+    <string name="stop_the_bleeding_from_the_wounds_and_if_the_bleeding_is_profuse_and_you_cannot_stop_it_it_is_okay_to_use_a_tourniquet_made_of_any_piece_of_cloth_or_piece_of_clothing_that_is_wrapped_tightly_around_the_upper_side_closest_to_the_heart_of_the_affected_limb">5-Stop the bleeding from the wounds, and if the bleeding is profuse and you cannot stop it, it is okay to use a tourniquet made of any piece of cloth (or piece of clothing) that is wrapped tightly around the upper side (closest to the heart) of the affected limb.</string>
+    <string name="if_the_victim_is_unconscious_open_his_respiratory_tracts_and_perform_heart_and_lung_resuscitation_if_required_and_place_him_in_the_comfortable_rescue_position">6-If the victim is unconscious, open his respiratory tracts, and perform heart and lung resuscitation if required, and place him in the comfortable rescue position.</string>
+    <string name="continue_to_reassure_him_while_arranging_his_urgent_transfer_to_the_hospital_and_to_be_transported_on_a_stretcher_equipped_crane_while_maintaining_the_treatment_procedures">7-Continue to reassure him while arranging his urgent transfer to the hospital, and to be transported on a stretcher (equipped crane), while maintaining the treatment procedures.</string>
+    <string name="accompany_the_injured_person_to_the_hospital_if_you_can_to_give_a_report_to_those_responsible_for_all_your_observations_about_the_accident_and_the_injury">8-Accompany the injured person to the hospital if you can, to give a report to those responsible for all your observations about the accident and the injury.</string>
 
 </resources>
