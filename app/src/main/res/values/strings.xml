@@ -361,15 +361,14 @@ Opening the airway:
     <string name="fixation_of_the_limb_with_splints_to_prevent_movement_or_walking_as_in_the_case_of_a_fracture">•Fixation of the limb with splints to prevent movement or walking (as in the case of a fracture).</string>
     <!--    omartask-->
     <string-array name="report_types">
-        <item>اختر نوع البلاغ</item>
-        <item>حوادث مرروريه</item>
-        <item>حريق</item>
-        <item>أمراض</item>
-        <item>نساءوولاده</item>
-        <item>تسمم</item>
-        <item>متفجرات وأسلحه</item>
-        <item>اصابات</item>
-        <item>اعتداء وعنف</item>
+        <item>Choose the type of report</item>
+        <item>traffic accidents</item>
+        <item>Explosions</item>
+        <item>Heart attack</item>
+        <item>A drunken coma</item>
+        <item>Poisoning</item>
+        <item>brain attack</item>
+        <item>Fire accidents</item>
     </string-array>
 
     <string name="types">انواع الحروق\n</string>

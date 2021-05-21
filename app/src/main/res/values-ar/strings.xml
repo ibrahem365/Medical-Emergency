@@ -364,14 +364,13 @@
 <!--omartask-->
     <string-array name="report_types" >
         <item>اختر نوع البلاغ</item>
-        <item>حوادث مرروريه</item>
-        <item>حريق</item>
-        <item>أمراض</item>
-        <item>نساءوولاده</item>
+        <item>حوادث مروريه</item>
+        <item>انفجارات</item>
+        <item>ازمة قلبية</item>
+        <item>غيبوبة سكر</item>
         <item>تسمم</item>
-        <item>متفجرات وأسلحه</item>
-        <item>اصابات</item>
-        <item>اعتداء وعنف</item>
+        <item>السكتة الدماغية</item>
+        <item>حوادث حريق</item>
     </string-array>
 
     <string name="types">انواع الحروق\n</string>
