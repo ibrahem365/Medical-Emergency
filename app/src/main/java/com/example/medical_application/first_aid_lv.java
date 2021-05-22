@@ -48,6 +48,8 @@ public class first_aid_lv extends AppCompatActivity {
         fa_infos.add(new fa_info(R.drawable.reaf2, R.string.item_title_reaf,R.string.item_disc_reaf));
         fa_infos.add(new fa_info(R.drawable.sakta100, R.string.item_title_saktademaghia,R.string.item_disc_sakta));
         fa_infos.add(new fa_info(R.drawable.hrook100, R.string.item_title_hrook,R.string.item_disc_hrook));
+        fa_infos.add(new fa_info(R.drawable.accident, R.string.traffic_accidents,R.string.you_shouhdknow));
+        fa_infos.add(new fa_info(R.drawable.explosives, R.string.explosion,R.string.enfgar));
 
         final first_aidAdapter adapter = new first_aidAdapter(this, R.layout.fa_lv_item_layout, fa_infos);
 
@@ -120,6 +122,16 @@ public class first_aid_lv extends AppCompatActivity {
                     Intent i=new Intent(first_aid_lv.this,burns.class);
                     startActivity(i);
                 }
+                if(position==16){
+                    Intent i=new Intent(first_aid_lv.this,traffic_accidents.class);
+                    startActivity(i);
+                }
+                if(position==17){
+                    Intent i=new Intent(first_aid_lv.this,explosion_act.class);
+                    startActivity(i);
+                }
+
+
             }
         });
 

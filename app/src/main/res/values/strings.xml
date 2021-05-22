@@ -662,5 +662,27 @@ Opening the airway:
     <string name="if_the_victim_is_unconscious_open_his_respiratory_tracts_and_perform_heart_and_lung_resuscitation_if_required_and_place_him_in_the_comfortable_rescue_position">6-If the victim is unconscious, open his respiratory tracts, and perform heart and lung resuscitation if required, and place him in the comfortable rescue position.</string>
     <string name="continue_to_reassure_him_while_arranging_his_urgent_transfer_to_the_hospital_and_to_be_transported_on_a_stretcher_equipped_crane_while_maintaining_the_treatment_procedures">7-Continue to reassure him while arranging his urgent transfer to the hospital, and to be transported on a stretcher (equipped crane), while maintaining the treatment procedures.</string>
     <string name="accompany_the_injured_person_to_the_hospital_if_you_can_to_give_a_report_to_those_responsible_for_all_your_observations_about_the_accident_and_the_injury">8-Accompany the injured person to the hospital if you can, to give a report to those responsible for all your observations about the accident and the injury.</string>
+    <!--   traffic_accidents-->
+    <string name="traffic_accidents">Traffic accidents</string>
+    <string name="you_shouhdknow">What you must know before treating injured people in road accidents</string>
+    <string name="you_shouhdknowexp">The first thing you need to know while treating an accident victim is whether the casualty is suffering physical harm.
+You may not be able to identify internal injuries (such as internal bleeding), but you will definitely notice signs of external injuries, such as wounds, etc., depending on the severity of the injury.
+
+Brain injuries (concussions), spinal trauma, and fractures are common in traffic accidents. So, during first aid for traffic accidents and in the event that you intend to move the patient to a safer place from the middle of the road, be aware that the wrong mode of transportation may cause an increase in injuries. To avoid this, ask the people around you for help to move the injured / injured person to a safe side.</string>
+    <string name="khatwat">What are the first aid steps for traffic accidents?</string>
+    <string name="tafakednaf">Check yourself first</string>
+    <string name="tafkadnaftv">If you were a part of the traffic accident, check yourself for any injuries, try to move your four limbs to discover any cuts or fractures, and if you feel symptoms such as dizziness.</string>
+    <string name="tafkadakhreen">Check for injuries to the person (s) around you</string>
+    <string name="tafkadakhreentv">	•	If you notice an injured person around you, try to slightly assess his injury. For example, does he have bleeding in the head, neck, limbs, abdomen, etc.</string>
+    <string name="tafkadakhreentv1">  •	Start with treatment for those who are calmest, because they are often seriously injured (such as fainting) or unable to breathe.</string>
+    <string name="tafkadakhreentv2">•	On the other hand, injured people who can speak or scream are able to breathe, so they can be managed later.</string>
+    <string name="tafkadakhreentv3">•	Ask the injured person for his name, if he answered you correctly, this indicates that he is aware of the event, and therefore he usually does not suffer from a serious brain injury.</string>
+    <string name="tafkadakhreentv4">•	The next step is to check the patient’s breathing by placing your ear over the patient’s mouth and nose while monitoring the rise and fall of the victim’s chest. In addition to checking his pulse by placing two fingers on the victims neck next to the throat.</string>
+    <string name="tafkadakhreentv5">•	Seek emergency medical help to take seriously injured people to hospital. It is best to inform the ambulance team about the medical condition of the injured person, if you are able to determine his injury.</string>
+    <string name="tafkadakhreentv6">•	If you do not hear breathing noises from the victim, check his throat immediately for any obstructions blocking his airway. If you find a foreign object stuck in the airway, remove it using your index and middle fingers.</string>
+
+    <string name="otheraids">Here are some other first aid that can help </string>
+
+    <string name="enfgar">Specialists divide blasts into high-intensity, accompanied by a supersonic air shock...</string>
 
 </resources>

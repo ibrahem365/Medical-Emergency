@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Build;
@@ -190,7 +191,7 @@ minus2.setOnClickListener(new View.OnClickListener() {
         bl_text=findViewById(R.id.bl_text);
         bl=findViewById(R.id.bl_btn);
         cancel_btn=findViewById(R.id.cancel_btn);
-
+        
         dialogbuilder.setView(dilaog_sc);
         dialog=dialogbuilder.create();
         dialog.setCanceledOnTouchOutside(false);

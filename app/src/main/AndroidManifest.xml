@@ -13,7 +13,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Explosions"></activity>
+        <activity android:name=".explosion_act"
+            android:label="@string/fa_name"
+            android:parentActivityName=".first_aid_lv"
+            android:theme="@style/signup_theme"></activity>
+
+        <activity android:name=".traffic_accidents" android:label="@string/fa_name"
+            android:parentActivityName=".first_aid_lv"
+            android:theme="@style/signup_theme">
+
+        </activity>
+        <activity android:name=".Explosions" />
         <activity android:name=".ReceivingReports" />
         <activity android:name=".UI.Admin.AddData" />
         <activity
@@ -53,7 +63,6 @@
             android:theme="@style/sign_in">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -161,7 +170,9 @@
         <activity
             android:name=".first_aid_lv"
             android:label="@string/fa_name"
-            android:theme="@style/signup_theme" />
+            android:theme="@style/signup_theme" >
+
+        </activity>
     </application>
 
 </manifest>
