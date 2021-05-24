@@ -53,7 +53,6 @@ public class new_report extends AppCompatActivity {
     TextView bl_text;
     private AlertDialog.Builder dialogbuilder;
     private AlertDialog dialog;
-    Button cancel_btn;
     Button getLoc;
     TextView locTextView;
     String cLocation;
@@ -187,12 +186,33 @@ minus2.setOnClickListener(new View.OnClickListener() {
         dialogbuilder=new AlertDialog.Builder(this);
         final View dilaog_sc=getLayoutInflater().inflate(R.layout.dialog,null);
         fa_text=findViewById(R.id.fa_text);
-        fa=findViewById(R.id.fa_btn);
+        fa=dilaog_sc.findViewById(R.id.fa_btn);
         bl_text=findViewById(R.id.bl_text);
-        bl=findViewById(R.id.bl_btn);
-        cancel_btn=findViewById(R.id.cancel_btn);
+        bl=dilaog_sc.findViewById(R.id.bl_btn);
+        bl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent b=new Intent(new_report.this,bloodbank_recycle.class);
+                startActivity(b);
+            }
+        });
+
+//        fa.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent f= new Intent(new_report.this,first_aid_lv.class);
+//                startActivity(f);
+//            }
+//        });
         
         dialogbuilder.setView(dilaog_sc);
+        dialogbuilder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+
+            }
+        });
         dialog=dialogbuilder.create();
         dialog.setCanceledOnTouchOutside(false);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -203,7 +223,10 @@ minus2.setOnClickListener(new View.OnClickListener() {
 
 
         dialog.show();
+
+
     }
+
 
     private void insertSendData(){
 
