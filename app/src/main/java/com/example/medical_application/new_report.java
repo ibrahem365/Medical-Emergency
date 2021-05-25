@@ -11,6 +11,7 @@ import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -18,6 +19,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.medical_application.UI.Diabetes;
 import com.example.medical_application.UI.MainActivity;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -46,7 +48,7 @@ public class new_report extends AppCompatActivity {
     FloatingActionButton plus2;
     FloatingActionButton minus2;
     TextView count2;
-    Button send;
+    Button send ;
     Button fa;
     TextView fa_text;
     Button bl;
@@ -82,6 +84,7 @@ public class new_report extends AppCompatActivity {
         locTextView= findViewById(R.id.locTxtView);
         pName= findViewById(R.id.description);
         rType= findViewById(R.id.spinner_type_of_report);
+
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
@@ -137,8 +140,12 @@ minus2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 insertSendData();
                 popup();
+
             }
         });
+
+
+
 
         getLoc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -189,6 +196,117 @@ minus2.setOnClickListener(new View.OnClickListener() {
         fa=dilaog_sc.findViewById(R.id.fa_btn);
         bl_text=findViewById(R.id.bl_text);
         bl=dilaog_sc.findViewById(R.id.bl_btn);
+        //rType.setSelection(3);{
+           // fa.setText("yomna");
+          //  fa.setOnClickListener(new View.OnClickListener() {
+               // @Override
+               // public void onClick(View v) {
+                   // Intent i=new Intent(new_report.this,poisoning2.class);
+                    //startActivity(i);
+
+               // }
+           // });
+
+
+      //  }
+      // rType.setSelection(2);{
+            //fa.setText("salma");
+           // fa.setOnClickListener(new View.OnClickListener() {
+              //  @Override
+               // public void onClick(View v) {
+                   // Intent i=new Intent(new_report.this,traffic_accidents.class);
+                   // startActivity(i);
+
+              //  }
+          //  });
+
+       // }
+        if (rType.getSelectedItemPosition()==1){
+            fa.setText(R.string.traffic);
+           fa.setOnClickListener(new View.OnClickListener() {
+             @Override
+            public void onClick(View v) {
+            Intent i=new Intent(new_report.this,traffic_accidents.class);
+            startActivity(i);
+
+              }
+              });
+
+        }
+        if (rType.getSelectedItemPosition()==2){
+            fa.setText(R.string.explo);
+            fa.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i=new Intent(new_report.this,explosion_act.class);
+                    startActivity(i);
+
+                }
+            });
+
+        }
+        if (rType.getSelectedItemPosition()==3){
+            fa.setText(R.string.heartatt);
+            fa.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i=new Intent(new_report.this,heartattacks.class);
+                    startActivity(i);
+
+                }
+            });
+
+        }
+        if (rType.getSelectedItemPosition()==4){
+            fa.setText(R.string.dia);
+            fa.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i=new Intent(new_report.this, Diabetes.class);
+                    startActivity(i);
+
+                }
+            });
+
+        }
+        if (rType.getSelectedItemPosition()==5){
+            fa.setText(R.string.poiso);
+            fa.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i=new Intent(new_report.this,poisoning2.class);
+                    startActivity(i);
+
+                }
+            });
+
+        }
+        if (rType.getSelectedItemPosition()==6){
+            fa.setText(R.string.brain);
+            fa.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i=new Intent(new_report.this,brainattack.class);
+                    startActivity(i);
+
+                }
+            });
+
+        }
+        if (rType.getSelectedItemPosition()==7){
+            fa.setText(R.string.bur);
+            fa.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i=new Intent(new_report.this,burns.class);
+                    startActivity(i);
+
+                }
+            });
+
+        }
+
+
         bl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -222,10 +340,12 @@ minus2.setOnClickListener(new View.OnClickListener() {
         }
 
 
+
         dialog.show();
 
 
     }
+
 
 
     private void insertSendData(){

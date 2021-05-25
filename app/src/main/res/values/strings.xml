@@ -684,5 +684,13 @@ Brain injuries (concussions), spinal trauma, and fractures are common in traffic
     <string name="otheraids">Here are some other first aid that can help </string>
 
     <string name="enfgar">Specialists divide blasts into high-intensity, accompanied by a supersonic air shock...</string>
+    <!--   settext-->
+    <string name="traffic"> First aid for traffic accidents</string>
+    <string name="explo"> First aid for blasts</string>
+    <string name="heartatt"> First aid for heart attacks</string>
+    <string name="dia"> First aid for a sugar coma</string>
+    <string name="poiso"> First aid for poisoning</string>
+    <string name="brain"> First aid for stroke</string>
+    <string name="bur"> First aid for fire accidents</string>
 
 </resources>
