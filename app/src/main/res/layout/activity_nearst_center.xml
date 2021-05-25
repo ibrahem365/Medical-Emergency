@@ -9,9 +9,11 @@
     tools:context=".nearst_center">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="2dp"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:visibility="invisible"
+        >
         <Spinner
             android:layout_width="0dp"
             android:layout_height="wrap_content"
