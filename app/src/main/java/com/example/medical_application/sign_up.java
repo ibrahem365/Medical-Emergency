@@ -36,6 +36,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 import java.util.regex.Pattern;
 
+import static com.example.medical_application.R.id.p;
 import static com.example.medical_application.R.id.sw_blood_pressure;
 
 public class sign_up extends AppCompatActivity {
@@ -192,13 +193,13 @@ public class sign_up extends AppCompatActivity {
                 final String  diseases;if(checkBox_diseases.isChecked()) {
                 diseases=et_didiseases.toString();
             }else diseases="null";
-               final String gender =item_select_gender;
+               final  String gender =item_select_gender;
                final String bloodType=item_select_bloodtpye;
                if(user.isChecked()){
-                   userType="normal user ";
+                   userType="normaluser";
                }
                if(para.isChecked()){
-                   userType="paramedic user";
+                   userType="paramedicuser";
                }
                 //informeation for register error
 
@@ -319,8 +320,9 @@ public class sign_up extends AppCompatActivity {
                                                 paramedic_user.put("NumberBeds",numberBeds);
                                                 paramedic_user.put("NumberCareRooms",numberCareroom);
                                                 root.child(userID).setValue(paramedic_user);
+
                                             }
-                                            if(user.isChecked()){
+                                             if(user.isChecked()){
                                                 root=db_real_time.getReference().child("NormalUser");
                                                 HashMap<String,String> normal_user=new HashMap<>();
                                                 normal_user.put("UserType ",userType);

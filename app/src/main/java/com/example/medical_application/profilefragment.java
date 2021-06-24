@@ -30,16 +30,15 @@ import java.util.concurrent.Executor;
 
 public class profilefragment extends Fragment {
   FloatingActionButton edit_btn;
-  private FirebaseAuth DBauth;
-  private   FirebaseFirestore DBstore ;
-  private DocumentReference docRef;
-
-   String normal_userId;
 
 
+
+    private FirebaseDatabase database;
+    private  DatabaseReference UserRef;
+    public static final String user="NormalUser";
 
     private  String userID;
-    private TextView fullname_tv,phone_tv,address_tv,age_tv ,gender_tv,lenthg_tv,weight_tv,blooatype_tv;
+    private TextView fullname_tv,phone_tv,address_tv ,city_tv,age_tv ,gender_tv,lenthg_tv,weight_tv,blooatype_tv;
 
     @Nullable
     @Override
@@ -56,41 +55,46 @@ public class profilefragment extends Fragment {
 
 
 
-        /*fullname_tv=v.findViewById(R.id.fullname);
+        fullname_tv=v.findViewById(R.id.fullname);
         phone_tv=v.findViewById(R.id.phone);
         address_tv=v.findViewById(R.id.address);
+        city_tv=v.findViewById(R.id.city);
         age_tv=v.findViewById(R.id.age);
         gender_tv=v.findViewById(R.id.gender);
         lenthg_tv=v.findViewById(R.id.length);
         weight_tv=v.findViewById(R.id.weight);
         blooatype_tv=v.findViewById(R.id.bloodtype);
-        //data base
-        DBauth= FirebaseAuth.getInstance();
-        DBstore=FirebaseFirestore.getInstance();
-       normal_userId=DBauth.getCurrentUser().getUid();
-        docRef = DBstore.collection("Normal User").document(normal_userId);
-
-       docRef.addSnapshotListener((Executor) this, new EventListener<DocumentSnapshot>() {
+        // display data
+        database =FirebaseDatabase.getInstance();
+        UserRef=database.getReference(user);
+        UserRef.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-           fullname_tv.setText(value.getString("N_FullName"));
-           phone_tv.setText(value.getString("N_PhoneNumber"));
-            String governorate=value.getString("N_Governorate");
-            String city=value.getString("N_City");
-            String address=governorate +" "+city;
-            address_tv.setText(address);
-           age_tv.setText(value.getString("N_Age"));
-           gender_tv.setText(value.getString("N_Gender"));
-           lenthg_tv.setText(value.getString("N_length"));
-           weight_tv.setText(value.getString("N_weight"));
-           blooatype_tv.setText(value.getString("N_BloodType"));
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot ds : snapshot.getChildren())
+                {
+                    fullname_tv.setText(ds.child("FullName").getValue(String.class));
+                    phone_tv.setText(ds.child("PhoneNumber").getValue(String.class));
+                    address_tv.setText(ds.child("Governorate").getValue(String.class));
+                    city_tv.setText(ds.child("City").getValue(String.class));
+                    age_tv.setText(ds.child("Age").getValue(String.class));
+                    gender_tv.setText(ds.child("Gender").getValue(String.class));
+                    lenthg_tv.setText(ds.child("Length").getValue(String.class));
+                    weight_tv.setText(ds.child("Weight").getValue(String.class));
+                    blooatype_tv.setText(ds.child("NBloodType").getValue(String.class));
 
 
+
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
 
-         */
+
 
 
 

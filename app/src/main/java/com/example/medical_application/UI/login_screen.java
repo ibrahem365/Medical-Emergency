@@ -112,7 +112,7 @@ public class login_screen extends AppCompatActivity {
                                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                                 DatabaseUser x = snapshot.getValue(DatabaseUser.class);
 
-                                                if (x.getTypeUser() != null) {
+                                                if (x.getTypeUser()!= null) {
 
                                                     if (x.getTypeUser().equals("normaluser")) {
                                                         startActivity(new Intent(login_screen.this, MainActivity.class));
