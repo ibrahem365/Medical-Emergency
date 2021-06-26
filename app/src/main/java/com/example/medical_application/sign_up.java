@@ -293,7 +293,7 @@ public class sign_up extends AppCompatActivity {
 
                 //code  auth data base para
                 current_user=FirebaseAuth.getInstance().getCurrentUser();
-                userID=current_user.getUid();
+                //userID=current_user.getUid();
                 mAuth.createUserWithEmailAndPassword(e_mail,passWord)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
