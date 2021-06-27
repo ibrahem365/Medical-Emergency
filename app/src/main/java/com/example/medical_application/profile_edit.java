@@ -82,13 +82,13 @@ public class profile_edit extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                final String upfullName = name.getText().toString();
-                final String upnumberphone=phone.getText().toString();
-                final String upgovernorate = gover.getText().toString();
-                final String upcity=etcity.getText().toString();
-                final String upage=etage.getText().toString();
-                final String uplength=etlenthg.getText().toString();
-                final String upweight=etweight.getText().toString();
+                final String upfullName = name.getText().toString().trim();
+                final String upnumberphone=phone.getText().toString().trim();
+                final String upgovernorate = gover.getText().toString().trim();
+                final String upcity=etcity.getText().toString().trim();
+                final String upage=etage.getText().toString().trim();
+                final String uplength=etlenthg.getText().toString().trim();
+                final String upweight=etweight.getText().toString().trim();
                 if (upfullName.isEmpty()) {
                    name.setError("enter your name");
                    name.requestFocus();
@@ -138,7 +138,7 @@ public class profile_edit extends AppCompatActivity {
                             sage=ds.child("Age").getValue(String.class);
                             sgender=ds.child("Gender").getValue(String.class);
                             slengt=ds.child("Length").getValue(String.class);
-                           sweight=ds.child("Weight").getValue(String.class);
+                            sweight=ds.child("Weight").getValue(String.class);
                             sbloodtype=ds.child("NBloodType").getValue(String.class);
                         }
                     }
@@ -164,7 +164,7 @@ public class profile_edit extends AppCompatActivity {
               
 
 
-                Toast.makeText(profile_edit.this ,"عدلت البيانات خلاص  ",Toast.LENGTH_LONG).show();
+                Toast.makeText(profile_edit.this ,"تم تعديل البيانات  ",Toast.LENGTH_LONG).show();
 
 
 

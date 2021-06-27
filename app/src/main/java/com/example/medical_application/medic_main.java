@@ -13,11 +13,16 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class medic_main extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
+    FirebaseAuth mAuth;
+    FirebaseUser currentUser;
 
 
 
@@ -25,6 +30,11 @@ public class medic_main extends AppCompatActivity implements NavigationView.OnNa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Firebase init
+        mAuth= FirebaseAuth.getInstance();
+        currentUser= mAuth.getCurrentUser();
+
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         medic_home_frag fragment=new medic_home_frag();
@@ -44,6 +54,8 @@ public class medic_main extends AppCompatActivity implements NavigationView.OnNa
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new medic_home_frag()).commit();
             navigationView.setCheckedItem(R.id.nav_home);}
+
+        updateNav();
 
     }
     @Override
@@ -71,6 +83,19 @@ public class medic_main extends AppCompatActivity implements NavigationView.OnNa
         }
         else{
             super.onBackPressed();}
+    }
+
+    public void updateNav(){
+
+        NavigationView navigationView =(NavigationView) findViewById(R.id.nav_view);
+        View headerView = navigationView.getHeaderView(0);
+//        TextView txNavName = headerView.findViewById(R.id.nav_name);
+        TextView txNavMail = headerView.findViewById(R.id.nav_email);
+
+        txNavMail.setText(currentUser.getEmail());
+//        txNavName.setText(currentUser.getDisplayName());
+
+
     }
 
 

@@ -37,7 +37,6 @@ import java.util.HashMap;
 import java.util.regex.Pattern;
 
 import static com.example.medical_application.R.id.p;
-import static com.example.medical_application.R.id.sw_blood_pressure;
 
 public class sign_up extends AppCompatActivity {
     RadioGroup radioGroup;
@@ -319,7 +318,8 @@ public class sign_up extends AppCompatActivity {
                                                 paramedic_user.put("NumberAmbulances",numberAmblanc);
                                                 paramedic_user.put("NumberBeds",numberBeds);
                                                 paramedic_user.put("NumberCareRooms",numberCareroom);
-                                                root.child(userID).setValue(paramedic_user);
+//                                                root.child(userID).setValue(paramedic_user);
+                                                root.push().setValue(paramedic_user);
 
                                             }
                                              if(user.isChecked()){
@@ -335,7 +335,8 @@ public class sign_up extends AppCompatActivity {
                                                 normal_user.put("Weight",weight);
                                                 normal_user.put("NBloodType",bloodType);
                                                 normal_user.put("Gender",gender);
-                                                root.child(userID).setValue(normal_user);
+//                                                root.child(userID).setValue(normal_user);
+                                                 root.push().setValue(normal_user);
 
                                             }
 
@@ -352,7 +353,7 @@ public class sign_up extends AppCompatActivity {
 
 
 
-                Toast.makeText(sign_up.this ,"ضفتك في الداتا بيز خلاص  ",Toast.LENGTH_LONG).show();
+                Toast.makeText(sign_up.this ," تم اضافتك  ",Toast.LENGTH_LONG).show();
             }
 
 

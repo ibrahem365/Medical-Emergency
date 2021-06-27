@@ -77,10 +77,6 @@
             android:parentActivityName=".UI.login_screen"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".signup_user"
-            android:label="التسجيل كمستخدم"
-            android:theme="@style/signup_theme" />
-        <activity
             android:name=".new_report"
             android:label="بلاغ جديد"
             android:parentActivityName=".UI.main_screen"
@@ -88,10 +84,6 @@
         <activity
             android:name=".UI.main_screen"
             android:label="الصفحة الرئيسية" />
-        <activity
-            android:name=".signup_medic"
-            android:label="التسجيل كمسعف"
-            android:theme="@style/signup_theme" />
         <activity
             android:name=".asthma"
             android:label="@string/fa_name"

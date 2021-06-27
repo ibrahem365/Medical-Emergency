@@ -120,7 +120,7 @@ public class medic_prof_edit extends AppCompatActivity {
                 map.replace(pnammercareroom,upnambercareroom_p);
                 map.replace(pnamberbeds,upnamberbed_p);
                 UserRef.child(ID).updateChildren(map);
-                Toast.makeText(medic_prof_edit.this ,"عدلت البيانات خلاص  ",Toast.LENGTH_LONG).show();
+                Toast.makeText(medic_prof_edit.this ," تم تعديل البيانات ",Toast.LENGTH_LONG).show();
 
 
 

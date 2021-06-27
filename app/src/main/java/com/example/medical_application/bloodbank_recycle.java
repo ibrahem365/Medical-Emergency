@@ -105,9 +105,9 @@ public class bloodbank_recycle extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent i =new Intent(bloodbank_recycle.this, AddData.class);
-//                startActivity(i);
-                Toast.makeText(bloodbank_recycle.this,"حاسك عايز تلعب ههههه جرب علي الي موجود وخلاص ",Toast.LENGTH_SHORT).show();
+                Intent i =new Intent(bloodbank_recycle.this, AddData.class);
+                startActivity(i);
+//                Toast.makeText(bloodbank_recycle.this,"حاسك عايز تلعب ههههه جرب علي الي موجود وخلاص ",Toast.LENGTH_SHORT).show();
             }
         });
 

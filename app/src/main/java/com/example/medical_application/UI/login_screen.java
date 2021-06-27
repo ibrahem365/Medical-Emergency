@@ -138,12 +138,12 @@ public class login_screen extends AppCompatActivity {
 
                                     } else {
                                         users.sendEmailVerification();
-                                        Toast.makeText(login_screen.this, "روح للايميل بتاعك عشان لان انت اول مرة تعمل login", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(login_screen.this, "يحتاج الي التاكيد", Toast.LENGTH_LONG).show();
                                     }
 
 
                                 } else
-                                    Toast.makeText(login_screen.this, " انت مش مسجل اصلا   ", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(login_screen.this, " يجب التسجيل اولا ", Toast.LENGTH_LONG).show();
                             }
                         });
 

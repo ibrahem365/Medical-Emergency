@@ -13,14 +13,19 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.medical_application.R;
 import com.example.medical_application.home_fragment;
 import com.example.medical_application.profilefragment;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
+    FirebaseAuth mAuth;
+    FirebaseUser currentUser;
 
 
 
@@ -28,6 +33,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Firebase init
+        mAuth= FirebaseAuth.getInstance();
+        currentUser= mAuth.getCurrentUser();
+
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         home_fragment fragment =new home_fragment();
@@ -40,6 +50,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer=findViewById(R.id.drawer_layout);
         NavigationView navigationView =findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        updateNav();
+
         ActionBarDrawerToggle toggle =new ActionBarDrawerToggle(this,drawer,toolbar,
                 R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -75,6 +88,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         else{
             super.onBackPressed();}
+    }
+
+    public void updateNav(){
+
+        NavigationView navigationView =(NavigationView) findViewById(R.id.nav_view);
+        View headerView = navigationView.getHeaderView(0);
+//        TextView txNavName = headerView.findViewById(R.id.nav_name);
+        TextView txNavMail = headerView.findViewById(R.id.nav_email);
+
+        txNavMail.setText(currentUser.getEmail());
+//        txNavName.setText(currentUser.getDisplayName());
+
+
     }
 
 

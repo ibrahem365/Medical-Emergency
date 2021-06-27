@@ -64,7 +64,7 @@ public class medic_prof_frag extends Fragment {
 
         database =FirebaseDatabase.getInstance();
         UserRef=database.getReference(user);
-      UserRef.addValueEventListener(new ValueEventListener() {
+        UserRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot ds : snapshot.getChildren())
