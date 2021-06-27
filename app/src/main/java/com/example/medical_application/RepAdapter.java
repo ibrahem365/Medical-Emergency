@@ -81,9 +81,16 @@ public class RepAdapter extends RecyclerView.Adapter<RepAdapter.ItemHolder> {
             itemView.findViewById(R.id.btnViewLOca).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent i= new Intent(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse("geo:"+txLoca.getText().toString()));
-                    mContext.startActivity(i);
+//                    Intent i= new Intent(Intent.ACTION_VIEW);
+//                    i.setData(Uri.parse("geo:"+txLoca.getText().toString()));
+//                    mContext.startActivity(i);
+
+                    Uri uri = Uri.parse("google.navigation:q="+txLoca.getText().toString()+"&mode=1");
+                    Intent mapIntent = new Intent(Intent.ACTION_VIEW, uri);
+                    mapIntent.setPackage("com.google.android.apps.maps");
+                        mContext.startActivity(mapIntent);
+
+
                 }
             });
 
