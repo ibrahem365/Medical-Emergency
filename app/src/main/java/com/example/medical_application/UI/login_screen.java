@@ -9,6 +9,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.medical_application.Database.DatabaseUser;
@@ -35,6 +36,7 @@ public class login_screen extends AppCompatActivity {
     Button user;
     Button sign_up;
     EditText et_email, et_password;
+    ProgressBar simpleProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +56,7 @@ public class login_screen extends AppCompatActivity {
         sign_up = findViewById(R.id.signupp_btn);
         et_email = findViewById(R.id.et_email_login);
         et_password = findViewById(R.id.et_pasaword_login);
+        simpleProgressBar = findViewById(R.id.simpleProgressBar);
 
 
         sign_up.setOnClickListener(new View.OnClickListener() {
@@ -94,7 +97,7 @@ public class login_screen extends AppCompatActivity {
                     et_password.requestFocus();
                     return;
                 }
-
+                simpleProgressBar.setVisibility(View.VISIBLE);
                 mAuth.signInWithEmailAndPassword(email_login, password_login)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
