@@ -305,6 +305,22 @@
             android:layout_marginBottom="10dp"
             android:text="@string/objectembeded3"
             android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/t_2172"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="@string/for_more_information_watch_the_video"
+            android:textColor="@color/bbbblue"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="@string/bleed_link"
+            android:id="@+id/textview"/>
 
     </LinearLayout>
     </com.google.android.material.card.MaterialCardView>

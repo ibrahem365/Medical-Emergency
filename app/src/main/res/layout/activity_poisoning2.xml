@@ -559,6 +559,22 @@
             android:layout_margin="5dp"
             android:padding="5dp"
             />
+        <TextView
+            android:id="@+id/t_2172"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="@string/for_more_information_watch_the_video"
+            android:textColor="@color/bbbblue"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="@string/poisoning_link"
+            android:id="@+id/textview"/>
 
 
 

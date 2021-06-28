@@ -692,5 +692,45 @@ Brain injuries (concussions), spinal trauma, and fractures are common in traffic
     <string name="poiso"> First aid for poisoning</string>
     <string name="brain"> First aid for stroke</string>
     <string name="bur"> First aid for fire accidents</string>
+    <string name="for_more_information_watch_the_video">For more information watch the video</string>
+    <string name="heartattacks_link" translatable="false">
+        <a href="http://youtu.be/KnVogagd0oo"> http://youtu.be/KnVogagd0oo </a>
+    </string>
+    <string name="airwayobstruction_link" translatable="false">
+        <a href="http://youtu.be/L_kLGhExH04"> http://youtu.be/L_kLGhExH04 </a>
+    </string>
+    <string name="asthma_link" translatable="false">
+        <a href="http://youtu.be/r5A5RLn4VI0"> http://youtu.be/r5A5RLn4VI0 </a>
+    </string>
+    <string name="fractures_link" translatable="false">
+        <a href="http://youtu.be/D_hBt-gqI1s"> http://youtu.be/D_hBt-gqI1s </a>
+    </string>
+    <string name="drowning_link" translatable="false">
+        <a href="http://youtu.be/r2U0MSruFX4"> http://youtu.be/r2U0MSruFX4 </a>
+    </string>
+    <string name="poisoning_link" translatable="false">
+        <a href="http://youtu.be/SV3PkpJaQQQ"> http://youtu.be/SV3PkpJaQQQ </a>
+    </string>
+    <string name="diabetes_link" translatable="false">
+        <a href="http://youtu.be/5llwpyiKmEI"> http://youtu.be/5llwpyiKmEI </a>
+    </string>
+    <string name="epilepsy_link" translatable="false">
+        <a href="http://youtu.be/6onML4byuyw"> http://youtu.be/6onML4byuyw </a>
+    </string>
+    <string name="brainattack_link" translatable="false">
+        <a href="http://youtu.be/J3bJtP1JWAc"> http://youtu.be/J3bJtP1JWAc </a>
+    </string>
+    <string name="burns_link" translatable="false">
+        <a href="http://youtu.be/ulNcw8VZajI"> http://youtu.be/ulNcw8VZajI </a>
+    </string>
+    <string name="trafficaccidient_link" translatable="false">
+        <a href="http://youtu.be/v2hBZ7cxLTQ"> http://youtu.be/v2hBZ7cxLTQ </a>
+    </string>
+    <string name="bleed_link" translatable="false">
+        <a href="http://youtu.be/CV2KUF3-yIQ"> http://youtu.be/CV2KUF3-yIQ </a>
+    </string>
+
+
+
 
 </resources>

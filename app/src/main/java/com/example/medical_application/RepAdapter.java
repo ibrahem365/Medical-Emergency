@@ -85,7 +85,7 @@ public class RepAdapter extends RecyclerView.Adapter<RepAdapter.ItemHolder> {
 //                    i.setData(Uri.parse("geo:"+txLoca.getText().toString()));
 //                    mContext.startActivity(i);
 
-                    Uri uri = Uri.parse("google.navigation:q="+txLoca.getText().toString()+"&mode=1");
+                    Uri uri = Uri.parse("google.navigation:q="+txLoca.getText().toString()+"&mode=d");
                     Intent mapIntent = new Intent(Intent.ACTION_VIEW, uri);
                     mapIntent.setPackage("com.google.android.apps.maps");
                         mContext.startActivity(mapIntent);

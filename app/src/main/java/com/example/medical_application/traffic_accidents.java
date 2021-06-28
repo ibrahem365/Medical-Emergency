@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 import com.example.medical_application.Adapter.first_aidAdapter;
 import com.example.medical_application.UI.Diabetes;
@@ -28,6 +30,8 @@ public class traffic_accidents extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        TextView textView =findViewById(R.id.textview);
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
 
 
         final ArrayList<fa_info> fa_infos = new ArrayList<>();
