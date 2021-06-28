@@ -692,5 +692,7 @@
     <string name="brain"> الاسعافات الاولية للسكتة الدماغية</string>
     <string name="bur"> الاسعافات الاولية لحوادث الحريق</string>
     <string name="for_more_information_watch_the_video">لمزيد من المعلومات شاهد الفيديو</string>
+    <string name="map_text">هل تريد تحديد اقرب المستشفيات لموقعك؟</string>
+    <string name="map_btn">الانتقال للخريطة</string>
 
 </resources>

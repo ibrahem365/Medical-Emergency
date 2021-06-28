@@ -50,8 +50,8 @@ public class new_report extends AppCompatActivity {
     TextView count2;
     Button send ;
     Button fa;
-    TextView fa_text;
-    Button bl;
+    TextView fa_text,map_text;
+    Button bl,map_btn;
     TextView bl_text;
     private AlertDialog.Builder dialogbuilder;
     private AlertDialog dialog;
@@ -196,31 +196,16 @@ minus2.setOnClickListener(new View.OnClickListener() {
         fa=dilaog_sc.findViewById(R.id.fa_btn);
         bl_text=findViewById(R.id.bl_text);
         bl=dilaog_sc.findViewById(R.id.bl_btn);
-        //rType.setSelection(3);{
-           // fa.setText("yomna");
-          //  fa.setOnClickListener(new View.OnClickListener() {
-               // @Override
-               // public void onClick(View v) {
-                   // Intent i=new Intent(new_report.this,poisoning2.class);
-                    //startActivity(i);
+        map_text=findViewById(R.id.map_text);
+        map_btn=dilaog_sc.findViewById(R.id.map_btn);
+        map_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(new_report.this,nearst_center.class);
+                startActivity(intent);
+            }
+        });
 
-               // }
-           // });
-
-
-      //  }
-      // rType.setSelection(2);{
-            //fa.setText("salma");
-           // fa.setOnClickListener(new View.OnClickListener() {
-              //  @Override
-               // public void onClick(View v) {
-                   // Intent i=new Intent(new_report.this,traffic_accidents.class);
-                   // startActivity(i);
-
-              //  }
-          //  });
-
-       // }
         if (rType.getSelectedItemPosition()==1){
             fa.setText(R.string.traffic);
            fa.setOnClickListener(new View.OnClickListener() {

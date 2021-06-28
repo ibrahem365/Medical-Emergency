@@ -729,6 +729,8 @@ Brain injuries (concussions), spinal trauma, and fractures are common in traffic
     <string name="bleed_link" translatable="false">
         <a href="http://youtu.be/CV2KUF3-yIQ"> http://youtu.be/CV2KUF3-yIQ </a>
     </string>
+    <string name="map_text">Do you want to locate the nearest hospitals to your location?</string>
+    <string name="map_btn">Go to the map</string>
 
 
 

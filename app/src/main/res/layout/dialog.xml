@@ -34,6 +34,21 @@
         android:text="بنك الدم"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/map_text"
+        android:text="@string/map_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_margin="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/map_btn"
+        android:text="@string/map_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
 
 
 
