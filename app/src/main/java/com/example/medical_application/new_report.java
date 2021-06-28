@@ -206,6 +206,8 @@ minus2.setOnClickListener(new View.OnClickListener() {
             }
         });
 
+
+
         if (rType.getSelectedItemPosition()==1){
             fa.setText(R.string.traffic);
            fa.setOnClickListener(new View.OnClickListener() {
