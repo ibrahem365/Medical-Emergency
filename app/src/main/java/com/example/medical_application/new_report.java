@@ -2,8 +2,12 @@ package com.example.medical_application;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.Manifest;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -50,8 +54,8 @@ public class new_report extends AppCompatActivity {
     TextView count2;
     Button send ;
     Button fa;
-    TextView fa_text,map_text;
-    Button bl,map_btn;
+    TextView fa_text;
+    Button bl;
     TextView bl_text;
     private AlertDialog.Builder dialogbuilder;
     private AlertDialog dialog;
@@ -196,18 +200,31 @@ minus2.setOnClickListener(new View.OnClickListener() {
         fa=dilaog_sc.findViewById(R.id.fa_btn);
         bl_text=findViewById(R.id.bl_text);
         bl=dilaog_sc.findViewById(R.id.bl_btn);
-        map_text=findViewById(R.id.map_text);
-        map_btn=dilaog_sc.findViewById(R.id.map_btn);
-        map_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(new_report.this,nearst_center.class);
-                startActivity(intent);
-            }
-        });
+        //rType.setSelection(3);{
+           // fa.setText("yomna");
+          //  fa.setOnClickListener(new View.OnClickListener() {
+               // @Override
+               // public void onClick(View v) {
+                   // Intent i=new Intent(new_report.this,poisoning2.class);
+                    //startActivity(i);
+
+               // }
+           // });
 
 
+      //  }
+      // rType.setSelection(2);{
+            //fa.setText("salma");
+           // fa.setOnClickListener(new View.OnClickListener() {
+              //  @Override
+               // public void onClick(View v) {
+                   // Intent i=new Intent(new_report.this,traffic_accidents.class);
+                   // startActivity(i);
 
+              //  }
+          //  });
+
+       // }
         if (rType.getSelectedItemPosition()==1){
             fa.setText(R.string.traffic);
            fa.setOnClickListener(new View.OnClickListener() {
@@ -351,11 +368,34 @@ minus2.setOnClickListener(new View.OnClickListener() {
 
             addDbRef.push().setValue(ditem);
 
+            notification();
+
             Toast.makeText(new_report.this,"Report send",Toast.LENGTH_SHORT).show();
         }
         else {
             Toast.makeText(new_report.this,"Field is Empty",Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private void notification(){
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            NotificationChannel channel =
+                    new NotificationChannel("n","n", NotificationManager.IMPORTANCE_DEFAULT);
+
+            NotificationManager manager = getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this,"n")
+                .setContentText("Code sphere")
+                .setSmallIcon(R.drawable.ic_baseline_message_24)
+                .setAutoCancel(true)
+                .setContentText(" يوجد بلاغ جديد ");
+
+        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(this);
+        managerCompat.notify(999,builder.build());
+
     }
 
 
