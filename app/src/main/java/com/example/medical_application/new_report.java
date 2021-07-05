@@ -377,26 +377,5 @@ minus2.setOnClickListener(new View.OnClickListener() {
         }
     }
 
-    public void notification(){
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            NotificationChannel channel =
-                    new NotificationChannel("n","n", NotificationManager.IMPORTANCE_DEFAULT);
-
-            NotificationManager manager = getSystemService(NotificationManager.class);
-            manager.createNotificationChannel(channel);
-        }
-
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this,"n")
-                .setContentText("Code sphere")
-                .setSmallIcon(R.drawable.ic_baseline_message_24)
-                .setAutoCancel(true)
-                .setContentText(" يوجد بلاغ جديد ");
-
-        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(this);
-        managerCompat.notify(999,builder.build());
-
-    }
-
 
 }
