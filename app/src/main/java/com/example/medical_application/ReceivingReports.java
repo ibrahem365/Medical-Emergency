@@ -20,6 +20,8 @@ public class ReceivingReports extends AppCompatActivity {
     FirebaseDatabase mDatabase;
     DatabaseReference addDbRef;
 
+    new_report newReport;
+
     RecyclerView rvRep;
     ArrayList<RepItem> repItems;
     RepAdapter repAdapter;
@@ -33,6 +35,8 @@ public class ReceivingReports extends AppCompatActivity {
         RecyclerView.LayoutManager lm = new LinearLayoutManager(this);
         rvRep.setHasFixedSize(true);
         rvRep.setLayoutManager(lm);
+
+        newReport = new new_report();
 
         repItems = new ArrayList<>();
         repAdapter = new RepAdapter(ReceivingReports.this,repItems);
@@ -54,7 +58,7 @@ public class ReceivingReports extends AppCompatActivity {
                 item.setChTxt(snapshot.child("chTxt").getValue().toString());
                 repItems.add(item);
                 repAdapter.notifyDataSetChanged();
-
+                newReport.notification();
             }
 
             @Override

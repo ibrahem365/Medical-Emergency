@@ -368,7 +368,7 @@ minus2.setOnClickListener(new View.OnClickListener() {
 
             addDbRef.push().setValue(ditem);
 
-            notification();
+//            notification();
 
             Toast.makeText(new_report.this,"Report send",Toast.LENGTH_SHORT).show();
         }
@@ -377,7 +377,7 @@ minus2.setOnClickListener(new View.OnClickListener() {
         }
     }
 
-    private void notification(){
+    public void notification(){
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             NotificationChannel channel =
