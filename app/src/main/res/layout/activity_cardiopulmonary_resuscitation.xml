@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:orientation="vertical"
-        tools:context=".Cardiopulmonary_resuscitation">
+        tools:context=".FirstAid.Cardiopulmonary_resuscitation">
 
         <TextView
             android:id="@+id/textView"

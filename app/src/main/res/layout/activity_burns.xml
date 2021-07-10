@@ -33,7 +33,7 @@
         android:background="@color/white"
         android:orientation="vertical"
         android:padding="10dp"
-        tools:context=".UI.MainActivity">
+        tools:context=".MainScreens.MainActivity">
 
 
 

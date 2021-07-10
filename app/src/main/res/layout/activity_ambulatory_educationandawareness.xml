@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:orientation="vertical"
-        tools:context=".Ambulatory_educationandawareness">
+        tools:context=".FirstAid.Ambulatory_educationandawareness">
 
         <TextView
             android:id="@+id/textView6"

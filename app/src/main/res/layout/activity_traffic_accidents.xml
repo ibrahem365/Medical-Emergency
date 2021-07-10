@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:nestedScrollingEnabled="true"
     android:layout_height="match_parent"
-    tools:context=".traffic_accidents">
+    tools:context=".FirstAid.traffic_accidents">
     <LinearLayout
 
         android:layout_width="match_parent"

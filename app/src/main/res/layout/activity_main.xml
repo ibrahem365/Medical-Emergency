@@ -12,7 +12,7 @@
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
-    tools:context=".UI.MainActivity">
+    tools:context=".MainScreens.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

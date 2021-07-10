@@ -13,33 +13,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".explosion_act"
+        <activity android:name=".FirstAid.explosion_act"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme"></activity>
 
-        <activity android:name=".traffic_accidents" android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+        <activity android:name=".FirstAid.traffic_accidents" android:label="@string/fa_name"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme">
 
         </activity>
-        <activity android:name=".Explosions" />
-        <activity android:name=".ReceivingReports" />
-        <activity android:name=".UI.Admin.AddData" />
+        <activity android:name=".FirstAid.Explosions" />
+        <activity android:name=".Reports.ReceivingReports" />
+        <activity android:name=".BloodBank.AddData" />
         <activity
-            android:name=".medic_prof_edit"
+            android:name=".Profiles.medic_prof_edit"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".medic_main"
+            android:name=".MainScreens.medic_main"
             android:label="الصفحة الرئيسية"
             android:theme="@style/first_aid" />
-        <activity android:name=".paramedic" />
+        <activity android:name=".MainScreens.paramedic" />
         <activity
-            android:name=".profile_edit"
+            android:name=".Profiles.profile_edit"
             android:label=" "
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".UI.MainActivity"
+            android:name=".MainScreens.MainActivity"
             android:label="الصفحة الرئيسية"
             android:theme="@style/first_aid" />
 
@@ -48,18 +48,18 @@
             android:value="@string/google_map_key" />
 
         <activity
-            android:name=".nearst_center"
+            android:name=".NearstCenter.nearst_center"
             android:label="اقرب مركز صحي" />
         <activity
-            android:name=".sign_up"
+            android:name=".MainScreens.sign_up"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".drowning"
+            android:name=".FirstAid.drowning"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".UI.login_screen"
+            android:name=".MainScreens.login_screen"
             android:theme="@style/sign_in">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,100 +67,100 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".bloodbank_recycle"
+            android:name=".BloodBank.bloodbank_recycle"
             android:label="بنك الدم"
-            android:parentActivityName=".UI.main_screen"
+            android:parentActivityName=".MainScreens.main_screen"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".emgnum_listview"
+            android:name=".EmerNum.emgnum_listview"
             android:label="أرقام الطوارئ"
-            android:parentActivityName=".UI.login_screen"
+            android:parentActivityName=".MainScreens.login_screen"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".new_report"
+            android:name=".Reports.new_report"
             android:label="بلاغ جديد"
-            android:parentActivityName=".UI.main_screen"
+            android:parentActivityName=".MainScreens.main_screen"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".UI.main_screen"
+            android:name=".MainScreens.main_screen"
             android:label="الصفحة الرئيسية" />
         <activity
-            android:name=".asthma"
+            android:name=".FirstAid.asthma"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".UI.firstaid_States.airwayobstruction"
+            android:name=".FirstAid.airwayobstruction"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".heatstroke"
+            android:name=".FirstAid.heatstroke"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".heartattacks"
+            android:name=".FirstAid.heartattacks"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".brainattack"
+            android:name=".FirstAid.brainattack"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".epilepsy"
+            android:name=".FirstAid.epilepsy"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".nosebleeds"
+            android:name=".FirstAid.nosebleeds"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".burns"
+            android:name=".FirstAid.burns"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".qucik_check"
+            android:name=".FirstAid.qucik_check"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".poisoning2"
+            android:name=".FirstAid.poisoning2"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".fractures"
+            android:name=".FirstAid.fractures"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".bleeds_profusely"
+            android:name=".FirstAid.bleeds_profusely"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".UI.Diabetes"
+            android:name=".FirstAid.Diabetes"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".Ambulatory_educationandawareness"
+            android:name=".FirstAid.Ambulatory_educationandawareness"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".Cardiopulmonary_resuscitation"
+            android:name=".FirstAid.Cardiopulmonary_resuscitation"
             android:label="@string/fa_name"
-            android:parentActivityName=".first_aid_lv"
+            android:parentActivityName=".FirstAid.first_aid_lv"
             android:theme="@style/signup_theme" />
         <activity
-            android:name=".first_aid_lv"
+            android:name=".FirstAid.first_aid_lv"
             android:label="@string/fa_name"
             android:theme="@style/signup_theme" >
 
